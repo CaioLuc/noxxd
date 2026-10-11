@@ -504,6 +504,12 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -541,6 +547,54 @@ a:hover {
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
+}
+
+/* Language Switcher (Strict Geometric Aesthetic) */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background-color: rgba(200, 151, 93, 0.08);
+  border: 1px solid var(--color-gold);
+  border-radius: 0 !important;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  padding: 2px 4px;
+  line-height: 1;
+  border-radius: 0 !important;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.lang-btn:hover {
+  color: var(--color-gold-hover);
+}
+
+.lang-btn.active {
+  color: var(--color-gold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 700;
+}
+
+.lang-divider {
+  color: var(--color-gold);
+  opacity: 0.4;
+  font-size: 0.8rem;
+  user-select: none;
 }
 
 /* Hero Section */
@@ -851,6 +905,10 @@ section {
 }
 
 @media (max-width: 768px) {
+  .nav-right {
+    gap: 12px;
+  }
+
   .site-nav {
     display: none;
   }
