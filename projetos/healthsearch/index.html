@@ -77,8 +77,6 @@
       --nxf-ink: var(--h-primary);
       --nxf-line: var(--h-accent-hover);
       --nxf-hover: #020617;
-      --nxf-emblem-bg: var(--h-primary);
-      --nxf-emblem-pad: 4px;
     }
 
     body { font-variant-numeric: tabular-nums; }
@@ -527,7 +525,7 @@
     <div class="wrap nx-bar__inner">
       <a class="nx-back" href="../../">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M20 12H5M11 5l-7 7 7 7"/></svg>
-        <img src="../../assets/logo-emblem.svg" alt="" width="28" height="28">
+        <span class="nx-emblem" aria-hidden="true"></span>
         <span class="nx-back__label">NOXXD Home</span>
       </a>
       <div class="nx-actions">
@@ -735,10 +733,10 @@
   <footer class="nx-footer">
     <div class="wrap nx-footer__inner">
       <div class="nx-footer__brand">
-        <img src="../../assets/logo-emblem.svg" alt="" width="36" height="36">
+        <span class="nx-emblem nx-emblem--footer" aria-hidden="true"></span>
         <div>
           <p><span lang="pt-BR">© 2026 NOXXD. Todos os direitos reservados.</span><span lang="en">© 2026 NOXXD. All rights reserved.</span></p>
-          <p class="nx-footer__slogan">BUILD IT YOUR WAY</p>
+          <p class="nx-footer__slogan"><span lang="pt-BR">CONSTRUA DO SEU JEITO</span><span lang="en">BUILD IT YOUR WAY</span></p>
         </div>
       </div>
       <nav aria-label="NOXXD">

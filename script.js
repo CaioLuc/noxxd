@@ -211,16 +211,55 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ---------------------------------------------------------------------------
+  // 4c. Decrypt-style reveal for [data-scramble]: letters settle left to right
+  // ---------------------------------------------------------------------------
+  const GLYPHS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&';
+  const scrambleTo = (el, text) => {
+    clearInterval(el.scrambleTimer);
+    if (prefersReducedMotion) {
+      el.textContent = text;
+      return;
+    }
+    const steps = 18;
+    let frame = 0;
+    el.scrambleTimer = setInterval(() => {
+      frame += 1;
+      const settled = Math.floor((frame / steps) * text.length);
+      el.textContent = [...text]
+        .map((ch, i) => (i < settled || ch === ' ' ? ch : GLYPHS[Math.floor(Math.random() * GLYPHS.length)]))
+        .join('');
+      if (frame >= steps) {
+        clearInterval(el.scrambleTimer);
+        el.textContent = text;
+      }
+    }, 40);
+  };
+  document.querySelectorAll('[data-scramble]:not([data-i18n])').forEach((el) => scrambleTo(el, el.textContent));
+
+  // ---------------------------------------------------------------------------
+  // 4d. Spotlight on pixel cards, fine pointers only (CSS reads --mx / --my)
+  // ---------------------------------------------------------------------------
+  if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('.pixel-card').forEach((card) => {
+      card.addEventListener('pointermove', (event) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+        card.style.setProperty('--my', `${event.clientY - rect.top}px`);
+      });
+    });
+  }
+
+  // ---------------------------------------------------------------------------
   // 5. Bilingual Localization (PT-BR / EN) & Persistence
   // ---------------------------------------------------------------------------
   const i18nData = {
     pt: {
-      doc_title: "NOXXD — Tecnologia Feita do Seu Jeito | BUILD IT YOUR WAY",
+      doc_title: "NOXXD — Tecnologia Feita do Seu Jeito | CONSTRUA DO SEU JEITO",
       nav_home: "Início",
       nav_services: "Serviços",
       nav_projects: "Projetos",
       nav_contact: "Contato",
-      hero_slogan: "BUILD IT YOUR WAY",
+      hero_slogan: "CONSTRUA DO SEU JEITO",
       hero_description: "Soluções digitais de alto impacto, plataformas SaaS robustas e sistemas inteligentes sob medida para modernizar o setor público e empresas privadas.",
       hero_btn_projects: "CONHEÇA NOSSOS PROJETOS",
       hero_btn_contact: "FALE CONOSCO",
@@ -343,6 +382,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (dict[key] !== undefined) {
         if (dict[key].includes('<')) {
           element.innerHTML = dict[key];
+        } else if (element.hasAttribute('data-scramble')) {
+          scrambleTo(element, dict[key]);
         } else {
           element.textContent = dict[key];
         }

@@ -136,9 +136,21 @@ html:not([lang="en"]) body [lang="en"] {
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.nx-back img {
-  width: 28px;
-  height: 28px;
+/* NOXXD emblem painted in the page's frame colour (mask keeps the N cut-out) */
+.nx-emblem {
+  display: inline-block;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  background-color: var(--nx-accent);
+  -webkit-mask: url("../assets/logo-emblem.svg") center / contain no-repeat;
+  mask: url("../assets/logo-emblem.svg") center / contain no-repeat;
+}
+
+.nx-emblem--footer {
+  width: 40px;
+  height: 40px;
+  background-color: var(--nxf-ink);
 }
 
 .nx-back:hover,
@@ -234,13 +246,6 @@ html:not([lang="en"]) body [lang="en"] {
   display: flex;
   align-items: center;
   gap: 14px;
-}
-
-.nx-footer__brand img {
-  width: 36px;
-  height: 36px;
-  padding: var(--nxf-emblem-pad, 0);
-  background: var(--nxf-emblem-bg, transparent); /* keeps the gold emblem visible on gold-like footers */
 }
 
 .nx-footer__slogan {
@@ -516,8 +521,9 @@ html[lang="en"] .shot__screen::after {
 }
 
 @media (max-width: 600px) {
-  .nx-back img {
-    display: none;
+  .nx-back .nx-emblem {
+    width: 28px;
+    height: 28px;
   }
 
   .nx-back {

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOXXD — Tecnologia Feita do Seu Jeito | BUILD IT YOUR WAY</title>
+  <title>NOXXD — Tecnologia Feita do Seu Jeito | CONSTRUA DO SEU JEITO</title>
   <meta name="description" content="A NOXXD desenvolve sites modernos, landing pages de alta conversão, sistemas web e SaaS sob medida para empresas e setor público.">
   <meta name="robots" content="index, follow">
 
   <!-- OpenGraph Metadata -->
-  <meta property="og:title" content="NOXXD — Tecnologia Feita do Seu Jeito | BUILD IT YOUR WAY">
+  <meta property="og:title" content="NOXXD — Tecnologia Feita do Seu Jeito | CONSTRUA DO SEU JEITO">
   <meta property="og:description" content="A NOXXD desenvolve sites modernos, landing pages de alta conversão, sistemas web e SaaS sob medida para empresas e setor público.">
   <meta property="og:url" content="https://noxxd.com.br/">
   <meta property="og:image" content="https://noxxd.com.br/assets/logo-full.svg">
@@ -33,7 +33,8 @@
   <header class="site-header">
     <div class="nav-container">
       <a href="#inicio" class="brand-lockup" aria-label="NOXXD - Início">
-        <img src="assets/logo-full.svg" alt="NOXXD - Logotipo Oficial" class="brand-logo" width="160" height="40">
+        <img src="assets/logo-emblem.svg" alt="Emblema NOXXD" class="brand-emblem" width="44" height="44">
+        <span class="brand-name">NOXXD</span>
       </a>
       <div class="nav-right">
         <nav id="primary-nav" class="site-nav" aria-label="Navegação Principal">
@@ -63,9 +64,9 @@
     <section id="inicio" class="hero-section">
       <div class="hero-content reveal-item">
         <img src="assets/logo-emblem.svg" alt="NOXXD Emblem" class="hero-emblem" width="96" height="96">
-        <h1 class="hero-title">NOXXD</h1>
+        <h1 class="hero-title" data-scramble>NOXXD</h1>
         <div class="hero-slogan-wrapper">
-          <p class="slogan" data-i18n="hero_slogan">BUILD IT YOUR WAY</p>
+          <p class="slogan" data-i18n="hero_slogan" data-scramble>CONSTRUA DO SEU JEITO</p>
         </div>
         <p class="hero-description" data-i18n="hero_description">
           Soluções digitais de alto impacto, plataformas SaaS robustas e sistemas inteligentes sob medida para modernizar o setor público e empresas privadas.
@@ -76,6 +77,12 @@
         </div>
       </div>
     </section>
+
+    <!-- Tech stack loop: technologies used in the portfolio projects -->
+    <div class="tech-loop" role="region" aria-label="Stack">
+      <ul class="tech-loop__track"><li>React 19</li><li>React Native</li><li>Expo</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Vite</li><li>Firebase</li><li>Supabase</li><li>Leaflet</li><li>Recharts</li><li>Cloudflare R2</li><li>jsPDF</li><li>GPT-4o-mini</li></ul>
+      <ul class="tech-loop__track" aria-hidden="true"><li>React 19</li><li>React Native</li><li>Expo</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Vite</li><li>Firebase</li><li>Supabase</li><li>Leaflet</li><li>Recharts</li><li>Cloudflare R2</li><li>jsPDF</li><li>GPT-4o-mini</li></ul>
+    </div>
 
     <!-- 2. Services Section -->
     <section id="servicos" class="services-section">
@@ -245,6 +252,7 @@
 
   <!-- Site Footer in Official Brand Gold Ribbon -->
   <footer class="site-footer">
+    <p class="footer-wordmark" aria-hidden="true">NOXXD</p>
     <div class="footer-container">
       <div class="footer-brand">
         <span class="footer-copy" data-i18n="footer_copy">© 2026 NOXXD. Todos os direitos reservados.</span>

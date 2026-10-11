@@ -278,14 +278,14 @@ The NOXXD layer is a two-colour brand (deep teal and burnished gold) with warm p
 - **Headline** (Oswald 700, clamp(1.8rem, 4vw, 2.8rem), 1.2, uppercase): Home section titles.
 - **Title** (Oswald 700, clamp(1.3rem, 2.5vw, 1.8rem), uppercase): card titles.
 - **Body** (Josefin Sans 400, 1.05rem, 1.7): paragraphs; leads at 1.25rem in Old Paper.
-- **Slogan** (Josefin Sans 600, 0.35em tracking, uppercase): "BUILD IT YOUR WAY" only; 0.2em under 480px.
+- **Slogan** (Josefin Sans 600, 0.35em tracking, uppercase): "CONSTRUA DO SEU JEITO" / "BUILD IT YOUR WAY"; 0.2em under 480px.
 - **Label** (Oswald 600–700, 0.85–1.05rem, 0.08em, uppercase): nav, frame bar, language switch, buttons (0.12em).
 - **Case headline** (product head font, clamp(1.9rem, 3.6vw, 3rem), -0.02em): every case `h2`. Case body is 1.0625rem / 1.65 with leads capped at 62ch.
 
 ### Named Rules
 **The Uppercase Belongs To NOXXD Rule.** Uppercase, tracked type is the frame's voice. Product worlds set headings in sentence case with negative tracking.
 
-**The Slogan Stays English Rule.** "BUILD IT YOUR WAY" is never translated and never set in anything but tracked Josefin.
+**The Bilingual Slogan Rule.** The slogan follows the page language: "CONSTRUA DO SEU JEITO" in Portuguese, "BUILD IT YOUR WAY" in English, always set in tracked Josefin uppercase. It never sits inside the top-bar lockup, which is emblem plus NOXXD wordmark only.
 
 ## Layout
 

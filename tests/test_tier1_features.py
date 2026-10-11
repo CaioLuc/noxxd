@@ -204,10 +204,13 @@ def test_t1_brand_name_strict_orthography(repo_root: Path):
     )
 
 def test_t1_brand_slogan_exact(repo_root: Path):
-    """Verify official uppercase slogan 'BUILD IT YOUR WAY' is present in index.html."""
-    raw_html = get_index_html(repo_root)
-    assert "BUILD IT YOUR WAY" in raw_html, (
-        "Slogan 'BUILD IT YOUR WAY' in uppercase not found in index.html"
+    """Slogan is bilingual: 'CONSTRUA DO SEU JEITO' (PT, default in index.html) / 'BUILD IT YOUR WAY' (EN dictionary)."""
+    soup = BeautifulSoup(get_index_html(repo_root), "html.parser")
+    slogan = soup.find(attrs={"data-i18n": "hero_slogan"})
+    assert slogan is not None and slogan.get_text(strip=True) == "CONSTRUA DO SEU JEITO", "PT slogan missing in hero"
+    js = (repo_root / "script.js").read_text(encoding="utf-8")
+    assert 'hero_slogan: "CONSTRUA DO SEU JEITO"' in js and 'hero_slogan: "BUILD IT YOUR WAY"' in js, (
+        "Slogan must be translated in both i18n dictionaries"
     )
 
 def test_t1_footer_copyright(repo_root: Path):
