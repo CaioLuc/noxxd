@@ -1,0 +1,15 @@
+# Cache e testes em Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tests/
+verify.py
+
+# Documentos internos, guias e referências locais
+guia-site-noxxd.md
+TEST_*.md
+*.jpeg
+
+# Pastas e logs de automação/agentes
+.agents/
+agents/

@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 680" width="360" height="680" role="img" aria-label="Mockup do Aplicativo Mobile Cidadão Relata">
+  <!-- Definições e Estilos Embutidos -->
+  <defs>
+    <style>
+      .bg-phone { fill: #0E363E; stroke: #C8975D; stroke-width: 3; }
+      .screen-bg { fill: #154B56; }
+      .bar-bg { fill: #0E363E; }
+      .panel-teal { fill: #1B5E6B; stroke: #C8975D; stroke-width: 1; }
+      .panel-dark { fill: #0E363E; stroke: #C8975D; stroke-width: 1; }
+      .panel-card { fill: #154B56; stroke: #C8975D; stroke-width: 1; }
+      .gold-btn { fill: #C8975D; }
+      .gold-text { fill: #C8975D; }
+      .light-text { fill: #F5F7F8; }
+      .muted-text { fill: #D0C0A7; }
+      .dark-text { fill: #0E363E; }
+      .font-head { font-family: 'Oswald', 'Archivo Narrow', sans-serif; font-weight: 700; text-transform: uppercase; }
+      .font-body { font-family: 'Josefin Sans', sans-serif; }
+    </style>
+    <!-- Marcador de Grade Xadrez Pixelada -->
+    <pattern id="pixel-checker" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#C8975D" opacity="0.3" />
+      <rect x="4" y="4" width="4" height="4" fill="#C8975D" opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <!-- Moldura Smartphone em Ângulo Reto (Zero border-radius) -->
+  <rect x="2" y="2" width="356" height="676" class="bg-phone" />
+  <rect x="10" y="10" width="340" height="660" class="screen-bg" />
+
+  <!-- Barra de Status Superior (Horário, Bateria, Sinal) -->
+  <rect x="10" y="10" width="340" height="26" class="bar-bg" />
+  <text x="26" y="27" class="light-text font-body" font-size="11" font-weight="600">09:41</text>
+  <!-- Sinal Celular Pixelado -->
+  <rect x="272" y="22" width="3" height="4" fill="#C8975D" />
+  <rect x="277" y="20" width="3" height="6" fill="#C8975D" />
+  <rect x="282" y="18" width="3" height="8" fill="#C8975D" />
+  <rect x="287" y="16" width="3" height="10" fill="#C8975D" />
+  <!-- Ícone Wi-Fi Geométrico -->
+  <rect x="296" y="17" width="10" height="2" fill="#F5F7F8" />
+  <rect x="298" y="21" width="6" height="2" fill="#F5F7F8" />
+  <rect x="300" y="24" width="2" height="2" fill="#F5F7F8" />
+  <!-- Bateria Retangular -->
+  <rect x="312" y="17" width="20" height="11" fill="none" stroke="#C8975D" stroke-width="1.5" />
+  <rect x="314" y="19" width="13" height="7" fill="#C8975D" />
+  <rect x="332" y="20" width="2" height="5" fill="#C8975D" />
+
+  <!-- Cabeçalho do App 'Cidadão Relata' -->
+  <rect x="10" y="36" width="340" height="50" class="panel-teal" />
+  <!-- Emblema NOXXD Mini no Cabeçalho -->
+  <rect x="20" y="46" width="30" height="30" fill="#0E363E" stroke="#C8975D" stroke-width="1" />
+  <rect x="25" y="51" width="3" height="20" fill="#C8975D" />
+  <rect x="37" y="51" width="3" height="20" fill="#C8975D" />
+  <polygon points="25,51 37,64 37,71 29,61" fill="#C8975D" />
+
+  <text x="60" y="59" class="gold-text font-head" font-size="16" letter-spacing="1.5">CIDADÃO RELATA</text>
+  <text x="60" y="73" class="light-text font-body" font-size="9" letter-spacing="0.5">GESTORIA MUNICIPAL · RELATO RÁPIDO</text>
+
+  <!-- Notificação / Status da Conexão GPS -->
+  <rect x="268" y="49" width="70" height="22" fill="#0E363E" stroke="#C8975D" stroke-width="1" />
+  <rect x="274" y="57" width="6" height="6" fill="#C8975D" />
+  <text x="286" y="64" class="gold-text font-body" font-size="8" font-weight="700">GPS ATIVO</text>
+
+  <!-- Seção 1: Mapa com Marcador de Ocorrência -->
+  <rect x="18" y="94" width="324" height="166" class="panel-dark" />
+  <!-- Malha Viária Urbana Retangular (Street Grid) -->
+  <line x1="18" y1="134" x2="342" y2="134" stroke="#1B5E6B" stroke-width="6" />
+  <line x1="18" y1="174" x2="342" y2="174" stroke="#1B5E6B" stroke-width="12" />
+  <line x1="18" y1="224" x2="342" y2="224" stroke="#1B5E6B" stroke-width="6" />
+  <line x1="88" y1="94" x2="88" y2="260" stroke="#1B5E6B" stroke-width="6" />
+  <line x1="178" y1="94" x2="178" y2="260" stroke="#1B5E6B" stroke-width="14" />
+  <line x1="268" y1="94" x2="268" y2="260" stroke="#1B5E6B" stroke-width="6" />
+
+  <!-- Linha Central de Avenida Tracejada -->
+  <line x1="18" y1="174" x2="342" y2="174" stroke="#C8975D" stroke-width="1" stroke-dasharray="4,4" opacity="0.6" />
+  <line x1="178" y1="94" x2="178" y2="260" stroke="#C8975D" stroke-width="1" stroke-dasharray="4,4" opacity="0.6" />
+
+  <!-- Nomes de Ruas no Mapa -->
+  <text x="24" y="166" class="muted-text font-body" font-size="8">AV. BRASIL</text>
+  <text x="184" y="106" class="muted-text font-body" font-size="8">RUA CENTRAL</text>
+  <text x="274" y="216" class="muted-text font-body" font-size="8">R. 15 DE NOV.</text>
+
+  <!-- Zonas Térmicas / Radar de Calor no Mapa do Munícipe -->
+  <circle cx="178" cy="174" r="38" fill="#C8975D" opacity="0.2" />
+  <circle cx="178" cy="174" r="22" fill="#C8975D" opacity="0.4" />
+
+  <!-- Marcador Retilíneo de Localização do Incidente (Pin Geométrico) -->
+  <polygon points="178,144 190,166 178,188 166,166" fill="#C8975D" stroke="#0E363E" stroke-width="1.5" />
+  <rect x="175" y="163" width="6" height="6" fill="#F5F7F8" />
+  <line x1="178" y1="188" x2="178" y2="198" stroke="#C8975D" stroke-width="2" />
+
+  <!-- Etiqueta Flutuante do Marcador -->
+  <rect x="108" y="104" width="140" height="22" fill="#0E363E" stroke="#C8975D" stroke-width="1" />
+  <text x="178" y="118" text-anchor="middle" class="gold-text font-head" font-size="9" letter-spacing="0.5">LOCAL DA OCORRÊNCIA</text>
+
+  <!-- Indicador de Endereço Georreferenciado -->
+  <rect x="18" y="266" width="324" height="42" class="panel-teal" />
+  <rect x="26" y="274" width="24" height="24" fill="#0E363E" stroke="#C8975D" stroke-width="1" />
+  <!-- Ícone de Alfinete Geométrico -->
+  <polygon points="38,277 44,285 38,293 32,285" fill="#C8975D" />
+  <rect x="36" y="283" width="4" height="4" fill="#F5F7F8" />
+
+  <text x="58" y="282" class="muted-text font-body" font-size="8" font-weight="600" letter-spacing="0.5">ENDEREÇO IDENTIFICADO (GPS ±2M)</text>
+  <text x="58" y="298" class="light-text font-head" font-size="12">AV. BRASIL, Nº 1420 — CENTRO</text>
+
+  <!-- Seção 2: Tags de Categoria de Ocorrência -->
+  <text x="20" y="324" class="gold-text font-head" font-size="11" letter-spacing="1">SELECIONE A CATEGORIA:</text>
+
+  <!-- Tag 1: 'Vias Públicas' (Selecionada / Ativa) -->
+  <g id="tag-vias-publicas">
+    <rect x="18" y="332" width="102" height="28" fill="#C8975D" stroke="#C8975D" stroke-width="1" />
+    <text x="69" y="350" text-anchor="middle" class="dark-text font-head" font-size="10" letter-spacing="0.5">VIAS PÚBLICAS</text>
+  </g>
+
+  <!-- Tag 2: 'Iluminação' -->
+  <g id="tag-iluminacao">
+    <rect x="126" y="332" width="98" height="28" fill="#154B56" stroke="#C8975D" stroke-width="1" />
+    <text x="175" y="350" text-anchor="middle" class="light-text font-head" font-size="10" letter-spacing="0.5">ILUMINAÇÃO</text>
+  </g>
+
+  <!-- Tag 3: 'Saneamento' -->
+  <g id="tag-saneamento">
+    <rect x="230" y="332" width="112" height="28" fill="#154B56" stroke="#C8975D" stroke-width="1" />
+    <text x="286" y="350" text-anchor="middle" class="light-text font-head" font-size="10" letter-spacing="0.5">SANEAMENTO</text>
+  </g>
+
+  <!-- Seção 3: Pré-visualização da Foto da Ocorrência -->
+  <text x="20" y="380" class="gold-text font-head" font-size="11" letter-spacing="1">REGISTRO FOTOGRÁFICO DO INCIDENTE:</text>
+  <rect x="18" y="388" width="324" height="108" class="panel-dark" />
+
+  <!-- Pré-visualização Fotográfica (Mockup de Asfalto Danificado / Buraco) -->
+  <rect x="26" y="396" width="112" height="92" fill="#154B56" stroke="#C8975D" stroke-width="1" />
+  <!-- Imagem Vetorial do Dano na Pista -->
+  <rect x="30" y="400" width="104" height="84" fill="#0E363E" />
+  <!-- Textura de Asfalto com Fratura Geométrica -->
+  <line x1="30" y1="440" x2="134" y2="440" stroke="#1B5E6B" stroke-width="2" />
+  <polygon points="50,425 80,420 95,438 85,455 60,450 45,435" fill="#154B56" stroke="#C8975D" stroke-width="1.5" />
+  <polygon points="62,430 78,426 84,436 76,446 66,442" fill="#C8975D" opacity="0.8" />
+  <!-- Selo Sobreposto na Foto: 'FOTO ANEXADA' -->
+  <rect x="30" y="468" width="104" height="16" fill="#C8975D" />
+  <text x="82" y="480" text-anchor="middle" class="dark-text font-head" font-size="8" letter-spacing="0.5">FOTO ANEXADA [✓]</text>
+
+  <!-- Detalhes do Arquivo e Metadados -->
+  <text x="148" y="412" class="light-text font-head" font-size="11">BURACO_ASFALTO_01.JPG</text>
+  <text x="148" y="428" class="muted-text font-body" font-size="9">Resolução: 1920x1080 px</text>
+  <text x="148" y="442" class="muted-text font-body" font-size="9">Geotag: -23.5505, -46.6333</text>
+  <text x="148" y="456" class="muted-text font-body" font-size="9">Gravidade: Alto Risco Viário</text>
+
+  <rect x="148" y="466" width="120" height="18" fill="#1B5E6B" stroke="#C8975D" stroke-width="1" />
+  <text x="154" y="479" class="gold-text font-body" font-size="8" font-weight="700">AUTENTICADO COM DATA/HORA</text>
+
+  <!-- Campo de Descrição Resumida -->
+  <rect x="18" y="504" width="324" height="64" class="panel-teal" />
+  <text x="28" y="520" class="muted-text font-body" font-size="8" font-weight="600">DESCRIÇÃO DETALHADA DO MUNÍCIPE:</text>
+  <text x="28" y="536" class="light-text font-body" font-size="9">"Cratera aberta na pista direita após chuvas torrenciais.</text>
+  <text x="28" y="549" class="light-text font-body" font-size="9">Risco de colisão veicular e queda de motociclistas."</text>
+  <text x="28" y="561" class="gold-text font-body" font-size="8" font-weight="700">PROTOCOLO PREVISTO: #CR-2026-8492</text>
+
+  <!-- Botão de Ação Dourado: 'ENVIAR OCORRÊNCIA' -->
+  <g id="btn-enviar-ocorrencia">
+    <rect x="18" y="580" width="324" height="48" class="gold-btn" stroke="#C8975D" stroke-width="1" />
+    <!-- Borda Dupla Pixelada Decorativa -->
+    <rect x="22" y="584" width="316" height="40" fill="none" stroke="#0E363E" stroke-width="1" />
+    <text x="180" y="610" text-anchor="middle" class="dark-text font-head" font-size="14" letter-spacing="2">ENVIAR OCORRÊNCIA</text>
+  </g>
+
+  <!-- Barra de Navegação Inferior do Smartphone (Home Bar) -->
+  <rect x="10" y="640" width="340" height="30" class="bar-bg" />
+  <rect x="130" y="654" width="100" height="4" fill="#C8975D" />
+</svg>
