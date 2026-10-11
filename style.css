@@ -341,7 +341,7 @@ a:hover {
   padding: 4px 10px;
   background: rgba(200, 151, 93, 0.15);
   border: 1px solid var(--color-gold);
-  color: var(--color-gold);
+  color: #F0D9B5; /* light sand: gold text on the tinted tag was 2.6:1 at 0.8rem */
   font-family: var(--font-slogan);
   font-size: 0.8rem;
   font-weight: 600;
@@ -879,10 +879,63 @@ section {
   }
 }
 
-@media (max-width: 1024px) {
+/* Narrow desktops: keep card CTAs on one line */
+@media (max-width: 1100px) {
+  .service-card .btn-outline {
+    padding: 12px 14px;
+    letter-spacing: 0.06em;
+  }
+}
+
+/* Tablet: 3 columns get too narrow and 2 leave an orphan card, so cards go
+   full width and lay out horizontally (media left, content right). */
+@media (max-width: 900px) and (min-width: 601px) {
   .services-grid,
   .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-card {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    column-gap: 24px;
+    align-content: start;
+  }
+
+  .service-card > :not(.pixel-corner):not(.service-icon) {
+    grid-column: 2;
+  }
+
+  .service-card .service-icon {
+    grid-row: 1 / span 3;
+    margin: 0;
+  }
+
+  .service-card .btn-outline {
+    justify-self: start;
+    margin-top: 8px;
+  }
+
+  .project-card {
+    display: grid;
+    grid-template-columns: minmax(200px, 38%) 1fr;
+    column-gap: 28px;
+    align-content: start;
+  }
+
+  .project-card > :not(.pixel-corner):not(.project-logo-link) {
+    grid-column: 2;
+  }
+
+  .project-card .project-logo-link {
+    grid-row: 1 / span 6;
+    align-self: start;
+    margin: 0;
+  }
+
+  .project-card .project-logo {
+    aspect-ratio: 1 / 1;
   }
 }
 
@@ -936,9 +989,29 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .contact-grid {
+    gap: 24px;
+  }
+
   .hero-section {
     padding: 60px 16px 40px;
     min-height: auto;
+  }
+
+  .services-section,
+  .projects-section,
+  .contact-section {
+    padding: 64px 16px;
+  }
+
+  /* touch targets: 44px minimum */
+  .lang-btn {
+    padding: 8px 10px;
+  }
+
+  .social-link {
+    width: 44px;
+    height: 44px;
   }
 
   .footer-container {
@@ -962,7 +1035,18 @@ section {
   .btn-primary,
   .btn-outline {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 16px;
+    letter-spacing: 0.08em;
+  }
+
+  .pixel-card,
+  .contact-card {
+    padding: 24px 18px;
+  }
+
+  .contact-link {
+    font-size: 1.05rem;
+    overflow-wrap: anywhere;
   }
 
   .bg-grid,
@@ -1017,7 +1101,7 @@ main,
 }
 
 @media (max-width: 768px) {
-  .pixel-field span:nth-child(n + 13) {
+  .pixel-field span:nth-child(n + 11) {
     display: none;
   }
 }

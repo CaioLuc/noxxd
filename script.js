@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (size >= 8 && i % 3 === 0) pixel.className = 'is-hollow';
       pixel.style.setProperty('--x', `${(Math.random() * 100).toFixed(2)}vw`);
       pixel.style.setProperty('--s', `${size}px`);
-      pixel.style.setProperty('--o', (0.14 + Math.random() * 0.32).toFixed(2));
+      pixel.style.setProperty('--o', (0.1 + Math.random() * 0.22).toFixed(2));
       pixel.style.setProperty('--d', `${(22 + Math.random() * 26).toFixed(1)}s`);
       // negative delay spreads the squares across the screen on first paint
       pixel.style.setProperty('--delay', `${(-Math.random() * 48).toFixed(1)}s`);
