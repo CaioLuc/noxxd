@@ -332,8 +332,7 @@ html:not([lang="en"]) body [lang="en"] {
 }
 
 /* --------------------------------------------------------------------------
-   Screenshot slots: framed placeholders until real captures land in
-   assets/projetos/<slug>/screens/. Swap .shot__screen content for an <img>.
+   Screenshot frames: captures live in assets/projetos/<slug>/screens/
    -------------------------------------------------------------------------- */
 .shot {
   margin: 0;
@@ -416,88 +415,33 @@ html:not([lang="en"]) body [lang="en"] {
   transform: translateX(-50%);
 }
 
-/* Wireframe of the real layout (sidebar + KPIs + main panel / app header + cards + tab bar) */
-.sk {
-  display: grid;
-  gap: 10px;
-  padding: 14px;
-  opacity: 0.9;
-}
-
-.sk--web {
-  grid-template-columns: 18% 1fr;
-}
-
-.sk--app {
-  grid-template-rows: auto auto 1fr auto;
-  padding-top: 44px;
-}
-
-.sk b {
-  display: block;
-  border-radius: 6px;
-  background: var(--sk-block);
-}
-
-.sk__side {
-  background: var(--sk-side) !important;
-  grid-row: span 3;
-}
-
-.sk__kpis {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  height: 18%;
-  min-height: 34px;
-}
-
-.sk__kpis b {
-  height: 100%;
-}
-
-.sk__main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 8px;
-}
-
-.sk__main b {
-  height: 100%;
-}
-
-.sk__bar {
-  height: 44px;
-}
-
-.sk__card {
-  height: 64px;
-}
-
-.sk__tabs {
-  height: 46px;
-}
-
-.shot__note {
+/* Every capture comes from a local demo run: say so on the image itself */
+.shot__screen::after {
+  content: "Dados fictícios";
   position: absolute;
-  inset: auto 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 10px 12px;
-  background: var(--shot-note-bg);
-  color: var(--shot-note-text);
-  font-size: 0.78rem;
+  right: 10px;
+  bottom: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(10, 22, 40, 0.78);
+  color: #FFFFFF;
+  font-family: var(--p-font-body);
+  font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  text-align: center;
+  pointer-events: none;
 }
 
-.shot__note svg {
-  width: 15px;
-  height: 15px;
-  flex: none;
+html[lang="en"] .shot__screen::after {
+  content: "Demo data";
+}
+
+/* phones: under the notch, clear of the tab bar */
+.shot--phone .shot__screen::after {
+  top: 38px;
+  bottom: auto;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .shot figcaption {

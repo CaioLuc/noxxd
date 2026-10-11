@@ -199,10 +199,23 @@ def test_t5_bilingual_pt_en(repo_root: Path, slug: str):
 
 
 @pytest.mark.parametrize("slug", PROJECTS)
-def test_t5_screenshot_slots(repo_root: Path, slug: str):
+def test_t5_real_screenshots_in_frames(repo_root: Path, slug: str):
+    """Every frame shows a real capture (WebP) from assets/projetos/<slug>/screens/, sized and described."""
+    from PIL import Image
     soup = BeautifulSoup(read_page(repo_root, slug), "html.parser")
-    assert len(soup.select("figure.shot .shot__screen")) >= 2, "Need framed screenshot slots"
-    assert (repo_root / "assets" / "projetos" / slug / "screens").is_dir(), "screens/ folder for future prints missing"
+    screens = soup.select("figure.shot .shot__screen")
+    assert len(screens) >= 2, "Need at least 2 framed screenshots"
+    for screen in screens:
+        img = screen.find("img")
+        assert img is not None, "Frame still holds a placeholder instead of a screenshot"
+        src = img["src"]
+        assert src.startswith(f"../../assets/projetos/{slug}/screens/") and src.endswith(".webp"), src
+        path = repo_root / src.replace("../../", "")
+        with Image.open(path) as im:
+            assert im.format == "WEBP" and (im.width, im.height) == (int(img["width"]), int(img["height"])), src
+        assert "fictícios" in img.get("alt", ""), "Alt text must flag the data as fictitious"
+    css = (repo_root / "projetos" / "projeto.css").read_text(encoding="utf-8")
+    assert 'content: "Dados fictícios"' in css and 'content: "Demo data"' in css, "Frames must carry the demo-data badge"
 
 
 def test_t5_home_particles_gpu_and_reduced_motion(repo_root: Path):

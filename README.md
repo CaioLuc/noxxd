@@ -16,7 +16,7 @@ Cada projeto tem página própria, com a identidade visual oficial do produto de
 - **[HealthSearch](https://noxxd.com.br/projetos/healthsearch/)** (`/projetos/healthsearch/`): central de Saúde e Segurança do Trabalho que sustenta o SIGAC (ASO NR-07, matriz NR-01 a NR-35, CID-10 cifrado em AES-GCM 256).
 - **[CARITAS](https://noxxd.com.br/projetos/caritas/)** (`/projetos/caritas/`): plataforma clínica para psicólogas(os), com prontuário, anamnese, I.A., documentos CFP, agenda e PIX.
 
-Logos em `assets/projetos/<slug>/`. Prints dos sistemas entram em `assets/projetos/<slug>/screens/`: troque o conteúdo do `.shot__screen` correspondente (marcado com `<!-- slot: ... -->` no HTML) por um `<img>`.
+Logos em `assets/projetos/<slug>/` e prints dos sistemas em `assets/projetos/<slug>/screens/` (WebP). Os prints vêm de execuções locais com **dados fictícios** (emuladores Firebase / modo demo do Urbis) e levam o selo "Dados fictícios" na moldura.
 
 ### Serviços
 - **Sistemas Web & SaaS:** Plataformas em nuvem, controle de acessos, microsserviços e APIs.

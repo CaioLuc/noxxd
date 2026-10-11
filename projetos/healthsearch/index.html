@@ -196,7 +196,7 @@
 
     .h-matrix .ok { --c: var(--h-em-dia); }
     /* due/late read in their own colour at rest, not only on hover */
-    .h-matrix .due { --c: var(--h-a-vencer); background: color-mix(in srgb, var(--c) 78%, var(--h-primary)); color: #020617; }
+    .h-matrix .due { --c: var(--h-a-vencer); background: color-mix(in srgb, var(--c) 88%, var(--h-primary)); color: #020617; }
     .h-matrix .late { --c: var(--h-vencido); background: color-mix(in srgb, var(--c) 72%, var(--h-primary)); }
     .h-matrix .late:hover { color: #ffffff; }
 
@@ -237,7 +237,7 @@
       border-left: 1px solid #163b66;
     }
 
-    .h-rail h3 {
+    .h-rail h2 {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -246,7 +246,7 @@
       color: #ffffff;
     }
 
-    .h-rail h3::before {
+    .h-rail h2::before {
       content: "";
       width: 12px;
       height: 12px;
@@ -582,15 +582,15 @@
 
         <div class="h-rail">
           <div style="--c:var(--h-em-dia)">
-            <h3><span lang="pt-BR">Em Dia</span><span lang="en">Up to Date</span></h3>
+            <h2><span lang="pt-BR">Em Dia</span><span lang="en">Up to Date</span></h2>
             <p><span lang="pt-BR">Exame válido, aptidão ocupacional regularizada.</span><span lang="en">Valid exam, occupational fitness confirmed.</span></p>
           </div>
           <div style="--c:var(--h-a-vencer)">
-            <h3><span lang="pt-BR">A Vencer</span><span lang="en">Due Soon</span></h3>
+            <h2><span lang="pt-BR">A Vencer</span><span lang="en">Due Soon</span></h2>
             <p><span lang="pt-BR">Janela preventiva de 30 dias antes do vencimento normativo.</span><span lang="en">A 30-day preventive window before the regulatory deadline.</span></p>
           </div>
           <div style="--c:var(--h-vencido)">
-            <h3><span lang="pt-BR">Vencido</span><span lang="en">Expired</span></h3>
+            <h2><span lang="pt-BR">Vencido</span><span lang="en">Expired</span></h2>
             <p><span lang="pt-BR">ASO expirado: inconformidade imediata com a NR-07, sinalizada no painel.</span><span lang="en">Expired exam: immediate NR-07 non-compliance, flagged on the dashboard.</span></p>
           </div>
         </div>
@@ -612,11 +612,9 @@
         </ol>
         <figure class="shot shot--browser h-cycle__shot">
           <div class="shot__device">
-            <div class="shot__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="shot__url">/colaboradores</span></div>
-            <!-- slot: assets/projetos/healthsearch/screens/ficha-colaborador.png -->
+            <div class="shot__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="shot__url">/funcionarios</span></div>
             <div class="shot__screen">
-              <div class="sk sk--web" aria-hidden="true"><b class="sk__side"></b><div class="sk__kpis"><b></b><b></b><b></b><b></b></div><div class="sk__main"><b></b><b></b></div></div>
-              <p class="shot__note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/></svg><span lang="pt-BR">Captura da ficha do colaborador em breve</span><span lang="en">Employee profile screenshot coming soon</span></p>
+              <img src="../../assets/projetos/healthsearch/screens/ficha-colaborador.webp" alt="HealthSearch: ficha do colaborador com ASO e treinamentos NR (dados fictícios)" width="1440" height="900" loading="lazy" decoding="async">
             </div>
           </div>
           <figcaption><strong><span lang="pt-BR">Ficha do colaborador</span><span lang="en">Employee profile</span></strong> · <span lang="pt-BR">ASO, exames complementares e treinamentos com o mesmo semáforo.</span><span lang="en">Exams, complementary tests and training under the same traffic light.</span></figcaption>
@@ -632,10 +630,8 @@
           <figure class="shot shot--browser">
             <div class="shot__device">
               <div class="shot__chrome" aria-hidden="true"><i></i><i></i><i></i><span class="shot__url">/dashboard</span></div>
-              <!-- slot: assets/projetos/healthsearch/screens/dashboard.png -->
               <div class="shot__screen">
-                <div class="sk sk--web" aria-hidden="true"><b class="sk__side"></b><div class="sk__kpis"><b></b><b></b><b></b><b></b></div><div class="sk__main"><b></b><b></b></div></div>
-                <p class="shot__note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/></svg><span lang="pt-BR">Captura do painel em breve</span><span lang="en">Dashboard screenshot coming soon</span></p>
+                <img src="../../assets/projetos/healthsearch/screens/dashboard.webp" alt="HealthSearch: dashboard de conformidade SST (dados fictícios)" width="1440" height="900" loading="lazy" decoding="async">
               </div>
             </div>
             <figcaption><strong><span lang="pt-BR">Painel em bento grid</span><span lang="en">Bento-grid dashboard</span></strong> · <span lang="pt-BR">KPIs com entrada escalonada, ações prioritárias e vencimentos.</span><span lang="en">Staggered KPIs, priority actions and upcoming expirations.</span></figcaption>
