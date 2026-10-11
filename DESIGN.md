@@ -261,7 +261,7 @@ The NOXXD layer is a two-colour brand (deep teal and burnished gold) with warm p
 ### Named Rules
 **The Deep Ink On Gold Rule.** Text and icons on gold use Abyss Teal (#0E363E, 5.1:1). Blueprint Teal on gold fails AA and is not allowed.
 
-**The Frame Owns Gold Rule.** Gold, teal and the blueprint grid appear only in the NOXXD layer: the Home page, the case-page bar and the footer band. A product world never borrows them, and the frame never borrows a product colour.
+**The Frame Wears The Product Rule.** Gold, teal and the blueprint grid belong to the NOXXD layer (the Home page and the frame defaults). On a case page the bar and footer keep the NOXXD signature (emblem, Oswald uppercase, square controls) but take the product palette through the --nx-* / --nxf-* tokens set in that page; a product world never borrows gold or teal.
 
 **The State Vocabulary Rule.** Inside a product world, the only hues besides the brand palette are the product's own state colours (Urbis statuses, the HealthSearch traffic light and ASO pre-states). No decorative extra hues.
 

@@ -1115,8 +1115,8 @@
         "section": "colors"
       },
       {
-        "name": "The Frame Owns Gold Rule",
-        "body": "Gold, teal and the blueprint grid appear only in the NOXXD layer: the Home page, the case-page bar and the footer band. A product world never borrows them, and the frame never borrows a product colour.",
+        "name": "The Frame Wears The Product Rule",
+        "body": "Gold, teal and the blueprint grid belong to the NOXXD layer (the Home page and the frame defaults). On a case page the bar and footer keep the NOXXD signature (emblem, Oswald uppercase, square controls) but take the product palette through the --nx-* / --nxf-* tokens set in that page; a product world never borrows gold or teal.",
         "section": "colors"
       },
       {

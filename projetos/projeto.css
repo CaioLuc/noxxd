@@ -85,15 +85,27 @@ html:not([lang="en"]) body [lang="en"] {
 /* --------------------------------------------------------------------------
    NOXXD frame: top bar
    -------------------------------------------------------------------------- */
+/* Frame colours: NOXXD by default, each case page overrides them with its product palette.
+   Emblem, Oswald and square controls stay as the NOXXD signature. */
+:root {
+  --nx-bg: #154B56;
+  --nx-line: #C8975D;
+  --nx-ink: #F5F7F8;
+  --nx-ink-2: #D0C0A7;
+  --nx-accent: #C8975D;
+  --nx-on-accent: #0E363E; /* text on gold: 5.1:1, brand teal there fails AA */
+  --nxf-bg: #C8975D;
+  --nxf-ink: #0E363E;
+  --nxf-line: #D8A76D;
+  --nxf-hover: #154B56;
+}
+
 .nx-bar {
-  --nx-teal: #154B56;
-  --nx-gold: #C8975D;
-  --nx-deep: #0E363E; /* text on gold: 5.1:1, brand teal there fails AA */
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--nx-teal);
-  border-bottom: 2px solid var(--nx-gold);
+  background: var(--nx-bg);
+  border-bottom: 2px solid var(--nx-line);
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -111,7 +123,7 @@ html:not([lang="en"]) body [lang="en"] {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #F5F7F8;
+  color: var(--nx-ink);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 600;
@@ -120,7 +132,7 @@ html:not([lang="en"]) body [lang="en"] {
 .nx-back svg {
   width: 18px;
   height: 18px;
-  color: var(--nx-gold);
+  color: var(--nx-accent);
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -131,7 +143,7 @@ html:not([lang="en"]) body [lang="en"] {
 
 .nx-back:hover,
 .nx-back:focus-visible {
-  color: var(--nx-gold);
+  color: var(--nx-accent);
 }
 
 .nx-back:hover svg {
@@ -148,7 +160,7 @@ html:not([lang="en"]) body [lang="en"] {
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  border: 1px solid var(--nx-gold);
+  border: 1px solid var(--nx-line);
   padding: 2px;
 }
 
@@ -156,7 +168,7 @@ html:not([lang="en"]) body [lang="en"] {
   appearance: none;
   border: 0;
   background: transparent;
-  color: #D0C0A7;
+  color: var(--nx-ink-2);
   font: inherit;
   font-size: 0.8rem;
   font-weight: 700;
@@ -167,25 +179,25 @@ html:not([lang="en"]) body [lang="en"] {
 }
 
 .lang-btn[aria-pressed="true"] {
-  background: var(--nx-gold);
-  color: var(--nx-deep);
+  background: var(--nx-accent);
+  color: var(--nx-on-accent);
 }
 
 .lang-btn:hover {
-  color: #F5F7F8;
+  color: var(--nx-ink);
 }
 
 .lang-btn[aria-pressed="true"]:hover {
-  color: var(--nx-deep);
+  color: var(--nx-on-accent);
 }
 
 .nx-contact {
   display: inline-flex;
   align-items: center;
   padding: 9px 18px;
-  background: var(--nx-gold);
-  color: var(--nx-deep);
-  border: 2px solid var(--nx-gold);
+  background: var(--nx-accent);
+  color: var(--nx-on-accent);
+  border: 2px solid var(--nx-accent);
   font-size: 0.85rem;
   font-weight: 700;
   text-decoration: none;
@@ -195,16 +207,16 @@ html:not([lang="en"]) body [lang="en"] {
 .nx-contact:hover,
 .nx-contact:focus-visible {
   background: transparent;
-  color: var(--nx-gold);
+  color: var(--nx-accent);
 }
 
 /* --------------------------------------------------------------------------
    NOXXD frame: footer
    -------------------------------------------------------------------------- */
 .nx-footer {
-  background: #C8975D;
-  color: #0E363E;
-  border-top: 4px solid #D8A76D;
+  background: var(--nxf-bg);
+  color: var(--nxf-ink);
+  border-top: 4px solid var(--nxf-line);
   font-family: 'Josefin Sans', system-ui, sans-serif;
   font-weight: 600;
   padding: 28px 0;
@@ -227,6 +239,8 @@ html:not([lang="en"]) body [lang="en"] {
 .nx-footer__brand img {
   width: 36px;
   height: 36px;
+  padding: var(--nxf-emblem-pad, 0);
+  background: var(--nxf-emblem-bg, transparent); /* keeps the gold emblem visible on gold-like footers */
 }
 
 .nx-footer__slogan {
@@ -243,14 +257,14 @@ html:not([lang="en"]) body [lang="en"] {
 }
 
 .nx-footer a {
-  color: #0E363E;
+  color: var(--nxf-ink);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
 
 .nx-footer a:hover {
-  color: #154B56;
+  color: var(--nxf-hover);
 }
 
 /* --------------------------------------------------------------------------
