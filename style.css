@@ -496,6 +496,12 @@ a:hover {
   gap: 12px;
 }
 
+.brand-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
 .brand-name {
   font-family: var(--font-heading);
   font-size: 1.8rem;
@@ -781,9 +787,21 @@ a:hover {
 .portfolio-card-img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--bg-primary);
+  border: 1px solid rgba(200, 151, 93, 0.25);
   border-bottom: 2px solid var(--color-gold);
+  padding: 24px 20px;
   margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.portfolio-card-img.has-screenshot {
+  object-fit: cover;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid var(--color-gold);
 }
 
 /* Contact Section */
