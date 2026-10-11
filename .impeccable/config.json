@@ -29,6 +29,15 @@
         ],
         "createdAt": "2026-10-11T20:57:52.549Z",
         "reason": "agent triage: static false positive; full-bleed sections inset content via .wrap (min(1200px,100%-32px)), verified in 1440/390 captures"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "jetbrains mono",
+        "files": [
+          "projetos/healthsearch/index.html"
+        ],
+        "createdAt": "2026-10-11T21:31:15.298Z",
+        "reason": "agent triage: intentional, DESIGN.md Typography line 272 names JetBrains Mono for code-like identifiers (CID-10 cipher, kbd); not in token frontmatter"
       }
     ]
   }
