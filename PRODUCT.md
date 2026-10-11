@@ -20,7 +20,7 @@ noxxd.com.br é o site institucional e portfólio da NOXXD, software house que d
 
 ## Positioning
 
-A NOXXD mostra produtos reais em operação, cada um com identidade visual própria, e não um catálogo genérico de serviços. O lema da marca é "BUILD IT YOUR WAY".
+A NOXXD mostra produtos reais em operação, cada um com identidade visual própria, e não um catálogo genérico de serviços. O lema da marca é bilíngue: "CONSTRUA DO SEU JEITO" / "BUILD IT YOUR WAY".
 
 ## Capabilities and Constraints
 

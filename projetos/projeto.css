@@ -365,6 +365,13 @@ html:not([lang="en"]) body [lang="en"] {
   overflow: hidden;
 }
 
+/* Tilt toward the pointer (projeto.js sets --rx/--ry on fine pointers only) */
+.shot__device {
+  transform: perspective(1200px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
 .shot__chrome {
   display: flex;
   align-items: center;
