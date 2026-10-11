@@ -1,0 +1,71 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "noxxd-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 8765
+    },
+    {
+      "name": "urbis-painel-demo",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "C:\\Users\\kaiol\\AppData\\Local\\Temp\\claude\\C--Projetos-Faculdade-noxxd\\df30d2ca-1441-460b-b0b2-0b910fb4c6fc\\scratchpad\\urbis-painel-demo.cmd"
+      ],
+      "port": 3010
+    },
+    {
+      "name": "urbis-app-demo",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "C:\\Users\\kaiol\\AppData\\Local\\Temp\\claude\\C--Projetos-Faculdade-noxxd\\df30d2ca-1441-460b-b0b2-0b910fb4c6fc\\scratchpad\\urbis-app-demo.cmd"
+      ],
+      "port": 8082
+    },
+    {
+      "name": "sigac-emu",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "C:\\Users\\kaiol\\AppData\\Local\\Temp\\claude\\C--Projetos-Faculdade-noxxd\\df30d2ca-1441-460b-b0b2-0b910fb4c6fc\\scratchpad\\sigac-emu.cmd"
+      ],
+      "port": 8181
+    },
+    {
+      "name": "sigac-web-demo",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "C:\\Users\\kaiol\\AppData\\Local\\Temp\\claude\\C--Projetos-Faculdade-noxxd\\df30d2ca-1441-460b-b0b2-0b910fb4c6fc\\scratchpad\\sigac-web.cmd"
+      ],
+      "port": 5180
+    },
+    {
+      "name": "caritas-emu",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "C:\\Users\\kaiol\\AppData\\Local\\Temp\\claude\\C--Projetos-Faculdade-noxxd\\df30d2ca-1441-460b-b0b2-0b910fb4c6fc\\scratchpad\\caritas-emu.cmd"
+      ],
+      "port": 8181
+    },
+    {
+      "name": "caritas-web-demo",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "C:\\Users\\kaiol\\AppData\\Local\\Temp\\claude\\C--Projetos-Faculdade-noxxd\\df30d2ca-1441-460b-b0b2-0b910fb4c6fc\\scratchpad\\caritas-web.cmd"
+      ],
+      "port": 5181
+    }
+  ]
+}
