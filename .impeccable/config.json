@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "projetos/urbis/index.html"
+        ],
+        "createdAt": "2026-10-11T20:57:51.776Z",
+        "reason": "agent triage: static false positive; full-bleed sections inset content via .wrap (min(1200px,100%-32px)), verified in 1440/390 captures"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "projetos/healthsearch/index.html"
+        ],
+        "createdAt": "2026-10-11T20:57:52.177Z",
+        "reason": "agent triage: static false positive; full-bleed sections inset content via .wrap (min(1200px,100%-32px)), verified in 1440/390 captures"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "projetos/caritas/index.html"
+        ],
+        "createdAt": "2026-10-11T20:57:52.549Z",
+        "reason": "agent triage: static false positive; full-bleed sections inset content via .wrap (min(1200px,100%-32px)), verified in 1440/390 captures"
+      }
+    ]
+  }
+}

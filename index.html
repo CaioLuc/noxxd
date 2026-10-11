@@ -129,116 +129,59 @@
       </div>
     </section>
 
-    <!-- 3. Projects Section (Flagship Deep-Dive + Secondary Modular Grid) -->
+    <!-- 3. Projects Section: real projects, each with its own case page -->
     <section id="projetos" class="projects-section">
-      <div class="section-header reveal-item" style="max-width: 1200px; margin: 0 auto 32px; padding: 0 24px;">
+      <div class="section-header reveal-item">
         <h2 class="section-title" data-i18n="projects_title">Portfólio de Projetos</h2>
-        <p class="lead" data-i18n="projects_lead">Soluções tecnológicas em operação que modernizam a gestão pública e aceleram empresas de ponta a ponta.</p>
+        <p class="lead" data-i18n="projects_lead">Produtos reais em operação, cada um com identidade própria. Abra o caso completo de cada projeto.</p>
       </div>
 
-      <!-- Central Deep-Dive Showcase: Cidadão Relata -->
-      <div class="showcase-featured bg-grid-dark">
-        <div class="showcase-container">
-          <div class="showcase-header reveal-item">
-            <span class="tag" data-i18n="cidadao_tag">GOVTECH · CASO DE SUCESSO</span>
-            <h3 class="showcase-title" data-i18n="cidadao_title" style="font-size: clamp(2rem, 4vw, 3rem); margin-top: 12px;">Cidadão Relata — Zeladoria Urbana e Gestão Pública Municipal</h3>
-            <p class="lead" data-i18n="cidadao_lead" style="color: var(--text-light); max-width: 900px;">
-              Plataforma digital integrada composta por aplicativo mobile para munícipes e painel administrativo web em tempo real para prefeituras e secretarias de obras e zeladoria.
-            </p>
-          </div>
-
-          <div class="showcase-content reveal-item">
-            <div class="showcase-info">
-              <p data-i18n="cidadao_p1">
-                O <strong>Cidadão Relata</strong> é o projeto insignia da NOXXD desenvolvido para aproximar munícipes e prefeituras. Pelo smartphone, o cidadão abre relatos de ocorrências urbanas em poucos segundos — incluindo buracos na malha asfáltica, falhas na iluminação pública, vazamentos na rede e descarte irregular de entulho —, registrando coordenadas de geolocalização automática e fotos comprobatórias.
-              </p>
-              <p data-i18n="cidadao_p2">
-                Na gestão municipal, o painel web administrativo (dashboard) centraliza toda a triagem em tempo real, despacha equipes operacionais de campo e oferece visualização analítica através de <strong>mapa de calor (heatmap)</strong> de incidentes por bairro. Isso permite que gestores do setor público priorizem investimentos públicos com base em dados concretos.
-              </p>
-              <div class="showcase-tags">
-                <span class="tag" data-i18n="cidadao_tag_1">App Mobile</span>
-                <span class="tag" data-i18n="cidadao_tag_2">Painel Web Municipal</span>
-                <span class="tag" data-i18n="cidadao_tag_3">Mapa de Calor (Heatmap)</span>
-                <span class="tag" data-i18n="cidadao_tag_4">Relato de Ocorrências</span>
-                <span class="tag" data-i18n="cidadao_tag_5">Gestão Pública</span>
-                <span class="tag" data-i18n="cidadao_tag_6">Prefeitura Conectada</span>
-              </div>
-              <div class="showcase-cta" style="margin-top: 24px;">
-                <a href="#contato" class="btn btn-primary" data-i18n="cidadao_btn">SOLICITAR DEMONSTRAÇÃO</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Secondary Modular Portfolio Grid with 3 Projects -->
-      <div style="max-width: 1200px; margin: 0 auto; padding: 60px 24px 0;">
-        <div class="section-header reveal-item">
-          <h3 style="font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--color-gold);" data-i18n="other_projects_title">Outros Projetos Desenvolvidos</h3>
-          <p class="lead" data-i18n="other_projects_lead">Conheça outras soluções em software de alta qualidade entregues pela NOXXD.</p>
-        </div>
-
-        <div class="portfolio-grid">
-          <!-- Modular Project Card 1: Portal da Transparência -->
-          <article class="portfolio-card pixel-card reveal-item">
+      <div class="portfolio-grid projects-grid">
+          <article class="portfolio-card project-card pixel-card reveal-item" style="--plate: #CAF0F8;">
             <div class="pixel-corner top-left" aria-hidden="true"></div>
             <div class="pixel-corner top-right" aria-hidden="true"></div>
             <div class="pixel-corner bottom-left" aria-hidden="true"></div>
             <div class="pixel-corner bottom-right" aria-hidden="true"></div>
-            <img src="assets/logo-full.svg" alt="NOXXD - Portal da Transparência Municipal" class="portfolio-card-img" width="300" height="168">
-            <div class="showcase-tags">
-              <span class="tag" data-i18n="p1_tag_1">Setor Público</span>
-              <span class="tag" data-i18n="p1_tag_2">Open Data</span>
-            </div>
-            <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-gold); margin: 8px 0;" data-i18n="p1_title">Portal da Transparência</h4>
-            <p style="font-size: 0.95rem; color: var(--text-light); flex-grow: 1;" data-i18n="p1_desc">
-              Plataforma digital para prestação de contas governamentais em estrita conformidade com a Lei de Acesso à Informação (LAI). Apresenta gráficos interativos de receitas, despesas públicas, licitações e contratos com download de dados abertos.
-            </p>
-            <div style="margin-top: 16px; border-top: 1px solid var(--grid-line-bold); padding-top: 12px;">
-              <span class="tag" style="background: var(--bg-primary);" data-i18n="p1_badge">100% Conformidade LAI</span>
-            </div>
+            <a href="projetos/urbis/" class="project-logo-link" tabindex="-1" aria-hidden="true">
+              <img src="assets/projetos/urbis/logo.png" alt="Logo oficial do Urbis" class="portfolio-card-img project-logo" width="640" height="639" loading="lazy">
+            </a>
+            <div class="showcase-tags"><span class="tag" data-i18n="urbis_tag_1">GovTech</span><span class="tag" data-i18n="urbis_tag_2">App + Painel Web</span></div>
+            <h3 class="project-title">Urbis</h3>
+            <p class="project-summary" data-i18n="urbis_summary">Zeladoria urbana para prefeituras: o cidadão relata com foto, áudio e geolocalização exata, e a gestão municipal decide pelo mapa de calor.</p>
+            <p class="project-stack" data-i18n="urbis_stack">React Native · Expo 54 · Next.js 14 · Leaflet · Recharts</p>
+            <p class="project-metric"><strong data-i18n="urbis_metric_value">Lei 14.129/2021</strong> <span data-i18n="urbis_metric_label">Governo Digital + LGPD</span></p>
+            <a href="projetos/urbis/" class="btn btn-primary project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
           </article>
-
-          <!-- Modular Project Card 2: GeoUrban -->
-          <article class="portfolio-card pixel-card reveal-item">
+          <article class="portfolio-card project-card pixel-card reveal-item" style="--plate: #F4F6F8;">
             <div class="pixel-corner top-left" aria-hidden="true"></div>
             <div class="pixel-corner top-right" aria-hidden="true"></div>
             <div class="pixel-corner bottom-left" aria-hidden="true"></div>
             <div class="pixel-corner bottom-right" aria-hidden="true"></div>
-            <img src="assets/logo-full.svg" alt="NOXXD - GeoUrban Gestão Georreferenciada" class="portfolio-card-img" width="300" height="168">
-            <div class="showcase-tags">
-              <span class="tag" data-i18n="p2_tag_1">SaaS / GIS</span>
-              <span class="tag" data-i18n="p2_tag_2">Planejamento Urbano</span>
-            </div>
-            <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-gold); margin: 8px 0;" data-i18n="p2_title">GeoUrban</h4>
-            <p style="font-size: 0.95rem; color: var(--text-light); flex-grow: 1;" data-i18n="p2_desc">
-              Sistema corporativo de geoprocessamento e mapeamento geoespacial para prefeituras e concessionárias. Permite o cadastro multifinalitário de lotes, zoneamento fiscal e fiscalização predial georreferenciada em alta resolução.
-            </p>
-            <div style="margin-top: 16px; border-top: 1px solid var(--grid-line-bold); padding-top: 12px;">
-              <span class="tag" style="background: var(--bg-primary);" data-i18n="p2_badge">Precisão Submétrica</span>
-            </div>
+            <a href="projetos/healthsearch/" class="project-logo-link" tabindex="-1" aria-hidden="true">
+              <img src="assets/projetos/healthsearch/logo.png" alt="Logo oficial do HealthSearch" class="portfolio-card-img project-logo" width="628" height="640" loading="lazy">
+            </a>
+            <div class="showcase-tags"><span class="tag" data-i18n="hs_tag_1">SST / RH</span><span class="tag" data-i18n="hs_tag_2">SaaS</span></div>
+            <h3 class="project-title">HealthSearch</h3>
+            <p class="project-summary" data-i18n="hs_summary">Central de Saúde e Segurança do Trabalho que sustenta o SIGAC: ciclo do ASO (NR-07), matriz de NR-01 a NR-35, folha e absenteísmo.</p>
+            <p class="project-stack" data-i18n="hs_stack">React 19 · Tailwind v4 · Firebase · Cloudflare R2</p>
+            <p class="project-metric"><strong data-i18n="hs_metric_value">AES-GCM 256 bits</strong> <span data-i18n="hs_metric_label">CID-10 cifrado no navegador</span></p>
+            <a href="projetos/healthsearch/" class="btn btn-primary project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
           </article>
-
-          <!-- Modular Project Card 3: AtendeCidadão -->
-          <article class="portfolio-card pixel-card reveal-item">
+          <article class="portfolio-card project-card pixel-card reveal-item" style="--plate: #EFF6FF;">
             <div class="pixel-corner top-left" aria-hidden="true"></div>
             <div class="pixel-corner top-right" aria-hidden="true"></div>
             <div class="pixel-corner bottom-left" aria-hidden="true"></div>
             <div class="pixel-corner bottom-right" aria-hidden="true"></div>
-            <img src="assets/logo-full.svg" alt="NOXXD - AtendeCidadão Central Unificada" class="portfolio-card-img" width="300" height="168">
-            <div class="showcase-tags">
-              <span class="tag" data-i18n="p3_tag_1">Atendimento</span>
-              <span class="tag" data-i18n="p3_tag_2">Protocolo Digital</span>
-            </div>
-            <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-gold); margin: 8px 0;" data-i18n="p3_title">AtendeCidadão</h4>
-            <p style="font-size: 0.95rem; color: var(--text-light); flex-grow: 1;" data-i18n="p3_desc">
-              Central omnichannel de serviços públicos e protocolo digital unificado. Possibilita o agendamento prévio de atendimentos, emissão de certidões online e acompanhamento de processos administrativos em tempo real.
-            </p>
-            <div style="margin-top: 16px; border-top: 1px solid var(--grid-line-bold); padding-top: 12px;">
-              <span class="tag" style="background: var(--bg-primary);" data-i18n="p3_badge">-65% Tempo de Espera</span>
-            </div>
+            <a href="projetos/caritas/" class="project-logo-link" tabindex="-1" aria-hidden="true">
+              <img src="assets/projetos/caritas/logo.svg" alt="Logo oficial do CARITAS" class="portfolio-card-img project-logo" width="400" height="400" loading="lazy">
+            </a>
+            <div class="showcase-tags"><span class="tag" data-i18n="caritas_tag_1">HealthTech</span><span class="tag" data-i18n="caritas_tag_2">Psicologia</span></div>
+            <h3 class="project-title">CARITAS</h3>
+            <p class="project-summary" data-i18n="caritas_summary">Prontuário psicológico seguro com anamnese, resumo clínico por I.A., documentos CFP, agenda com link público e cobrança via PIX.</p>
+            <p class="project-stack" data-i18n="caritas_stack">React 19 · Vite 8 · Tailwind · GPT-4o-mini · jsPDF</p>
+            <p class="project-metric"><strong data-i18n="caritas_metric_value">4,55 / 5</strong> <span data-i18n="caritas_metric_label">em heurísticas de Nielsen</span></p>
+            <a href="projetos/caritas/" class="btn btn-primary project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
           </article>
-        </div>
       </div>
     </section>
 
@@ -270,7 +213,7 @@
             <img src="assets/icons/icon-whatsapp.svg" alt="Ícone de WhatsApp" width="28" height="28">
             <div>
               <span style="display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contact_wa_label">WhatsApp Comercial</span>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="contact-link">+55 (11) 99999-9999</a>
+              <a href="https://wa.me/5575981802188" target="_blank" rel="noopener noreferrer" class="contact-link">+55 (75) 98180-2188</a>
             </div>
           </div>
 
@@ -288,11 +231,11 @@
           <div class="pixel-corner bottom-right" aria-hidden="true"></div>
           <h3 style="color: var(--color-gold); margin-bottom: 16px;" data-i18n="contact_start_title">Inicie Seu Projeto</h3>
           <p data-i18n="contact_start_desc">
-            Seja para criar um novo site ou landing page de alto desempenho, construir um sistema SaaS escalável ou agendar uma apresentação aprofundada da plataforma Cidadão Relata, nossa equipe de engenharia e produto está pronta para atender seu projeto.
+            Seja para criar um novo site ou landing page de alto desempenho, construir um sistema SaaS escalável ou agendar uma apresentação aprofundada do Urbis, do HealthSearch ou do CARITAS, nossa equipe de engenharia e produto está pronta para atender seu projeto.
           </p>
           <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 28px;">
             <a href="mailto:contato@noxxd.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20Proposta%20-%20NOXXD" class="btn btn-primary" data-i18n="contact_btn_email">ENVIAR E-MAIL AGORA</a>
-            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20NOXXD." target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="contact_btn_wa">CONVERSAR NO WHATSAPP</a>
+            <a href="https://wa.me/5575981802188?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20NOXXD." target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="contact_btn_wa">CONVERSAR NO WHATSAPP</a>
           </div>
         </div>
       </div>
@@ -329,7 +272,7 @@
             <rect x="19" y="17" width="2" height="2" fill="currentColor" stroke="none" />
           </svg>
         </a>
-        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+        <a href="https://wa.me/5575981802188" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter">
             <path d="M4 4h16v12h-6l-4 4v-4H4V4z" />
             <rect x="8" y="8" width="3" height="3" fill="currentColor" stroke="none" />

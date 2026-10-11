@@ -1,0 +1,1165 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-11T21:13:40.909Z",
+  "title": "Design System: NOXXD",
+  "extensions": {
+    "colorMeta": {
+      "noxxd-teal": {
+        "role": "primary",
+        "displayName": "Blueprint Teal",
+        "canonical": "#1B5E6B",
+        "tonalRamp": [
+          "hsl(190 60% 15%)",
+          "hsl(190 60% 25%)",
+          "hsl(190 60% 35%)",
+          "hsl(190 60% 45%)",
+          "hsl(190 60% 55%)",
+          "hsl(190 60% 70%)",
+          "hsl(190 60% 85%)",
+          "hsl(190 60% 95%)"
+        ]
+      },
+      "noxxd-teal-dark": {
+        "role": "primary",
+        "displayName": "Shadow Teal",
+        "canonical": "#154B56",
+        "tonalRamp": [
+          "hsl(190 61% 15%)",
+          "hsl(190 61% 25%)",
+          "hsl(190 61% 35%)",
+          "hsl(190 61% 45%)",
+          "hsl(190 61% 55%)",
+          "hsl(190 61% 70%)",
+          "hsl(190 61% 85%)",
+          "hsl(190 61% 95%)"
+        ]
+      },
+      "noxxd-deep": {
+        "role": "primary",
+        "displayName": "Abyss Teal",
+        "canonical": "#0E363E",
+        "tonalRamp": [
+          "hsl(190 63% 15%)",
+          "hsl(190 63% 25%)",
+          "hsl(190 63% 35%)",
+          "hsl(190 63% 45%)",
+          "hsl(190 63% 55%)",
+          "hsl(190 63% 70%)",
+          "hsl(190 63% 85%)",
+          "hsl(190 63% 95%)"
+        ]
+      },
+      "noxxd-gold": {
+        "role": "secondary",
+        "displayName": "Burnished Gold",
+        "canonical": "#C8975D",
+        "tonalRamp": [
+          "hsl(33 49% 15%)",
+          "hsl(33 49% 25%)",
+          "hsl(33 49% 35%)",
+          "hsl(33 49% 45%)",
+          "hsl(33 49% 55%)",
+          "hsl(33 49% 70%)",
+          "hsl(33 49% 85%)",
+          "hsl(33 49% 95%)"
+        ]
+      },
+      "noxxd-gold-hover": {
+        "role": "secondary",
+        "displayName": "Lit Gold",
+        "canonical": "#D8A76D",
+        "tonalRamp": [
+          "hsl(33 58% 15%)",
+          "hsl(33 58% 25%)",
+          "hsl(33 58% 35%)",
+          "hsl(33 58% 45%)",
+          "hsl(33 58% 55%)",
+          "hsl(33 58% 70%)",
+          "hsl(33 58% 85%)",
+          "hsl(33 58% 95%)"
+        ]
+      },
+      "noxxd-text-light": {
+        "role": "neutral",
+        "displayName": "Parchment White",
+        "canonical": "#F5F7F8",
+        "tonalRamp": [
+          "hsl(200 18% 15%)",
+          "hsl(200 18% 25%)",
+          "hsl(200 18% 35%)",
+          "hsl(200 18% 45%)",
+          "hsl(200 18% 55%)",
+          "hsl(200 18% 70%)",
+          "hsl(200 18% 85%)",
+          "hsl(200 18% 95%)"
+        ]
+      },
+      "noxxd-text-muted": {
+        "role": "neutral",
+        "displayName": "Old Paper",
+        "canonical": "#D0C0A7",
+        "tonalRamp": [
+          "hsl(37 30% 15%)",
+          "hsl(37 30% 25%)",
+          "hsl(37 30% 35%)",
+          "hsl(37 30% 45%)",
+          "hsl(37 30% 55%)",
+          "hsl(37 30% 70%)",
+          "hsl(37 30% 85%)",
+          "hsl(37 30% 95%)"
+        ]
+      },
+      "noxxd-grid-line": {
+        "role": "neutral",
+        "displayName": "Grid Gold",
+        "canonical": "rgba(200, 151, 93, 0.07)"
+      },
+      "noxxd-grid-line-bold": {
+        "role": "neutral",
+        "displayName": "Grid Gold Major",
+        "canonical": "rgba(200, 151, 93, 0.14)"
+      },
+      "urbis-navy": {
+        "role": "product",
+        "displayName": "Harbour Navy",
+        "canonical": "#03045E",
+        "tonalRamp": [
+          "hsl(239 94% 15%)",
+          "hsl(239 94% 25%)",
+          "hsl(239 94% 35%)",
+          "hsl(239 94% 45%)",
+          "hsl(239 94% 55%)",
+          "hsl(239 94% 70%)",
+          "hsl(239 94% 85%)",
+          "hsl(239 94% 95%)"
+        ]
+      },
+      "urbis-navy-2": {
+        "role": "product",
+        "displayName": "Urbis Navy 2",
+        "canonical": "#243d80",
+        "tonalRamp": [
+          "hsl(224 56% 15%)",
+          "hsl(224 56% 25%)",
+          "hsl(224 56% 35%)",
+          "hsl(224 56% 45%)",
+          "hsl(224 56% 55%)",
+          "hsl(224 56% 70%)",
+          "hsl(224 56% 85%)",
+          "hsl(224 56% 95%)"
+        ]
+      },
+      "urbis-ocean": {
+        "role": "product",
+        "displayName": "Urbis Ocean",
+        "canonical": "#0077B6",
+        "tonalRamp": [
+          "hsl(201 100% 15%)",
+          "hsl(201 100% 25%)",
+          "hsl(201 100% 35%)",
+          "hsl(201 100% 45%)",
+          "hsl(201 100% 55%)",
+          "hsl(201 100% 70%)",
+          "hsl(201 100% 85%)",
+          "hsl(201 100% 95%)"
+        ]
+      },
+      "urbis-ocean-deep": {
+        "role": "product",
+        "displayName": "Urbis Ocean Deep",
+        "canonical": "#005f92",
+        "tonalRamp": [
+          "hsl(201 100% 15%)",
+          "hsl(201 100% 25%)",
+          "hsl(201 100% 35%)",
+          "hsl(201 100% 45%)",
+          "hsl(201 100% 55%)",
+          "hsl(201 100% 70%)",
+          "hsl(201 100% 85%)",
+          "hsl(201 100% 95%)"
+        ]
+      },
+      "urbis-sky": {
+        "role": "product",
+        "displayName": "Urbis Sky",
+        "canonical": "#00B4D8",
+        "tonalRamp": [
+          "hsl(190 100% 15%)",
+          "hsl(190 100% 25%)",
+          "hsl(190 100% 35%)",
+          "hsl(190 100% 45%)",
+          "hsl(190 100% 55%)",
+          "hsl(190 100% 70%)",
+          "hsl(190 100% 85%)",
+          "hsl(190 100% 95%)"
+        ]
+      },
+      "urbis-aqua": {
+        "role": "product",
+        "displayName": "Urbis Aqua",
+        "canonical": "#90E0EF",
+        "tonalRamp": [
+          "hsl(189 75% 15%)",
+          "hsl(189 75% 25%)",
+          "hsl(189 75% 35%)",
+          "hsl(189 75% 45%)",
+          "hsl(189 75% 55%)",
+          "hsl(189 75% 70%)",
+          "hsl(189 75% 85%)",
+          "hsl(189 75% 95%)"
+        ]
+      },
+      "urbis-ice": {
+        "role": "product",
+        "displayName": "Urbis Ice",
+        "canonical": "#CAF0F8",
+        "tonalRamp": [
+          "hsl(190 77% 15%)",
+          "hsl(190 77% 25%)",
+          "hsl(190 77% 35%)",
+          "hsl(190 77% 45%)",
+          "hsl(190 77% 55%)",
+          "hsl(190 77% 70%)",
+          "hsl(190 77% 85%)",
+          "hsl(190 77% 95%)"
+        ]
+      },
+      "urbis-frost": {
+        "role": "product",
+        "displayName": "Urbis Frost",
+        "canonical": "#E0F7FA",
+        "tonalRamp": [
+          "hsl(187 72% 15%)",
+          "hsl(187 72% 25%)",
+          "hsl(187 72% 35%)",
+          "hsl(187 72% 45%)",
+          "hsl(187 72% 55%)",
+          "hsl(187 72% 70%)",
+          "hsl(187 72% 85%)",
+          "hsl(187 72% 95%)"
+        ]
+      },
+      "urbis-web": {
+        "role": "product",
+        "displayName": "Urbis Web",
+        "canonical": "#F8FAFC",
+        "tonalRamp": [
+          "hsl(210 40% 15%)",
+          "hsl(210 40% 25%)",
+          "hsl(210 40% 35%)",
+          "hsl(210 40% 45%)",
+          "hsl(210 40% 55%)",
+          "hsl(210 40% 70%)",
+          "hsl(210 40% 85%)",
+          "hsl(210 40% 95%)"
+        ]
+      },
+      "urbis-text": {
+        "role": "product",
+        "displayName": "Urbis Text",
+        "canonical": "#1A1C1C",
+        "tonalRamp": [
+          "hsl(180 4% 15%)",
+          "hsl(180 4% 25%)",
+          "hsl(180 4% 35%)",
+          "hsl(180 4% 45%)",
+          "hsl(180 4% 55%)",
+          "hsl(180 4% 70%)",
+          "hsl(180 4% 85%)",
+          "hsl(180 4% 95%)"
+        ]
+      },
+      "urbis-text-2": {
+        "role": "product",
+        "displayName": "Urbis Text 2",
+        "canonical": "#464651",
+        "tonalRamp": [
+          "hsl(240 7% 15%)",
+          "hsl(240 7% 25%)",
+          "hsl(240 7% 35%)",
+          "hsl(240 7% 45%)",
+          "hsl(240 7% 55%)",
+          "hsl(240 7% 70%)",
+          "hsl(240 7% 85%)",
+          "hsl(240 7% 95%)"
+        ]
+      },
+      "urbis-status-pendente-bg": {
+        "role": "state",
+        "displayName": "Urbis Status Pendente Bg",
+        "canonical": "#FFDAD6",
+        "tonalRamp": [
+          "hsl(6 100% 15%)",
+          "hsl(6 100% 25%)",
+          "hsl(6 100% 35%)",
+          "hsl(6 100% 45%)",
+          "hsl(6 100% 55%)",
+          "hsl(6 100% 70%)",
+          "hsl(6 100% 85%)",
+          "hsl(6 100% 95%)"
+        ]
+      },
+      "urbis-status-pendente-fg": {
+        "role": "state",
+        "displayName": "Urbis Status Pendente Fg",
+        "canonical": "#BA1A1A",
+        "tonalRamp": [
+          "hsl(0 75% 15%)",
+          "hsl(0 75% 25%)",
+          "hsl(0 75% 35%)",
+          "hsl(0 75% 45%)",
+          "hsl(0 75% 55%)",
+          "hsl(0 75% 70%)",
+          "hsl(0 75% 85%)",
+          "hsl(0 75% 95%)"
+        ]
+      },
+      "urbis-status-analise-bg": {
+        "role": "state",
+        "displayName": "Urbis Status Analise Bg",
+        "canonical": "#FFF3CD",
+        "tonalRamp": [
+          "hsl(46 100% 15%)",
+          "hsl(46 100% 25%)",
+          "hsl(46 100% 35%)",
+          "hsl(46 100% 45%)",
+          "hsl(46 100% 55%)",
+          "hsl(46 100% 70%)",
+          "hsl(46 100% 85%)",
+          "hsl(46 100% 95%)"
+        ]
+      },
+      "urbis-status-analise-fg": {
+        "role": "state",
+        "displayName": "Urbis Status Analise Fg",
+        "canonical": "#856404",
+        "tonalRamp": [
+          "hsl(45 94% 15%)",
+          "hsl(45 94% 25%)",
+          "hsl(45 94% 35%)",
+          "hsl(45 94% 45%)",
+          "hsl(45 94% 55%)",
+          "hsl(45 94% 70%)",
+          "hsl(45 94% 85%)",
+          "hsl(45 94% 95%)"
+        ]
+      },
+      "urbis-status-andamento-fg": {
+        "role": "state",
+        "displayName": "Urbis Status Andamento Fg",
+        "canonical": "#005f92",
+        "tonalRamp": [
+          "hsl(201 100% 15%)",
+          "hsl(201 100% 25%)",
+          "hsl(201 100% 35%)",
+          "hsl(201 100% 45%)",
+          "hsl(201 100% 55%)",
+          "hsl(201 100% 70%)",
+          "hsl(201 100% 85%)",
+          "hsl(201 100% 95%)"
+        ]
+      },
+      "urbis-status-resolvido-bg": {
+        "role": "state",
+        "displayName": "Urbis Status Resolvido Bg",
+        "canonical": "#D1FAE5",
+        "tonalRamp": [
+          "hsl(149 80% 15%)",
+          "hsl(149 80% 25%)",
+          "hsl(149 80% 35%)",
+          "hsl(149 80% 45%)",
+          "hsl(149 80% 55%)",
+          "hsl(149 80% 70%)",
+          "hsl(149 80% 85%)",
+          "hsl(149 80% 95%)"
+        ]
+      },
+      "urbis-status-resolvido-fg": {
+        "role": "state",
+        "displayName": "Urbis Status Resolvido Fg",
+        "canonical": "#1F6B00",
+        "tonalRamp": [
+          "hsl(103 100% 15%)",
+          "hsl(103 100% 25%)",
+          "hsl(103 100% 35%)",
+          "hsl(103 100% 45%)",
+          "hsl(103 100% 55%)",
+          "hsl(103 100% 70%)",
+          "hsl(103 100% 85%)",
+          "hsl(103 100% 95%)"
+        ]
+      },
+      "urbis-status-rejeitado-bg": {
+        "role": "state",
+        "displayName": "Urbis Status Rejeitado Bg",
+        "canonical": "#E2E2E2",
+        "tonalRamp": [
+          "hsl(0 0% 15%)",
+          "hsl(0 0% 25%)",
+          "hsl(0 0% 35%)",
+          "hsl(0 0% 45%)",
+          "hsl(0 0% 55%)",
+          "hsl(0 0% 70%)",
+          "hsl(0 0% 85%)",
+          "hsl(0 0% 95%)"
+        ]
+      },
+      "hs-petroleo": {
+        "role": "product",
+        "displayName": "Petróleo",
+        "canonical": "#0B2545",
+        "tonalRamp": [
+          "hsl(213 72% 15%)",
+          "hsl(213 72% 25%)",
+          "hsl(213 72% 35%)",
+          "hsl(213 72% 45%)",
+          "hsl(213 72% 55%)",
+          "hsl(213 72% 70%)",
+          "hsl(213 72% 85%)",
+          "hsl(213 72% 95%)"
+        ]
+      },
+      "hs-petroleo-light": {
+        "role": "product",
+        "displayName": "Hs Petroleo Light",
+        "canonical": "#13375e",
+        "tonalRamp": [
+          "hsl(211 66% 15%)",
+          "hsl(211 66% 25%)",
+          "hsl(211 66% 35%)",
+          "hsl(211 66% 45%)",
+          "hsl(211 66% 55%)",
+          "hsl(211 66% 70%)",
+          "hsl(211 66% 85%)",
+          "hsl(211 66% 95%)"
+        ]
+      },
+      "hs-petroleo-soft": {
+        "role": "product",
+        "displayName": "Hs Petroleo Soft",
+        "canonical": "#e3eaf3",
+        "tonalRamp": [
+          "hsl(214 40% 15%)",
+          "hsl(214 40% 25%)",
+          "hsl(214 40% 35%)",
+          "hsl(214 40% 45%)",
+          "hsl(214 40% 55%)",
+          "hsl(214 40% 70%)",
+          "hsl(214 40% 85%)",
+          "hsl(214 40% 95%)"
+        ]
+      },
+      "hs-amber": {
+        "role": "product",
+        "displayName": "Signal Amber",
+        "canonical": "#F5A623",
+        "tonalRamp": [
+          "hsl(37 91% 15%)",
+          "hsl(37 91% 25%)",
+          "hsl(37 91% 35%)",
+          "hsl(37 91% 45%)",
+          "hsl(37 91% 55%)",
+          "hsl(37 91% 70%)",
+          "hsl(37 91% 85%)",
+          "hsl(37 91% 95%)"
+        ]
+      },
+      "hs-amber-hover": {
+        "role": "product",
+        "displayName": "Hs Amber Hover",
+        "canonical": "#e09510",
+        "tonalRamp": [
+          "hsl(38 87% 15%)",
+          "hsl(38 87% 25%)",
+          "hsl(38 87% 35%)",
+          "hsl(38 87% 45%)",
+          "hsl(38 87% 55%)",
+          "hsl(38 87% 70%)",
+          "hsl(38 87% 85%)",
+          "hsl(38 87% 95%)"
+        ]
+      },
+      "hs-surface": {
+        "role": "product",
+        "displayName": "Hs Surface",
+        "canonical": "#f4f6f8",
+        "tonalRamp": [
+          "hsl(210 22% 15%)",
+          "hsl(210 22% 25%)",
+          "hsl(210 22% 35%)",
+          "hsl(210 22% 45%)",
+          "hsl(210 22% 55%)",
+          "hsl(210 22% 70%)",
+          "hsl(210 22% 85%)",
+          "hsl(210 22% 95%)"
+        ]
+      },
+      "hs-card": {
+        "role": "product",
+        "displayName": "Hs Card",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "hsl(0 0% 15%)",
+          "hsl(0 0% 25%)",
+          "hsl(0 0% 35%)",
+          "hsl(0 0% 45%)",
+          "hsl(0 0% 55%)",
+          "hsl(0 0% 70%)",
+          "hsl(0 0% 85%)",
+          "hsl(0 0% 95%)"
+        ]
+      },
+      "hs-border": {
+        "role": "product",
+        "displayName": "Hs Border",
+        "canonical": "#dde1e7",
+        "tonalRamp": [
+          "hsl(216 17% 15%)",
+          "hsl(216 17% 25%)",
+          "hsl(216 17% 35%)",
+          "hsl(216 17% 45%)",
+          "hsl(216 17% 55%)",
+          "hsl(216 17% 70%)",
+          "hsl(216 17% 85%)",
+          "hsl(216 17% 95%)"
+        ]
+      },
+      "hs-text": {
+        "role": "product",
+        "displayName": "Hs Text",
+        "canonical": "#1a1f2b",
+        "tonalRamp": [
+          "hsl(222 25% 15%)",
+          "hsl(222 25% 25%)",
+          "hsl(222 25% 35%)",
+          "hsl(222 25% 45%)",
+          "hsl(222 25% 55%)",
+          "hsl(222 25% 70%)",
+          "hsl(222 25% 85%)",
+          "hsl(222 25% 95%)"
+        ]
+      },
+      "hs-text-2": {
+        "role": "product",
+        "displayName": "Hs Text 2",
+        "canonical": "#4b5563",
+        "tonalRamp": [
+          "hsl(215 14% 15%)",
+          "hsl(215 14% 25%)",
+          "hsl(215 14% 35%)",
+          "hsl(215 14% 45%)",
+          "hsl(215 14% 55%)",
+          "hsl(215 14% 70%)",
+          "hsl(215 14% 85%)",
+          "hsl(215 14% 95%)"
+        ]
+      },
+      "hs-ink-on-amber": {
+        "role": "product",
+        "displayName": "Hs Ink On Amber",
+        "canonical": "#020617",
+        "tonalRamp": [
+          "hsl(229 84% 15%)",
+          "hsl(229 84% 25%)",
+          "hsl(229 84% 35%)",
+          "hsl(229 84% 45%)",
+          "hsl(229 84% 55%)",
+          "hsl(229 84% 70%)",
+          "hsl(229 84% 85%)",
+          "hsl(229 84% 95%)"
+        ]
+      },
+      "hs-em-dia": {
+        "role": "state",
+        "displayName": "Hs Em Dia",
+        "canonical": "#16a34a",
+        "tonalRamp": [
+          "hsl(142 76% 15%)",
+          "hsl(142 76% 25%)",
+          "hsl(142 76% 35%)",
+          "hsl(142 76% 45%)",
+          "hsl(142 76% 55%)",
+          "hsl(142 76% 70%)",
+          "hsl(142 76% 85%)",
+          "hsl(142 76% 95%)"
+        ]
+      },
+      "hs-a-vencer": {
+        "role": "state",
+        "displayName": "Hs A Vencer",
+        "canonical": "#d97706",
+        "tonalRamp": [
+          "hsl(32 95% 15%)",
+          "hsl(32 95% 25%)",
+          "hsl(32 95% 35%)",
+          "hsl(32 95% 45%)",
+          "hsl(32 95% 55%)",
+          "hsl(32 95% 70%)",
+          "hsl(32 95% 85%)",
+          "hsl(32 95% 95%)"
+        ]
+      },
+      "hs-vencido": {
+        "role": "state",
+        "displayName": "Hs Vencido",
+        "canonical": "#dc2626",
+        "tonalRamp": [
+          "hsl(0 72% 15%)",
+          "hsl(0 72% 25%)",
+          "hsl(0 72% 35%)",
+          "hsl(0 72% 45%)",
+          "hsl(0 72% 55%)",
+          "hsl(0 72% 70%)",
+          "hsl(0 72% 85%)",
+          "hsl(0 72% 95%)"
+        ]
+      },
+      "hs-solicitado": {
+        "role": "state",
+        "displayName": "Hs Solicitado",
+        "canonical": "#4f46e5",
+        "tonalRamp": [
+          "hsl(243 75% 15%)",
+          "hsl(243 75% 25%)",
+          "hsl(243 75% 35%)",
+          "hsl(243 75% 45%)",
+          "hsl(243 75% 55%)",
+          "hsl(243 75% 70%)",
+          "hsl(243 75% 85%)",
+          "hsl(243 75% 95%)"
+        ]
+      },
+      "hs-agendado": {
+        "role": "state",
+        "displayName": "Hs Agendado",
+        "canonical": "#0284c7",
+        "tonalRamp": [
+          "hsl(200 98% 15%)",
+          "hsl(200 98% 25%)",
+          "hsl(200 98% 35%)",
+          "hsl(200 98% 45%)",
+          "hsl(200 98% 55%)",
+          "hsl(200 98% 70%)",
+          "hsl(200 98% 85%)",
+          "hsl(200 98% 95%)"
+        ]
+      },
+      "hs-pendente": {
+        "role": "state",
+        "displayName": "Hs Pendente",
+        "canonical": "#64748b",
+        "tonalRamp": [
+          "hsl(215 16% 15%)",
+          "hsl(215 16% 25%)",
+          "hsl(215 16% 35%)",
+          "hsl(215 16% 45%)",
+          "hsl(215 16% 55%)",
+          "hsl(215 16% 70%)",
+          "hsl(215 16% 85%)",
+          "hsl(215 16% 95%)"
+        ]
+      },
+      "caritas-midnight": {
+        "role": "product",
+        "displayName": "Midnight",
+        "canonical": "#0A1628",
+        "tonalRamp": [
+          "hsl(216 60% 15%)",
+          "hsl(216 60% 25%)",
+          "hsl(216 60% 35%)",
+          "hsl(216 60% 45%)",
+          "hsl(216 60% 55%)",
+          "hsl(216 60% 70%)",
+          "hsl(216 60% 85%)",
+          "hsl(216 60% 95%)"
+        ]
+      },
+      "caritas-paper": {
+        "role": "product",
+        "displayName": "Calm Paper",
+        "canonical": "#F8F9FA",
+        "tonalRamp": [
+          "hsl(210 17% 15%)",
+          "hsl(210 17% 25%)",
+          "hsl(210 17% 35%)",
+          "hsl(210 17% 45%)",
+          "hsl(210 17% 55%)",
+          "hsl(210 17% 70%)",
+          "hsl(210 17% 85%)",
+          "hsl(210 17% 95%)"
+        ]
+      },
+      "caritas-card": {
+        "role": "product",
+        "displayName": "Caritas Card",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "hsl(0 0% 15%)",
+          "hsl(0 0% 25%)",
+          "hsl(0 0% 35%)",
+          "hsl(0 0% 45%)",
+          "hsl(0 0% 55%)",
+          "hsl(0 0% 70%)",
+          "hsl(0 0% 85%)",
+          "hsl(0 0% 95%)"
+        ]
+      },
+      "caritas-text-2": {
+        "role": "product",
+        "displayName": "Caritas Text 2",
+        "canonical": "#4A5568",
+        "tonalRamp": [
+          "hsl(218 17% 15%)",
+          "hsl(218 17% 25%)",
+          "hsl(218 17% 35%)",
+          "hsl(218 17% 45%)",
+          "hsl(218 17% 55%)",
+          "hsl(218 17% 70%)",
+          "hsl(218 17% 85%)",
+          "hsl(218 17% 95%)"
+        ]
+      },
+      "caritas-muted": {
+        "role": "product",
+        "displayName": "Caritas Muted",
+        "canonical": "#5f6b7d",
+        "tonalRamp": [
+          "hsl(216 14% 15%)",
+          "hsl(216 14% 25%)",
+          "hsl(216 14% 35%)",
+          "hsl(216 14% 45%)",
+          "hsl(216 14% 55%)",
+          "hsl(216 14% 70%)",
+          "hsl(216 14% 85%)",
+          "hsl(216 14% 95%)"
+        ]
+      },
+      "caritas-royal": {
+        "role": "product",
+        "displayName": "Royal Blue",
+        "canonical": "#2563EB",
+        "tonalRamp": [
+          "hsl(221 83% 15%)",
+          "hsl(221 83% 25%)",
+          "hsl(221 83% 35%)",
+          "hsl(221 83% 45%)",
+          "hsl(221 83% 55%)",
+          "hsl(221 83% 70%)",
+          "hsl(221 83% 85%)",
+          "hsl(221 83% 95%)"
+        ]
+      },
+      "caritas-royal-hover": {
+        "role": "product",
+        "displayName": "Caritas Royal Hover",
+        "canonical": "#1D4ED8",
+        "tonalRamp": [
+          "hsl(224 76% 15%)",
+          "hsl(224 76% 25%)",
+          "hsl(224 76% 35%)",
+          "hsl(224 76% 45%)",
+          "hsl(224 76% 55%)",
+          "hsl(224 76% 70%)",
+          "hsl(224 76% 85%)",
+          "hsl(224 76% 95%)"
+        ]
+      },
+      "caritas-royal-light": {
+        "role": "product",
+        "displayName": "Caritas Royal Light",
+        "canonical": "#EFF6FF",
+        "tonalRamp": [
+          "hsl(214 100% 15%)",
+          "hsl(214 100% 25%)",
+          "hsl(214 100% 35%)",
+          "hsl(214 100% 45%)",
+          "hsl(214 100% 55%)",
+          "hsl(214 100% 70%)",
+          "hsl(214 100% 85%)",
+          "hsl(214 100% 95%)"
+        ]
+      },
+      "caritas-chip-text": {
+        "role": "product",
+        "displayName": "Caritas Chip Text",
+        "canonical": "#1E40AF",
+        "tonalRamp": [
+          "hsl(226 71% 15%)",
+          "hsl(226 71% 25%)",
+          "hsl(226 71% 35%)",
+          "hsl(226 71% 45%)",
+          "hsl(226 71% 55%)",
+          "hsl(226 71% 70%)",
+          "hsl(226 71% 85%)",
+          "hsl(226 71% 95%)"
+        ]
+      },
+      "caritas-dark-bg": {
+        "role": "product",
+        "displayName": "Caritas Dark Bg",
+        "canonical": "#0D1117",
+        "tonalRamp": [
+          "hsl(216 28% 15%)",
+          "hsl(216 28% 25%)",
+          "hsl(216 28% 35%)",
+          "hsl(216 28% 45%)",
+          "hsl(216 28% 55%)",
+          "hsl(216 28% 70%)",
+          "hsl(216 28% 85%)",
+          "hsl(216 28% 95%)"
+        ]
+      },
+      "caritas-dark-card": {
+        "role": "product",
+        "displayName": "Caritas Dark Card",
+        "canonical": "#161B22",
+        "tonalRamp": [
+          "hsl(215 21% 15%)",
+          "hsl(215 21% 25%)",
+          "hsl(215 21% 35%)",
+          "hsl(215 21% 45%)",
+          "hsl(215 21% 55%)",
+          "hsl(215 21% 70%)",
+          "hsl(215 21% 85%)",
+          "hsl(215 21% 95%)"
+        ]
+      },
+      "caritas-dark-text": {
+        "role": "product",
+        "displayName": "Caritas Dark Text",
+        "canonical": "#E6EDF3",
+        "tonalRamp": [
+          "hsl(208 35% 15%)",
+          "hsl(208 35% 25%)",
+          "hsl(208 35% 35%)",
+          "hsl(208 35% 45%)",
+          "hsl(208 35% 55%)",
+          "hsl(208 35% 70%)",
+          "hsl(208 35% 85%)",
+          "hsl(208 35% 95%)"
+        ]
+      },
+      "caritas-dark-text-2": {
+        "role": "product",
+        "displayName": "Caritas Dark Text 2",
+        "canonical": "#A5B0BC",
+        "tonalRamp": [
+          "hsl(211 15% 15%)",
+          "hsl(211 15% 25%)",
+          "hsl(211 15% 35%)",
+          "hsl(211 15% 45%)",
+          "hsl(211 15% 55%)",
+          "hsl(211 15% 70%)",
+          "hsl(211 15% 85%)",
+          "hsl(211 15% 95%)"
+        ]
+      },
+      "caritas-dark-royal": {
+        "role": "product",
+        "displayName": "Caritas Dark Royal",
+        "canonical": "#3B82F6",
+        "tonalRamp": [
+          "hsl(217 91% 15%)",
+          "hsl(217 91% 25%)",
+          "hsl(217 91% 35%)",
+          "hsl(217 91% 45%)",
+          "hsl(217 91% 55%)",
+          "hsl(217 91% 70%)",
+          "hsl(217 91% 85%)",
+          "hsl(217 91% 95%)"
+        ]
+      },
+      "caritas-dark-royal-hover": {
+        "role": "product",
+        "displayName": "Caritas Dark Royal Hover",
+        "canonical": "#60A5FA",
+        "tonalRamp": [
+          "hsl(213 94% 15%)",
+          "hsl(213 94% 25%)",
+          "hsl(213 94% 35%)",
+          "hsl(213 94% 45%)",
+          "hsl(213 94% 55%)",
+          "hsl(213 94% 70%)",
+          "hsl(213 94% 85%)",
+          "hsl(213 94% 95%)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home hero title, Oswald uppercase."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Home section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "NOXXD paragraphs on teal."
+      },
+      "slogan": {
+        "displayName": "Slogan",
+        "purpose": "BUILD IT YOUR WAY only."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav, frame bar, language switch, buttons."
+      },
+      "urbis-display": {
+        "displayName": "Urbis Display",
+        "purpose": "Urbis hero headline, Manrope 800."
+      },
+      "urbis-body": {
+        "displayName": "Urbis Body",
+        "purpose": "Urbis case body, Inter."
+      },
+      "hs-display": {
+        "displayName": "HealthSearch Display",
+        "purpose": "Archivo 800 headings with tabular numerals."
+      },
+      "hs-body": {
+        "displayName": "HealthSearch Body",
+        "purpose": "Archivo body, tabular numerals; JetBrains Mono 500 for code-like identifiers."
+      },
+      "caritas-display": {
+        "displayName": "CARITAS Display",
+        "purpose": "Sora 600 headings."
+      },
+      "caritas-body": {
+        "displayName": "CARITAS Body",
+        "purpose": "Inter body."
+      },
+      "case-headline": {
+        "displayName": "Case Headline",
+        "purpose": "Every case-page h2, in the product head font."
+      }
+    },
+    "shadows": [
+      {
+        "name": "device-drop",
+        "value": "0 24px 60px -24px var(--shot-shadow, rgba(0,0,0,0.45))",
+        "purpose": "Screenshot device frames, tinted per product."
+      },
+      {
+        "name": "urbis-lockup",
+        "value": "0 10px 30px -10px rgba(0,0,0,0.5)",
+        "purpose": "Urbis logo tile on navy."
+      },
+      {
+        "name": "caritas-sheet",
+        "value": "0 10px 30px -12px rgba(0,0,0,0.3)",
+        "purpose": "CARITAS document stack sheets."
+      },
+      {
+        "name": "caritas-card",
+        "value": "0 2px 12px rgba(0,0,0,0.06)",
+        "purpose": "CARITAS cards and link chip (0.3 alpha in dark scheme)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "noxxd-fast",
+        "value": "0.15s ease-in-out",
+        "purpose": "NOXXD buttons, links, nav underline."
+      },
+      {
+        "name": "noxxd-base",
+        "value": "0.25s ease-in-out",
+        "purpose": "Card lift and logo-plate scale."
+      },
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Reveal (0.6s), case button lift (0.2s), hero settle (0.8s), CARITAS sheet fan (0.6s), matrix cell (0.25s)."
+      },
+      {
+        "name": "geometric-ripple",
+        "value": "0.5s ease-out",
+        "purpose": "Square gold ripple from click point on NOXXD buttons."
+      },
+      {
+        "name": "pixel-float",
+        "value": "22-48s linear infinite",
+        "purpose": "Home gold particles, transform only; hidden under prefers-reduced-motion."
+      },
+      {
+        "name": "urbis-step",
+        "value": "10s cubic-bezier(0.16, 1, 0.3, 1) infinite, 2.5s stagger",
+        "purpose": "Urbis status ribbon steps through statuses."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "home-tablet",
+        "value": "1024px"
+      },
+      {
+        "name": "case-cta",
+        "value": "860px"
+      },
+      {
+        "name": "home-mobile",
+        "value": "768px"
+      },
+      {
+        "name": "case-mobile",
+        "value": "600px"
+      },
+      {
+        "name": "small",
+        "value": "480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "NOXXD Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square gold action on the teal world; inverts to teal on hover.",
+      "html": "<button class=\"ds-btn-primary\">VER PROJETO</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;padding:14px 32px;background:#C8975D;color:#0E363E;font-family:Oswald,'Arial Narrow',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;border:2px solid #C8975D;border-radius:0;cursor:pointer;transition:background-color .15s ease-in-out,color .15s ease-in-out,border-color .15s ease-in-out,transform .15s ease-in-out}.ds-btn-primary:hover,.ds-btn-primary:focus-visible{background:#1B5E6B;color:#C8975D;border-color:#D8A76D;transform:translateY(-2px);outline:none}.ds-btn-primary:active{background:#154B56;transform:none}"
+    },
+    {
+      "name": "NOXXD Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary square action; fills gold on hover.",
+      "html": "<button class=\"ds-btn-outline\">FALE CONOSCO</button>",
+      "css": ".ds-btn-outline{display:inline-flex;padding:14px 32px;background:transparent;color:#C8975D;font-family:Oswald,'Arial Narrow',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;border:2px solid #C8975D;border-radius:0;cursor:pointer;transition:background-color .15s,color .15s,transform .15s}.ds-btn-outline:hover,.ds-btn-outline:focus-visible{background:#C8975D;color:#0E363E;transform:translateY(-2px)}.ds-btn-outline:focus-visible{outline:2px solid #D8A76D;outline-offset:4px}"
+    },
+    {
+      "name": "NOXXD Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Square stack/technology tag on teal.",
+      "html": "<span class=\"ds-tag\">LARAVEL</span>",
+      "css": ".ds-tag{display:inline-block;padding:4px 10px;background:rgba(200,151,93,.15);border:1px solid #C8975D;color:#C8975D;font-family:'Josefin Sans',sans-serif;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;border-radius:0}"
+    },
+    {
+      "name": "Pixel Card",
+      "kind": "card",
+      "refersTo": "pixel-card",
+      "description": "Square gold-bordered card with 8-bit corner tabs; lifts 4px on hover.",
+      "html": "<article class=\"ds-pixel-card\"><h3>URBIS</h3><p>Zeladoria urbana com app e painel.</p></article>",
+      "css": ".ds-pixel-card{position:relative;max-width:320px;background:#154B56;border:2px solid #C8975D;padding:32px 24px;color:#F5F7F8;font-family:'Josefin Sans',sans-serif;transition:transform .25s ease-in-out,border-color .25s ease-in-out}.ds-pixel-card h3{font-family:Oswald,sans-serif;color:#C8975D;letter-spacing:.06em;margin:0 0 8px}.ds-pixel-card::before,.ds-pixel-card::after{content:\"\";position:absolute;left:-3px;width:6px;height:6px;background:#C8975D;box-shadow:calc(100% + 0px) 0 0 #C8975D}.ds-pixel-card::before{top:-3px}.ds-pixel-card::after{bottom:-3px}.ds-pixel-card:hover{transform:translateY(-4px);border-color:#D8A76D}"
+    },
+    {
+      "name": "Case Frame Bar",
+      "kind": "nav",
+      "refersTo": "frame-bar",
+      "description": "Sticky NOXXD bar over every case page: back link, PT/EN switch, gold contact.",
+      "html": "<header class=\"ds-bar\"><a class=\"ds-back\" href=\"#\">&larr; NOXXD</a><div class=\"ds-actions\"><span class=\"ds-lang\"><button aria-pressed=\"true\">PT</button><button aria-pressed=\"false\">EN</button></span><a class=\"ds-contact\" href=\"#\">CONTATO</a></div></header>",
+      "css": ".ds-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:0 16px;background:#154B56;border-bottom:2px solid #C8975D;font-family:Oswald,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.08em}.ds-back{color:#F5F7F8;text-decoration:none;font-weight:600;font-size:.95rem}.ds-back:hover,.ds-back:focus-visible{color:#C8975D}.ds-actions{display:flex;align-items:center;gap:14px}.ds-lang{display:inline-flex;gap:2px;border:1px solid #C8975D;padding:2px}.ds-lang button{border:0;background:transparent;color:#D0C0A7;font:inherit;font-size:.8rem;font-weight:700;padding:6px 9px;cursor:pointer;line-height:1}.ds-lang button:hover{color:#F5F7F8}.ds-lang button[aria-pressed=\"true\"]{background:#C8975D;color:#0E363E}.ds-contact{padding:9px 18px;background:#C8975D;color:#0E363E;border:2px solid #C8975D;font-size:.85rem;font-weight:700;text-decoration:none;transition:background-color .15s,color .15s}.ds-contact:hover,.ds-contact:focus-visible{background:transparent;color:#C8975D}"
+    },
+    {
+      "name": "Case Button (Urbis)",
+      "kind": "button",
+      "refersTo": "case-button-urbis",
+      "description": "The shared case-button primitive themed by Urbis tokens.",
+      "html": "<a class=\"ds-p-btn-urbis\" href=\"#\">Falar com a NOXXD</a>",
+      "css": ".ds-p-btn-urbis{display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;border-radius:12px;background:#0077B6;color:#fff;border:2px solid #0077B6;font-family:Manrope,Inter,system-ui,sans-serif;font-weight:700;font-size:1rem;text-decoration:none;transition:background-color .2s ease,transform .2s cubic-bezier(.16,1,.3,1)}.ds-p-btn-urbis:hover,.ds-p-btn-urbis:focus-visible{background:#005f92;border-color:#005f92;transform:translateY(-2px)}.ds-p-btn-urbis:focus-visible{outline:2px solid #00B4D8;outline-offset:3px}"
+    },
+    {
+      "name": "Case Button (HealthSearch)",
+      "kind": "button",
+      "refersTo": "case-button-hs",
+      "description": "The shared case-button primitive themed amber with near-black ink.",
+      "html": "<a class=\"ds-p-btn-hs\" href=\"#\">Falar com a NOXXD</a>",
+      "css": ".ds-p-btn-hs{display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;border-radius:6px;background:#F5A623;color:#020617;border:2px solid #F5A623;font-family:Archivo,system-ui,sans-serif;font-weight:700;font-size:1rem;text-decoration:none;transition:background-color .2s ease,transform .2s cubic-bezier(.16,1,.3,1)}.ds-p-btn-hs:hover,.ds-p-btn-hs:focus-visible{background:#e09510;border-color:#e09510;transform:translateY(-2px)}.ds-p-btn-hs:focus-visible{outline:2px solid #F5A623;outline-offset:3px}"
+    },
+    {
+      "name": "Case Button (CARITAS)",
+      "kind": "button",
+      "refersTo": "case-button-caritas",
+      "description": "The shared case-button primitive themed royal blue.",
+      "html": "<a class=\"ds-p-btn-caritas\" href=\"#\">Falar com a NOXXD</a>",
+      "css": ".ds-p-btn-caritas{display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;border-radius:8px;background:#2563EB;color:#fff;border:2px solid #2563EB;font-family:Sora,Inter,system-ui,sans-serif;font-weight:700;font-size:1rem;text-decoration:none;transition:background-color .2s ease,transform .2s cubic-bezier(.16,1,.3,1)}.ds-p-btn-caritas:hover,.ds-p-btn-caritas:focus-visible{background:#1D4ED8;border-color:#1D4ED8;transform:translateY(-2px)}.ds-p-btn-caritas:focus-visible{outline:2px solid #2563EB;outline-offset:3px}"
+    },
+    {
+      "name": "Urbis Status Badge",
+      "kind": "chip",
+      "refersTo": "urbis-status-badge",
+      "description": "Pill status from the Urbis occurrence lifecycle, dot in currentColor.",
+      "html": "<span class=\"ds-badge\" style=\"--b-bg:#CAF0F8;--b-fg:#005f92\">Em Andamento</span> <span class=\"ds-badge\" style=\"--b-bg:#D1FAE5;--b-fg:#1F6B00\">Resolvido</span>",
+      "css": ".ds-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--b-bg);color:var(--b-fg);font-family:Inter,system-ui,sans-serif;font-size:.88rem;font-weight:700;white-space:nowrap;transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s}.ds-badge::before{content:\"\";width:8px;height:8px;border-radius:50%;background:currentColor}.ds-badge:hover{transform:translateY(-4px);box-shadow:0 0 0 4px rgba(0,180,216,.55)}"
+    },
+    {
+      "name": "HealthSearch Matrix Cell",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "NR compliance cell tinted by traffic-light state; hover lights it as decoration only, state lives in a visually hidden summary.",
+      "html": "<ol class=\"ds-matrix\"><li class=\"ok\">NR-06</li><li class=\"due\">NR-10</li><li class=\"late\">NR-35</li></ol>",
+      "css": ".ds-matrix{display:grid;grid-template-columns:repeat(3,56px);gap:6px;list-style:none;padding:16px;margin:0;background:#13375e;border-radius:10px}.ds-matrix li{display:grid;place-items:center;aspect-ratio:1;border-radius:4px;background:color-mix(in srgb,var(--c) 22%,#0B2545);border:1px solid color-mix(in srgb,var(--c) 70%,transparent);color:#fff;font:600 .75rem Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s}.ds-matrix li:hover{transform:scale(1.12);background:var(--c);color:#020617}.ds-matrix .ok{--c:#16a34a}.ds-matrix .due{--c:#d97706;background:color-mix(in srgb,var(--c) 78%,#0B2545);color:#020617}.ds-matrix .late{--c:#dc2626;background:color-mix(in srgb,var(--c) 72%,#0B2545)}.ds-matrix .late:hover{color:#fff}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Square Frame, The Living Products",
+    "overview": "NOXXD is two layers, never blended. The outer layer is the agency itself: a retro-industrial, 8-bit refined world of deep teal ground, a gold blueprint grid, strictly right-angled shapes, Oswald capitals and the wide-tracked Josefin slogan \"BUILD IT YOUR WAY\". It owns the Home page outright and, on every case page, the sticky top bar and the gold footer band.\n\nThe inner layer belongs to each product. Between the NOXXD bar and footer, a case page speaks in its product's own palette, type and corner radius, set through one shared contract of `--p-*` custom properties (background, text, text-2, accent, accent-hover, on-accent, focus, chip, radius, radius-sm, head and body font). The shared primitives (buttons, sections, chips, screenshot slots, CTA band) read only those properties, so a fourth product is a new token block, not new components. Each world shows the product's real state vocabulary as its visual signature: Urbis's occurrence statuses, HealthSearch's NR compliance traffic light, CARITAS's document stack.\n\nDensity is moderate and editorial. Motion is short, transform-only, and settles once; every animation disappears under `prefers-reduced-motion`.",
+    "keyCharacteristics": [
+      "Two-layer system: NOXXD frame (square, teal, gold) around a per-product world (`--p-*` tokens).",
+      "Zero radius everywhere in the NOXXD layer; product radii only inside the frame.",
+      "Blueprint grid and 8-bit pixel ornaments (checker dividers, stepped corner tabs, floating gold squares) belong to NOXXD alone.",
+      "Each product world is pinned to its official palette and fonts, never reinterpreted.",
+      "Bilingual PT/EN everywhere; motion is decoration, never the carrier of state."
+    ],
+    "rules": [
+      {
+        "name": "The Deep Ink On Gold Rule",
+        "body": "Text and icons on gold use Abyss Teal (#0E363E, 5.1:1). Blueprint Teal on gold fails AA and is not allowed.",
+        "section": "colors"
+      },
+      {
+        "name": "The Frame Owns Gold Rule",
+        "body": "Gold, teal and the blueprint grid appear only in the NOXXD layer: the Home page, the case-page bar and the footer band. A product world never borrows them, and the frame never borrows a product colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The State Vocabulary Rule",
+        "body": "Inside a product world, the only hues besides the brand palette are the product's own state colours (Urbis statuses, the HealthSearch traffic light and ASO pre-states). No decorative extra hues.",
+        "section": "colors"
+      },
+      {
+        "name": "The Uppercase Belongs To NOXXD Rule",
+        "body": "Uppercase, tracked type is the frame's voice. Product worlds set headings in sentence case with negative tracking.",
+        "section": "typography"
+      },
+      {
+        "name": "The Slogan Stays English Rule",
+        "body": "\"BUILD IT YOUR WAY\" is never translated and never set in anything but tracked Josefin.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Frame Rule",
+        "body": "No shadow is ever cast in the NOXXD layer. The pixel-tab box-shadows on cards duplicate corner squares; they are ornament, not elevation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Radius Lives Inside Rule",
+        "body": "Radius is a product property, set through `--p-radius` and `--p-radius-sm`. It never reaches the NOXXD bar, footer or Home.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** put #0E363E ink on every gold surface.",
+      "**Do** theme a new case page only through a `--p-*` and `--shot-*` token block, with the NOXXD bar and footer unchanged.",
+      "**Do** keep the NOXXD layer at 0px radius with 2px gold borders and pixel ornaments.",
+      "**Do** use each product's official palette, fonts and logo from its spec in `Exemplos/`.",
+      "**Do** carry state in text, such as a visible label or a visually hidden bilingual summary. Hover and motion only decorate.",
+      "**Do** animate transform and opacity only, and remove all motion under `prefers-reduced-motion`.",
+      "**Do** provide every visible string in both `lang=\"pt-BR\"` and `lang=\"en\"`."
+    ],
+    "donts": [
+      "**Don't** set Blueprint Teal (#1B5E6B) text on gold; it fails AA.",
+      "**Don't** round anything in the NOXXD layer, and don't bring gold, the blueprint grid or pixel ornaments into a product world.",
+      "**Don't** add hues to a product world beyond its brand palette and its own state colours.",
+      "**Don't** cast shadows in the NOXXD layer.",
+      "**Don't** translate \"BUILD IT YOUR WAY\" or spell the name other than NOXXD."
+    ]
+  }
+}

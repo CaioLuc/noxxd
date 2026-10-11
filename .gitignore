@@ -2,7 +2,6 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
-tests/
 verify.py
 
 # Documentos internos, guias e referências locais
@@ -13,3 +12,7 @@ TEST_*.md
 # Pastas e logs de automação/agentes
 .agents/
 agents/
+
+# Impeccable: capturas locais e cache do hook
+.impeccable/review/
+.impeccable/hook.cache.json

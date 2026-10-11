@@ -187,6 +187,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ---------------------------------------------------------------------------
+  // 4b. Floating 8-bit Gold Particles (GPU translate3d, hidden by CSS on reduced motion)
+  // ---------------------------------------------------------------------------
+  if (!prefersReducedMotion) {
+    const field = document.createElement('div');
+    field.className = 'pixel-field';
+    field.setAttribute('aria-hidden', 'true');
+    const sizes = [4, 6, 8, 10];
+    for (let i = 0; i < 24; i++) {
+      const pixel = document.createElement('span');
+      const size = sizes[i % sizes.length];
+      if (size >= 8 && i % 3 === 0) pixel.className = 'is-hollow';
+      pixel.style.setProperty('--x', `${(Math.random() * 100).toFixed(2)}vw`);
+      pixel.style.setProperty('--s', `${size}px`);
+      pixel.style.setProperty('--o', (0.14 + Math.random() * 0.32).toFixed(2));
+      pixel.style.setProperty('--d', `${(22 + Math.random() * 26).toFixed(1)}s`);
+      // negative delay spreads the squares across the screen on first paint
+      pixel.style.setProperty('--delay', `${(-Math.random() * 48).toFixed(1)}s`);
+      pixel.style.setProperty('--drift', `${Math.round((Math.random() - 0.5) * 120)}px`);
+      field.appendChild(pixel);
+    }
+    document.body.prepend(field);
+  }
+
+  // ---------------------------------------------------------------------------
   // 5. Bilingual Localization (PT-BR / EN) & Persistence
   // ---------------------------------------------------------------------------
   const i18nData = {
@@ -212,36 +236,26 @@ document.addEventListener('DOMContentLoaded', () => {
       service_consulting_desc: "Auditoria técnica de arquitetura, modernização de sistemas legados, estratégias de migração em nuvem e planejamento tecnológico personalizado para prefeituras, órgãos públicos e empresas inovadoras.",
       service_consulting_btn: "Falar com Especialista",
       projects_title: "Portfólio de Projetos",
-      projects_lead: "Soluções tecnológicas em operação que modernizam a gestão pública e aceleram empresas de ponta a ponta.",
-      cidadao_tag: "GOVTECH · CASO DE SUCESSO",
-      cidadao_title: "Cidadão Relata — Zeladoria Urbana e Gestão Pública Municipal",
-      cidadao_lead: "Plataforma digital integrada composta por aplicativo mobile para munícipes e painel administrativo web em tempo real para prefeituras e secretarias de obras e zeladoria.",
-      cidadao_p1: "O <strong>Cidadão Relata</strong> é o projeto insignia da NOXXD desenvolvido para aproximar munícipes e prefeituras. Pelo smartphone, o cidadão abre relatos de ocorrências urbanas em poucos segundos — incluindo buracos na malha asfáltica, falhas na iluminação pública, vazamentos na rede e descarte irregular de entulho —, registrando coordenadas de geolocalização automática e fotos comprobatórias.",
-      cidadao_p2: "Na gestão municipal, o painel web administrativo (dashboard) centraliza toda a triagem em tempo real, despacha equipes operacionais de campo e oferece visualização analítica através de <strong>mapa de calor (heatmap)</strong> de incidentes por bairro. Isso permite que gestores do setor público priorizem investimentos públicos com base em dados concretos.",
-      cidadao_tag_1: "App Mobile",
-      cidadao_tag_2: "Painel Web Municipal",
-      cidadao_tag_3: "Mapa de Calor (Heatmap)",
-      cidadao_tag_4: "Relato de Ocorrências",
-      cidadao_tag_5: "Gestão Pública",
-      cidadao_tag_6: "Prefeitura Conectada",
-      cidadao_btn: "SOLICITAR DEMONSTRAÇÃO",
-      other_projects_title: "Outros Projetos Desenvolvidos",
-      other_projects_lead: "Conheça outras soluções em software de alta qualidade entregues pela NOXXD.",
-      p1_tag_1: "Setor Público",
-      p1_tag_2: "Open Data",
-      p1_title: "Portal da Transparência",
-      p1_desc: "Plataforma digital para prestação de contas governamentais em estrita conformidade com a Lei de Acesso à Informação (LAI). Apresenta gráficos interativos de receitas, despesas públicas, licitações e contratos com download de dados abertos.",
-      p1_badge: "100% Conformidade LAI",
-      p2_tag_1: "SaaS / GIS",
-      p2_tag_2: "Planejamento Urbano",
-      p2_title: "GeoUrban",
-      p2_desc: "Sistema corporativo de geoprocessamento e mapeamento geoespacial para prefeituras e concessionárias. Permite o cadastro multifinalitário de lotes, zoneamento fiscal e fiscalização predial georreferenciada em alta resolução.",
-      p2_badge: "Precisão Submétrica",
-      p3_tag_1: "Atendimento",
-      p3_tag_2: "Protocolo Digital",
-      p3_title: "AtendeCidadão",
-      p3_desc: "Central omnichannel de serviços públicos e protocolo digital unificado. Possibilita o agendamento prévio de atendimentos, emissão de certidões online e acompanhamento de processos administrativos em tempo real.",
-      p3_badge: "-65% Tempo de Espera",
+      projects_lead: "Produtos reais em operação, cada um com identidade própria. Abra o caso completo de cada projeto.",
+      project_btn: "VER PROJETO",
+      urbis_tag_1: "GovTech",
+      urbis_tag_2: "App + Painel Web",
+      urbis_summary: "Zeladoria urbana para prefeituras: o cidadão relata com foto, áudio e geolocalização exata, e a gestão municipal decide pelo mapa de calor.",
+      urbis_stack: "React Native · Expo 54 · Next.js 14 · Leaflet · Recharts",
+      urbis_metric_value: "Lei 14.129/2021",
+      urbis_metric_label: "Governo Digital + LGPD",
+      hs_tag_1: "SST / RH",
+      hs_tag_2: "SaaS",
+      hs_summary: "Central de Saúde e Segurança do Trabalho que sustenta o SIGAC: ciclo do ASO (NR-07), matriz de NR-01 a NR-35, folha e absenteísmo.",
+      hs_stack: "React 19 · Tailwind v4 · Firebase · Cloudflare R2",
+      hs_metric_value: "AES-GCM 256 bits",
+      hs_metric_label: "CID-10 cifrado no navegador",
+      caritas_tag_1: "HealthTech",
+      caritas_tag_2: "Psicologia",
+      caritas_summary: "Prontuário psicológico seguro com anamnese, resumo clínico por I.A., documentos CFP, agenda com link público e cobrança via PIX.",
+      caritas_stack: "React 19 · Vite 8 · Tailwind · GPT-4o-mini · jsPDF",
+      caritas_metric_value: "4,55 / 5",
+      caritas_metric_label: "em heurísticas de Nielsen",
       contact_title: "Fale Conosco",
       contact_lead: "Pronto para construir sua próxima plataforma ou modernizar a infraestrutura da sua organização? Entre em contato direto com a equipe da NOXXD.",
       contact_direct_title: "Canais Diretos",
@@ -249,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contact_wa_label: "WhatsApp Comercial",
       contact_hours: "Horário de atendimento: Segunda a sexta-feira, das 09h às 18h (Horário de Brasília). Respondemos solicitações técnicas e comerciais em até 24 horas úteis.",
       contact_start_title: "Inicie Seu Projeto",
-      contact_start_desc: "Seja para criar um novo site ou landing page de alto desempenho, construir um sistema SaaS escalável ou agendar uma apresentação aprofundada da plataforma Cidadão Relata, nossa equipe de engenharia e produto está pronta para atender seu projeto.",
+      contact_start_desc: "Seja para criar um novo site ou landing page de alto desempenho, construir um sistema SaaS escalável ou agendar uma apresentação aprofundada do Urbis, do HealthSearch ou do CARITAS, nossa equipe de engenharia e produto está pronta para atender seu projeto.",
       contact_btn_email: "ENVIAR E-MAIL AGORA",
       contact_btn_wa: "CONVERSAR NO WHATSAPP",
       footer_copy: "© 2026 NOXXD. Todos os direitos reservados."
@@ -276,36 +290,26 @@ document.addEventListener('DOMContentLoaded', () => {
       service_consulting_desc: "Technical architecture audits, legacy system modernization, cloud migration strategies, and tailored technology planning for municipalities, public entities, and innovative enterprises.",
       service_consulting_btn: "Talk to an Expert",
       projects_title: "Project Portfolio",
-      projects_lead: "Active tech solutions modernizing public administration and accelerating businesses end-to-end.",
-      cidadao_tag: "GOVTECH · SUCCESS STORY",
-      cidadao_title: "Cidadão Relata — Urban Maintenance & Municipal Management",
-      cidadao_lead: "Integrated digital platform featuring a citizen mobile app and a real-time web dashboard for city halls and public works departments.",
-      cidadao_p1: "<strong>Cidadão Relata</strong> is NOXXD's flagship GovTech platform connecting citizens and municipalities. Via mobile, citizens report urban issues in seconds — asphalt potholes, public lighting failures, water leaks, and illegal dumping —, capturing automatic GPS coordinates and photographic proof.",
-      cidadao_p2: "For city management, the web dashboard centralizes real-time triage, dispatches field operational teams, and delivers analytical insight through an incident <strong>heatmap</strong> across districts, enabling public managers to prioritize investments with hard data.",
-      cidadao_tag_1: "Mobile App",
-      cidadao_tag_2: "Municipal Web Dashboard",
-      cidadao_tag_3: "Incident Heatmap",
-      cidadao_tag_4: "Issue Reporting",
-      cidadao_tag_5: "Public Governance",
-      cidadao_tag_6: "Connected City",
-      cidadao_btn: "REQUEST A DEMO",
-      other_projects_title: "Other Featured Projects",
-      other_projects_lead: "Explore other high-caliber software engineering solutions delivered by NOXXD.",
-      p1_tag_1: "Public Sector",
-      p1_tag_2: "Open Data",
-      p1_title: "Transparency Portal",
-      p1_desc: "Digital platform for government accountability in strict compliance with Freedom of Information laws. Features interactive charts for revenue, public spending, tenders, contracts, and open data downloads.",
-      p1_badge: "100% LAI Compliance",
-      p2_tag_1: "SaaS / GIS",
-      p2_tag_2: "Urban Planning",
-      p2_title: "GeoUrban",
-      p2_desc: "Corporate GIS and geospatial mapping system for municipalities and utility companies. Enables multipurpose cadastre, fiscal zoning, and high-resolution georeferenced property auditing.",
-      p2_badge: "Sub-Meter Precision",
-      p3_tag_1: "Customer Care",
-      p3_tag_2: "Digital Protocol",
-      p3_title: "AtendeCidadão",
-      p3_desc: "Omnichannel public service hub and unified digital protocol. Enables appointment booking, online certificate issuance, and real-time administrative workflow tracking.",
-      p3_badge: "-65% Wait Time",
+      projects_lead: "Real products in operation, each with its own identity. Open the full case for each project.",
+      project_btn: "VIEW PROJECT",
+      urbis_tag_1: "GovTech",
+      urbis_tag_2: "App + Web Dashboard",
+      urbis_summary: "Urban maintenance for city halls: citizens report with photos, audio and exact geolocation, and city managers decide from a live heatmap.",
+      urbis_stack: "React Native · Expo 54 · Next.js 14 · Leaflet · Recharts",
+      urbis_metric_value: "Law 14.129/2021",
+      urbis_metric_label: "Digital Government + LGPD",
+      hs_tag_1: "OHS / HR",
+      hs_tag_2: "SaaS",
+      hs_summary: "Occupational health and safety hub behind SIGAC: medical-exam cycle (NR-07), NR-01 to NR-35 training matrix, payroll and absenteeism.",
+      hs_stack: "React 19 · Tailwind v4 · Firebase · Cloudflare R2",
+      hs_metric_value: "AES-GCM 256 bits",
+      hs_metric_label: "ICD-10 encrypted in the browser",
+      caritas_tag_1: "HealthTech",
+      caritas_tag_2: "Psychology",
+      caritas_summary: "Secure psychological records with structured intake, AI clinical summaries, CFP documents, a public booking link and PIX billing.",
+      caritas_stack: "React 19 · Vite 8 · Tailwind · GPT-4o-mini · jsPDF",
+      caritas_metric_value: "4.55 / 5",
+      caritas_metric_label: "on Nielsen heuristics",
       contact_title: "Contact Us",
       contact_lead: "Ready to build your next platform or modernize your organization's digital infrastructure? Get in touch directly with the NOXXD team.",
       contact_direct_title: "Direct Channels",
@@ -313,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contact_wa_label: "Commercial WhatsApp",
       contact_hours: "Business hours: Monday to Friday, 9:00 AM - 6:00 PM (BRT). We respond to technical and commercial inquiries within 24 business hours.",
       contact_start_title: "Start Your Project",
-      contact_start_desc: "Whether you need a high-performance website or landing page, a scalable SaaS system, or an in-depth demo of the Cidadão Relata platform, our engineering team is ready to deliver.",
+      contact_start_desc: "Whether you need a high-performance website or landing page, a scalable SaaS system, or an in-depth demo of Urbis, HealthSearch or CARITAS, our engineering team is ready to deliver.",
       contact_btn_email: "SEND EMAIL NOW",
       contact_btn_wa: "CHAT ON WHATSAPP",
       footer_copy: "© 2026 NOXXD. All rights reserved."
