@@ -318,6 +318,78 @@ html:not([lang="en"]) body [lang="en"] {
   pointer-events: none;
 }
 
+/* FAQ accordion on native <details> */
+.p-faq-grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+}
+
+.p-faq {
+  border-bottom: 1px solid var(--p-faq-line, rgba(0, 0, 0, 0.12));
+}
+
+.p-faq:first-child {
+  border-top: 1px solid var(--p-faq-line, rgba(0, 0, 0, 0.12));
+}
+
+.p-faq summary {
+  position: relative;
+  display: block;
+  padding: 20px 44px 20px 0;
+  font-family: var(--p-font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.p-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.p-faq summary::after {
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  background:
+    linear-gradient(var(--p-faq-icon, var(--p-accent)), var(--p-faq-icon, var(--p-accent))) center / 14px 2px no-repeat,
+    linear-gradient(var(--p-faq-icon, var(--p-accent)), var(--p-faq-icon, var(--p-accent))) center / 2px 14px no-repeat;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.p-faq[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.p-faq p {
+  padding: 0 44px 22px 0;
+  color: var(--p-text-2);
+  max-width: 68ch;
+}
+
+.p-faq[open] p {
+  animation: p-faq-in 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes p-faq-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -6px, 0);
+  }
+}
+
+@media (max-width: 860px) {
+  .p-faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Count-up facts band */
 .p-stats-band {
   padding-block: clamp(40px, 6vw, 72px);

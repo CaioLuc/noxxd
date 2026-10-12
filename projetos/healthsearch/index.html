@@ -221,15 +221,39 @@
       color: var(--p-text-2);
     }
 
-    .h-matrix__legend span::before {
+    .h-matrix__legend > button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 32px;
+      padding: 4px 10px;
+      border: 1px solid #163b66;
+      border-radius: 999px;
+      background: transparent;
+      color: #c3cfdf;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .h-matrix__legend > button::before {
       content: "";
-      display: inline-block;
       width: 9px;
       height: 9px;
-      margin-right: 6px;
       border-radius: 2px;
       background: var(--c);
     }
+
+    .h-matrix__legend > button[aria-pressed="true"] {
+      border-color: var(--h-accent);
+      color: #ffffff;
+    }
+
+    .p-faq { --p-faq-icon: var(--h-primary); }
+
+    .h-matrix ol li { transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease; }
+    .h-matrix ol[data-show="ok"] li:not(.ok),
+    .h-matrix ol[data-show="due"] li:not(.due),
+    .h-matrix ol[data-show="late"] li:not(.late) { opacity: 0.15; }
 
     /* Semáforo rail closing the hero */
     .h-rail {
@@ -703,10 +727,11 @@
               <li class="ok">22</li><li class="ok">23</li><li class="ok">24</li><li class="ok">25</li><li class="ok">26</li><li class="ok">27</li><li class="ok">28</li>
               <li class="ok">29</li><li class="ok">30</li><li class="ok">31</li><li class="ok">32</li><li class="due">33</li><li class="ok">34</li><li class="late">35</li>
             </ol>
-            <div class="h-matrix__legend">
-              <span style="--c:var(--h-em-dia)"><span lang="pt-BR">Em dia</span><span lang="en">Up to date</span></span>
-              <span style="--c:var(--h-a-vencer)"><span lang="pt-BR">A vencer</span><span lang="en">Due soon</span></span>
-              <span style="--c:var(--h-vencido)"><span lang="pt-BR">Vencido</span><span lang="en">Expired</span></span>
+            <div class="h-matrix__legend" role="group" aria-label="Filtrar / Filter" data-matrix-filter>
+              <button type="button" data-show="all" aria-pressed="true" style="--c:#c3cfdf"><span lang="pt-BR">Todas</span><span lang="en">All</span></button>
+              <button type="button" data-show="ok" aria-pressed="false" style="--c:var(--h-em-dia)"><span lang="pt-BR">Em dia</span><span lang="en">Up to date</span></button>
+              <button type="button" data-show="due" aria-pressed="false" style="--c:var(--h-a-vencer)"><span lang="pt-BR">A vencer</span><span lang="en">Due soon</span></button>
+              <button type="button" data-show="late" aria-pressed="false" style="--c:var(--h-vencido)"><span lang="pt-BR">Vencido</span><span lang="en">Expired</span></button>
               <em><span lang="pt-BR">Dados ilustrativos</span><span lang="en">Illustrative data</span></em>
             </div>
           </figure>
@@ -869,6 +894,31 @@
           <div><b>Cloudflare R2</b><small><span lang="pt-BR">sem taxa de egress</span><span lang="en">no egress fees</span></small><p><span lang="pt-BR">Arquivos e documentos armazenados sem pagar pelo download.</span><span lang="en">Files and documents stored without paying for downloads.</span></p></div>
         </div>
         <p class="h-stack__foot"><span lang="pt-BR">Interface com zero emojis, ícones Heroicons e alto contraste estrito (anti-washout) em conformidade com WCAG AA.</span><span lang="en">An interface with zero emojis, Heroicons iconography and strict anti-washout high contrast to WCAG AA.</span></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="p-section" aria-labelledby="h-faq-title">
+      <div class="wrap p-faq-grid">
+        <h2 id="h-faq-title"><span lang="pt-BR">Perguntas frequentes</span><span lang="en">Frequently asked questions</span></h2>
+        <div>
+          <details class="p-faq">
+            <summary><span lang="pt-BR">Preciso manter um servidor?</span><span lang="en">Do I need to run a server?</span></summary>
+            <p><span lang="pt-BR">Não. A aplicação roda em infraestrutura serverless (Firebase) e guarda arquivos no Cloudflare R2, sem taxa de saída de dados.</span><span lang="en">No. The app runs on serverless infrastructure (Firebase) and stores files on Cloudflare R2, with no egress fees.</span></p>
+          </details>
+          <details class="p-faq">
+            <summary><span lang="pt-BR">Como a equipe sabe que um ASO vai vencer?</span><span lang="en">How does the team know an exam is about to expire?</span></summary>
+            <p><span lang="pt-BR">Pelo semáforo: 30 dias antes do vencimento o exame passa para "A Vencer" e aparece nos painéis e alertas.</span><span lang="en">Through the traffic light: 30 days before the deadline the exam turns "Due Soon" and shows up on dashboards and alerts.</span></p>
+          </details>
+          <details class="p-faq">
+            <summary><span lang="pt-BR">Quem pode ver e editar os dados?</span><span lang="en">Who can see and edit the data?</span></summary>
+            <p><span lang="pt-BR">As rotas são protegidas por perfil de acesso (assessor, SST, supervisor) e os formulários validam cada campo antes de salvar.</span><span lang="en">Routes are protected by access profile (assistant, OHS, supervisor) and forms validate every field before saving.</span></p>
+          </details>
+          <details class="p-faq">
+            <summary><span lang="pt-BR">Os documentos saem prontos para arquivar?</span><span lang="en">Do documents come out ready to file?</span></summary>
+            <p><span lang="pt-BR">Sim. As folhas A4 normativas são geradas no próprio navegador em PDF.</span><span lang="en">Yes. Regulatory A4 sheets are generated as PDF right in the browser.</span></p>
+          </details>
+        </div>
       </div>
     </section>
 

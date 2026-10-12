@@ -609,6 +609,48 @@
 
     @keyframes c-caret { 50% { opacity: 0; } }
 
+    @media (prefers-color-scheme: dark) { .p-faq { --p-faq-line: rgba(255, 255, 255, 0.12); } }
+
+    /* PIX copy-and-paste (Uiverse copy-button pattern) */
+    .c-copy {
+      display: flex;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .c-copy code {
+      flex: 1;
+      min-width: 0;
+      padding: 10px 12px;
+      border-radius: var(--p-radius-sm);
+      border: 1px solid var(--c-border);
+      background: var(--c-bg);
+      font-size: 0.8rem;
+      color: var(--c-text-2);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .c-copy button {
+      flex: none;
+      min-width: 96px;
+      padding: 8px 14px;
+      border: 1px solid var(--c-accent);
+      border-radius: var(--p-radius-sm);
+      background: var(--c-accent-light);
+      color: var(--p-chip-text);
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .c-copy__note {
+      margin-top: 6px;
+      font-size: 0.78rem;
+      color: var(--c-muted);
+    }
+
     /* Agenda + PIX */
     .c-office {
       background: var(--c-card);
@@ -908,6 +950,11 @@
                 <li><span lang="pt-BR">Cobrança amigável via WhatsApp</span><span lang="en">Friendly reminders over WhatsApp</span></li>
                 <li><span lang="pt-BR">Balanços financeiros exportáveis em PDF</span><span lang="en">Financial statements exportable to PDF</span></li>
               </ul>
+              <div class="c-copy" data-copy>
+                <code>00020126360014br.gov.bcb.pix0114demo@caritas.test5204000053039865406180.005802BR5911HELENA PRADO6011VILA SERENA62070503***6304DEMO</code>
+                <button type="button" aria-live="polite"><span data-copy-idle><span lang="pt-BR">Copiar</span><span lang="en">Copy</span></span><span data-copy-done hidden><span lang="pt-BR">Copiado!</span><span lang="en">Copied!</span></span></button>
+              </div>
+              <p class="c-copy__note"><span lang="pt-BR">Copia e Cola de demonstração, não é uma chave real.</span><span lang="en">Demo copy-and-paste code, not a real key.</span></p>
             </article>
             <form class="c-booking" data-booking>
               <p class="c-booking__url">/agendar/helena-prado · <span lang="pt-BR">demonstração</span><span lang="en">demo</span></p>
@@ -934,6 +981,31 @@
           <div><h3><span lang="pt-BR">Líder clínico</span><span lang="en">Clinic lead</span></h3><p><span lang="pt-BR">Gestão de até 8 psicólogos com métricas agregadas, sem quebrar o sigilo das anotações.</span><span lang="en">Manage up to 8 psychologists with aggregate metrics, without breaking note confidentiality.</span></p></div>
         </div>
         <p class="c-trust__note"><span lang="pt-BR">Avaliado por heurísticas de Nielsen com nota <strong>4,55 / 5,00</strong> em auditoria técnica de usabilidade.</span><span lang="en">Scored <strong>4.55 / 5.00</strong> in a technical usability audit using Nielsen's heuristics.</span></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="p-section" aria-labelledby="c-faq-title">
+      <div class="wrap p-faq-grid">
+        <h2 id="c-faq-title"><span lang="pt-BR">Perguntas frequentes</span><span lang="en">Frequently asked questions</span></h2>
+        <div>
+          <details class="p-faq">
+            <summary><span lang="pt-BR">O que acontece se um paciente pedir exclusão?</span><span lang="en">What happens if a patient asks to be deleted?</span></summary>
+            <p><span lang="pt-BR">O cadastro é anonimizado: CPF e telefone saem, mas o prontuário fica guardado pelos 5 anos exigidos pelo CFP.</span><span lang="en">The account is anonymized: ID and phone are removed, but the record is kept for the 5 years the CFP requires.</span></p>
+          </details>
+          <details class="p-faq">
+            <summary><span lang="pt-BR">A I.A. substitui a minha avaliação?</span><span lang="en">Does the AI replace my assessment?</span></summary>
+            <p><span lang="pt-BR">Não. O GPT-4o-mini organiza suas anotações num resumo técnico para você revisar; a decisão clínica é sempre sua.</span><span lang="en">No. GPT-4o-mini turns your notes into a technical summary for you to review; the clinical decision is always yours.</span></p>
+          </details>
+          <details class="p-faq">
+            <summary><span lang="pt-BR">Como o paciente agenda uma sessão?</span><span lang="en">How does a patient book a session?</span></summary>
+            <p><span lang="pt-BR">Pelo seu link público em /agendar/seu-nome: ele escolhe um horário livre e você confirma pelo WhatsApp.</span><span lang="en">Through your public link at /agendar/your-name: they pick an open slot and you confirm over WhatsApp.</span></p>
+          </details>
+          <details class="p-faq">
+            <summary><span lang="pt-BR">Funciona para clínicas com vários psicólogos?</span><span lang="en">Does it work for clinics with several psychologists?</span></summary>
+            <p><span lang="pt-BR">Sim. O perfil Líder Clínico acompanha até 8 psicólogos com métricas agregadas, sem acesso às anotações confidenciais.</span><span lang="en">Yes. The Clinic Lead profile follows up to 8 psychologists with aggregate metrics, with no access to confidential notes.</span></p>
+          </details>
+        </div>
       </div>
     </section>
 
