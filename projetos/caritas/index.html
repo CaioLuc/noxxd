@@ -573,6 +573,42 @@
 
     @media (prefers-color-scheme: dark) { .c-booking__done { color: #86EFAC; } }
 
+    /* Typing AI summary (React Bits TextType pattern) */
+    .c-typed {
+      margin-top: 28px;
+      padding: 20px 22px;
+      border-radius: var(--p-radius);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .c-typed__label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #93C5FD;
+    }
+
+    .c-typed__label svg { width: 16px; height: 16px; }
+
+    .c-typed p:last-child { color: var(--p-text); min-height: 7.5em; margin: 0; }
+
+    .c-typed.is-typing p:last-child::after {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 1.1em;
+      margin-left: 2px;
+      vertical-align: -0.2em;
+      background: #60A5FA;
+      animation: c-caret 0.9s steps(1) infinite;
+    }
+
+    @keyframes c-caret { 50% { opacity: 0; } }
+
     /* Agenda + PIX */
     .c-office {
       background: var(--c-card);
@@ -751,6 +787,11 @@
       </div>
     </section>
 
+    <!-- Facts that count up when scrolled into view -->
+    <section class="p-stats-band" aria-label="Números / Facts">
+      <dl class="wrap p-stats"><div><dt><span data-count="4.55" data-decimals=2>4,55</span> / 5</dt><dd><span lang="pt-BR">em auditoria de usabilidade por heurísticas de Nielsen</span><span lang="en">in a Nielsen-heuristics usability audit</span></dd></div><div><dt><span data-count="5">5</span><span lang="pt-BR"> anos</span><span lang="en"> yrs</span></dt><dd><span lang="pt-BR">de guarda obrigatória do prontuário (CFP)</span><span lang="en">years of mandatory record retention (CFP)</span></dd></div><div><dt><span data-count="7">7</span><span lang="pt-BR"> dias</span><span lang="en"> days</span></dt><dd><span lang="pt-BR">de quarentena na lixeira antes de remover</span><span lang="en">days of trash quarantine before removal</span></dd></div><div><dt><span data-count="8">8</span></dt><dd><span lang="pt-BR">psicólogos por clínica sob um líder clínico</span><span lang="en">psychologists per clinic under one clinic lead</span></dd></div></dl>
+    </section>
+
     <!-- Record -->
     <section id="prontuario" class="p-section c-record" aria-labelledby="c-rec-title">
       <div class="wrap c-record__grid">
@@ -797,6 +838,10 @@
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span lang="pt-BR">Evolução da escala de humor do paciente ao longo do tempo</span><span lang="en">Patient mood scale tracked over time</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span lang="pt-BR">Hipóteses clínicas e técnicas interventivas registradas por sessão</span><span lang="en">Clinical hypotheses and interventions recorded per session</span></li>
           </ul>
+          <div class="c-typed" data-type>
+            <p class="c-typed__label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg><span lang="pt-BR">Resumo gerado · demonstração</span><span lang="en">Generated summary · demo</span></p>
+            <p><span lang="pt-BR">Paciente relata melhora na qualidade do sono após a aplicação da técnica de higiene do sono. Apresenta discurso organizado e afeto congruente. Mantida a tarefa de registro diário de pensamentos automáticos.</span><span lang="en">The patient reports better sleep quality after applying the sleep hygiene technique. Speech is organized and affect is congruent. The daily automatic-thoughts journal assignment is maintained.</span></p>
+          </div>
         </div>
         <figure class="shot shot--browser">
           <div class="shot__device">

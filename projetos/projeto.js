@@ -103,6 +103,100 @@
       });
     });
 
+    // Reading progress bar
+    const bar = document.createElement('div');
+    bar.className = 'p-progress';
+    bar.setAttribute('aria-hidden', 'true');
+    document.body.prepend(bar);
+    let ticking = false;
+    const paint = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.setProperty('--progress', max > 0 ? (window.scrollY / max).toFixed(4) : 0);
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(paint);
+      }
+    }, { passive: true });
+    paint();
+
+    // Magnetic primary buttons, fine pointers only
+    if (!calm && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      document.querySelectorAll('.p-btn').forEach((btn) => {
+        btn.addEventListener('pointermove', (event) => {
+          const r = btn.getBoundingClientRect();
+          btn.style.setProperty('--bx', `${((event.clientX - r.left - r.width / 2) * 0.18).toFixed(1)}px`);
+          btn.style.setProperty('--by', `${((event.clientY - r.top - r.height / 2) * 0.25).toFixed(1)}px`);
+        });
+        btn.addEventListener('pointerleave', () => {
+          btn.style.removeProperty('--bx');
+          btn.style.removeProperty('--by');
+        });
+      });
+    }
+
+    // Count-up facts ([data-count]); the final value is already in the HTML
+    const counters = document.querySelectorAll('[data-count]');
+    if (!calm && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          io.unobserve(entry.target);
+          const el = entry.target;
+          const end = parseFloat(el.dataset.count);
+          const decimals = +(el.dataset.decimals || 0);
+          const locale = root.lang === 'en' ? 'en' : 'pt-BR';
+          const fmt = (v) => v.toLocaleString(locale, { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+          const t0 = performance.now();
+          const step = (now) => {
+            const k = Math.min(1, (now - t0) / 1200);
+            el.textContent = fmt(end * (1 - Math.pow(1 - k, 3)));
+            if (k < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        });
+      }, { threshold: 0.6 });
+      counters.forEach((el) => io.observe(el));
+    }
+
+    // Animated alert feed ([data-feed]): newest item slides in on top
+    document.querySelectorAll('[data-feed]').forEach((list) => {
+      if (calm) return;
+      setInterval(() => {
+        const last = list.lastElementChild;
+        last.classList.remove('is-new');
+        list.prepend(last);
+        void last.offsetWidth; // restart the entrance animation
+        last.classList.add('is-new');
+      }, 2400);
+    });
+
+    // Typing AI summary ([data-type]): each language span types its own text once visible
+    document.querySelectorAll('[data-type]').forEach((box) => {
+      if (calm || !('IntersectionObserver' in window)) return;
+      const spans = [...box.querySelectorAll('p:last-child [lang]')];
+      const full = spans.map((s) => s.textContent);
+      spans.forEach((s) => { s.textContent = ''; });
+      box.classList.add('is-typing');
+      const io = new IntersectionObserver((entries) => {
+        if (!entries[0].isIntersecting) return;
+        io.disconnect();
+        let n = 0;
+        const longest = Math.max(...full.map((t) => t.length));
+        const timer = setInterval(() => {
+          n += 2;
+          spans.forEach((s, i) => { s.textContent = full[i].slice(0, n); });
+          if (n >= longest) {
+            clearInterval(timer);
+            box.classList.remove('is-typing');
+          }
+        }, 22);
+      }, { threshold: 0.5 });
+      io.observe(box);
+    });
+
     // Booking slots demo ([data-booking]): pick a slot, send the request
     document.querySelectorAll('[data-booking]').forEach((form) => {
       const done = form.querySelector('[data-booking-done]');

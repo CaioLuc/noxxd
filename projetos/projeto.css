@@ -293,11 +293,57 @@ html:not([lang="en"]) body [lang="en"] {
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.p-btn {
+  transform: translate3d(var(--bx, 0px), var(--by, 0px), 0);
+}
+
 .p-btn:hover,
 .p-btn:focus-visible {
   background: var(--p-accent-hover);
   border-color: var(--p-accent-hover);
-  transform: translateY(-2px);
+  transform: translate3d(var(--bx, 0px), calc(var(--by, 0px) - 2px), 0);
+}
+
+/* Reading progress under the NOXXD bar, in the frame accent */
+.p-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  height: 3px;
+  background: var(--nx-accent);
+  transform: scaleX(var(--progress, 0));
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+
+/* Count-up facts band */
+.p-stats-band {
+  padding-block: clamp(40px, 6vw, 72px);
+  border-bottom: 1px solid var(--p-stats-line, rgba(0, 0, 0, 0.08));
+}
+
+.p-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 28px clamp(24px, 4vw, 56px);
+}
+
+.p-stats dt {
+  font-family: var(--p-font-head);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  color: var(--p-stat, var(--p-accent));
+}
+
+.p-stats dd {
+  margin-top: 8px;
+  color: var(--p-text-2);
+  max-width: 28ch;
 }
 
 .p-btn svg {
