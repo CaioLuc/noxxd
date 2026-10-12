@@ -45,7 +45,7 @@ PROJECTS = {
         "colors": ["#0A1628", "#2563EB", "#F8F9FA", "#0D1117", "#EFF6FF"],
         "fonts": ["Sora", "Inter"],
         "terms": [r"[Pp]rontu[áa]rio", r"[Aa]namnese", r"question[áa]rio", r"GPT-4o-mini", r"06/2019",
-                  r"/agendar/:slug", r"PIX", r"QR Code", r"Copia e Cola", r"5 anos", r"anonimiza", r"LGPD"],
+                  r"/agendar/:slug", r"7 etapas", r"[Rr]ascunho", r"PDF", r"5 anos", r"anonimiza", r"LGPD"],
     },
 }
 

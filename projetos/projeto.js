@@ -207,35 +207,5 @@
         grid.dataset.show = btn.dataset.show;
       });
     });
-
-    // Copy-to-clipboard ([data-copy])
-    document.querySelectorAll('[data-copy]').forEach((box) => {
-      const btn = box.querySelector('button');
-      btn.addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText(box.querySelector('code').textContent);
-        } catch {
-          return; // clipboard blocked: leave the label as is
-        }
-        btn.querySelector('[data-copy-idle]').hidden = true;
-        btn.querySelector('[data-copy-done]').hidden = false;
-        setTimeout(() => {
-          btn.querySelector('[data-copy-idle]').hidden = false;
-          btn.querySelector('[data-copy-done]').hidden = true;
-        }, 1800);
-      });
-    });
-
-    // Booking slots demo ([data-booking]): pick a slot, send the request
-    document.querySelectorAll('[data-booking]').forEach((form) => {
-      const done = form.querySelector('[data-booking-done]');
-      form.addEventListener('change', () => {
-        form.querySelector('button').disabled = !form.querySelector('input:checked');
-      });
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        done.hidden = false;
-      });
-    });
   });
 })();
