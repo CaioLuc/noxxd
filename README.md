@@ -25,7 +25,7 @@ Os prints dos sistemas vêm de execuções locais com **dados fictícios** e lev
 
 ## Identidade visual
 
-- **Logo:** emblema xadrez com o "N" vazado, em duas versões: `public/assets/logo-black.svg` (fundos claros) e `public/assets/logo-white.svg` (fundos escuros). O favicon usa a versão preta.
+- **Logo:** emblema xadrez com o "N" vazado, em duas versões: `public/assets/logo-black.svg` (fundos claros) e `public/assets/logo-white.svg` (fundos escuros). O favicon usa a preta no tema claro e a branca no tema escuro do sistema.
 - **Cores:** neutros de pedra quentes (`#FAFAF9`, `#1C1917`, `#78716C`) e linhas finas. Cada projeto recebe um único tom discreto: Urbis `#2F6B7C`, HealthSearch `#8A6A2E`, CARITAS `#52599A`.
 - **Tipografia:** Libre Baskerville (títulos), Inter (texto) e Source Code Pro (stack e código). Nos projetos, os títulos usam a fonte do produto: Manrope, Archivo e Sora.
 - **Forma:** cantos retos, sem sombras, separação por linhas e espaço.
