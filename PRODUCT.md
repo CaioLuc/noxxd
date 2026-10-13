@@ -32,8 +32,8 @@ A NOXXD mostra produtos reais em operação, cada um com identidade visual próp
 ## Brand Commitments
 
 - Nome sempre **NOXXD** (nunca "NOXXED"). Slogan bilíngue: "CONSTRUA DO SEU JEITO" (PT, padrão) / "BUILD IT YOUR WAY" (EN), decidido pelo usuário em 2026-10-11.
-- Identidade NOXXD: azul-petróleo `#1B5E6B` / `#154B56`, dourado `#C8975D`, cantos retos, grade e pixel/xadrez 8-bit, Oswald + Josefin Sans.
-- Cada página de projeto usa a paleta, tipografia e logo oficiais do projeto (specs em `Exemplos/<Projeto>/`), com a moldura NOXXD (barra superior e rodapé).
+- Identidade NOXXD: sistema visual ThoughtStream (ver `DESIGN.md`): neutros quentes cor de pedra, Libre Baskerville + Inter, cantos retos, sem sombras. Decidido pelo usuário em 2026-10-13, substitui a identidade anterior (teal, dourado, 8-bit).
+- Cada página de projeto usa a paleta, tipografia e logo oficiais do projeto (specs em `Exemplos/<Projeto>/`), com a moldura NOXXD (barra superior e rodapé) no sistema ThoughtStream.
 
 ## Evidence on Hand
 

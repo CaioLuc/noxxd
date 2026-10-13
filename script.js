@@ -1,7 +1,6 @@
 /**
  * NOXXD — Interactivity, Animations & Responsiveness
  * Vanilla ES6 JavaScript Implementation
- * Strict Geometric Identity (Zero Border-Radius)
  * Domain: noxxd.com.br
  */
 
@@ -144,117 +143,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ---------------------------------------------------------------------------
-  // 4. Tactile Geometric Button Ripple (Strict Zero Border-Radius)
-  // ---------------------------------------------------------------------------
-  const interactiveButtons = document.querySelectorAll('.btn, .btn-primary, .btn-outline');
-
-  interactiveButtons.forEach((button) => {
-    button.addEventListener('click', function (event) {
-      const rect = button.getBoundingClientRect();
-      const size = Math.max(rect.width, rect.height);
-
-      const clientX = (typeof event.clientX === 'number' && event.clientX > 0)
-        ? event.clientX
-        : (rect.left + rect.width / 2);
-      const clientY = (typeof event.clientY === 'number' && event.clientY > 0)
-        ? event.clientY
-        : (rect.top + rect.height / 2);
-
-      const x = clientX - rect.left - size / 2;
-      const y = clientY - rect.top - size / 2;
-
-      // Create rectangular / square ripple element (right-angle geometric)
-      const ripple = document.createElement('span');
-      ripple.className = 'btn-ripple';
-      ripple.style.width = `${size}px`;
-      ripple.style.height = `${size}px`;
-      ripple.style.left = `${x}px`;
-      ripple.style.top = `${y}px`;
-
-      button.appendChild(ripple);
-
-      ripple.addEventListener('animationend', () => {
-        ripple.remove();
-      });
-
-      // Defensive fallback cleanup in case animationend does not fire
-      setTimeout(() => {
-        if (ripple.parentNode) {
-          ripple.remove();
-        }
-      }, 600);
-    });
-  });
-
-  // ---------------------------------------------------------------------------
-  // 4b. Floating 8-bit Gold Particles (GPU translate3d, hidden by CSS on reduced motion)
-  // ---------------------------------------------------------------------------
-  if (!prefersReducedMotion) {
-    const field = document.createElement('div');
-    field.className = 'pixel-field';
-    field.setAttribute('aria-hidden', 'true');
-    const sizes = [4, 6, 8, 10];
-    for (let i = 0; i < 24; i++) {
-      const pixel = document.createElement('span');
-      const size = sizes[i % sizes.length];
-      if (size >= 8 && i % 3 === 0) pixel.className = 'is-hollow';
-      pixel.style.setProperty('--x', `${(Math.random() * 100).toFixed(2)}vw`);
-      pixel.style.setProperty('--s', `${size}px`);
-      pixel.style.setProperty('--o', (0.1 + Math.random() * 0.22).toFixed(2));
-      pixel.style.setProperty('--d', `${(22 + Math.random() * 26).toFixed(1)}s`);
-      // negative delay spreads the squares across the screen on first paint
-      pixel.style.setProperty('--delay', `${(-Math.random() * 48).toFixed(1)}s`);
-      pixel.style.setProperty('--drift', `${Math.round((Math.random() - 0.5) * 120)}px`);
-      field.appendChild(pixel);
-    }
-    document.body.prepend(field);
-  }
-
-  // ---------------------------------------------------------------------------
-  // 4c. Decrypt-style reveal for [data-scramble]: letters settle left to right
-  // ---------------------------------------------------------------------------
-  const GLYPHS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&';
-  const scrambleTo = (el, text) => {
-    clearInterval(el.scrambleTimer);
-    if (prefersReducedMotion) {
-      el.textContent = text;
-      return;
-    }
-    const steps = 18;
-    let frame = 0;
-    el.scrambleTimer = setInterval(() => {
-      frame += 1;
-      const settled = Math.floor((frame / steps) * text.length);
-      el.textContent = [...text]
-        .map((ch, i) => (i < settled || ch === ' ' ? ch : GLYPHS[Math.floor(Math.random() * GLYPHS.length)]))
-        .join('');
-      if (frame >= steps) {
-        clearInterval(el.scrambleTimer);
-        el.textContent = text;
-      }
-    }, 40);
-  };
-  document.querySelectorAll('[data-scramble]:not([data-i18n])').forEach((el) => scrambleTo(el, el.textContent));
-
-  // ---------------------------------------------------------------------------
-  // 4d. Spotlight on pixel cards, fine pointers only (CSS reads --mx / --my)
-  // ---------------------------------------------------------------------------
-  if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    document.querySelectorAll('.pixel-card').forEach((card) => {
-      card.addEventListener('pointermove', (event) => {
-        const rect = card.getBoundingClientRect();
-        card.style.setProperty('--mx', `${event.clientX - rect.left}px`);
-        card.style.setProperty('--my', `${event.clientY - rect.top}px`);
-      });
-    });
-  }
-
-  // ---------------------------------------------------------------------------
   // 5. Bilingual Localization (PT-BR / EN) & Persistence
   // ---------------------------------------------------------------------------
   const i18nData = {
     pt: {
       doc_title: "NOXXD — Tecnologia Feita do Seu Jeito | CONSTRUA DO SEU JEITO",
+      skip_link: "Pular para o conteúdo",
       nav_home: "Início",
       nav_services: "Serviços",
       nav_projects: "Projetos",
@@ -305,10 +199,12 @@ document.addEventListener('DOMContentLoaded', () => {
       contact_start_desc: "Seja para criar um novo site ou landing page de alto desempenho, construir um sistema SaaS escalável ou agendar uma apresentação aprofundada do Urbis, do HealthSearch ou do CARITAS, nossa equipe de engenharia e produto está pronta para atender seu projeto.",
       contact_btn_email: "ENVIAR E-MAIL AGORA",
       contact_btn_wa: "CONVERSAR NO WHATSAPP",
+      footer_email: "E-mail",
       footer_copy: "© 2026 NOXXD. Todos os direitos reservados."
     },
     en: {
       doc_title: "NOXXD — Technology Built Your Way | BUILD IT YOUR WAY",
+      skip_link: "Skip to content",
       nav_home: "Home",
       nav_services: "Services",
       nav_projects: "Projects",
@@ -359,6 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contact_start_desc: "Whether you need a high-performance website or landing page, a scalable SaaS system, or an in-depth demo of Urbis, HealthSearch or CARITAS, our engineering team is ready to deliver.",
       contact_btn_email: "SEND EMAIL NOW",
       contact_btn_wa: "CHAT ON WHATSAPP",
+      footer_email: "Email",
       footer_copy: "© 2026 NOXXD. All rights reserved."
     }
   };
@@ -382,8 +279,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (dict[key] !== undefined) {
         if (dict[key].includes('<')) {
           element.innerHTML = dict[key];
-        } else if (element.hasAttribute('data-scramble')) {
-          scrambleTo(element, dict[key]);
         } else {
           element.textContent = dict[key];
         }

@@ -41,7 +41,7 @@ O site segue uma identidade visual geométrica e marcante:
 
 - **HTML5 Semântico:** Estrutura acessível com metadados SEO e OpenGraph completos.
 - **CSS3 Puro:** Variáveis de design system, micro-interações táteis e aceleração por GPU.
-- **Vanilla JavaScript (ES6):** Animações suaves na rolagem (*Scroll Reveal*), partículas 8-bit douradas (GPU, respeitam `prefers-reduced-motion`), menu mobile acessível, navegação ativa e alternância PT | EN (persistida entre Home e páginas de projeto).
+- **Vanilla JavaScript (ES6):** Animações suaves na rolagem (*Scroll Reveal*), revelação suave por opacidade (respeita `prefers-reduced-motion`), menu mobile acessível, navegação ativa e alternância PT | EN (persistida entre Home e páginas de projeto).
 - **Hospedagem:** GitHub Pages com domínio customizado via arquivo `CNAME`.
 
 ---

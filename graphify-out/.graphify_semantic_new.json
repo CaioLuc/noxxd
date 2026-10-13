@@ -1,0 +1,1507 @@
+{
+  "nodes": [
+    {
+      "id": "readme_noxxd",
+      "label": "NOXXD — Website & Portfólio Institucional",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_md",
+      "label": "Design System: NOXXD",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "product_md",
+      "label": "Product — NOXXD Portfolio & Brand",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\PRODUCT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "impeccable_projetos_urbis",
+      "label": "Projetos Urbis Index HTML Surface",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\.impeccable\\surfaces\\projetos-urbis-index-html.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "exemplos_caritas_specs",
+      "label": "CARITAS — Especificações Técnicas Frontend",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "exemplos_healthsearch_specs",
+      "label": "HealthSearch — Especificações Técnicas SIGAC",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\especificacoes_frontend_sigac.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "exemplos_urbis_specs",
+      "label": "Urbis — Especificações Técnicas Frontend",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "exemplos_prompt_draft",
+      "label": "Teamwork Project Prompt — Draft",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\prompt_draft.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "index_html",
+      "label": "NOXXD Home Page",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "projetos_urbis_html",
+      "label": "Urbis Project Page",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\urbis\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "projetos_healthsearch_html",
+      "label": "HealthSearch Project Page",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\healthsearch\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "projetos_caritas_html",
+      "label": "CARITAS Project Page",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\caritas\\index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "exemplos_caritas_logo",
+      "label": "CARITAS Logo — Sphere with Wave",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\LOGO CARITAS.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "exemplos_urbis_logo",
+      "label": "Urbis Logo — Modular Building Components",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\logo urbis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "exemplos_healthsearch_logo",
+      "label": "HealthSearch Logo — Shield with HAT",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\LOGO HEALTHSEARCH.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_favicon",
+      "label": "NOXXD Favicon — 8-bit Checkerboard",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_icon_consulting",
+      "label": "Icon — Consulting",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-consulting.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_icon_email",
+      "label": "Icon — Email",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-email.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_icon_github",
+      "label": "Icon — GitHub",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-github.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_icon_instagram",
+      "label": "Icon — Instagram",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-instagram.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_design_system_two_layer",
+      "label": "Two-Layer Design System: NOXXD Frame + Product World",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_noxxd_palette",
+      "label": "NOXXD Brand Palette: Teal + Gold",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_project_urbis",
+      "label": "Urbis: Urban Maintenance & Geospatial Intelligence",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_project_healthsearch",
+      "label": "HealthSearch: Occupational Health & Safety Hub",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_project_caritas",
+      "label": "CARITAS: Clinical Platform for Psychologists",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_urbis_palette",
+      "label": "Urbis Palette: Navy + Ocean + Sky + Aqua",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_healthsearch_palette",
+      "label": "HealthSearch Palette: Petróleo + Âmbar + SST Traffic Light",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\especificacoes_frontend_sigac.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_caritas_palette",
+      "label": "CARITAS Palette: Midnight + Royal Blue + Paper",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_typography_noxxd",
+      "label": "NOXXD Typography: Oswald + Josefin Sans",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_typography_urbis",
+      "label": "Urbis Typography: Manrope 800 + Inter",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_typography_healthsearch",
+      "label": "HealthSearch Typography: Archivo Tabular",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\especificacoes_frontend_sigac.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_typography_caritas",
+      "label": "CARITAS Typography: Sora + Inter",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_frame_rule",
+      "label": "Frame Wears Product Rule: Gold/Teal stay in NOXXD, Product gets own palette",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_state_vocabulary_rule",
+      "label": "State Vocabulary Rule: Product State Colors Only (Urbis Statuses, HealthSearch NR Traffic Light)",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_8bit_ornaments",
+      "label": "8-Bit Ornaments: Pixel Tabs, Checkerboard, Floating Squares",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_bilingual_support",
+      "label": "Bilingual Support: Portuguese (PT) / English (EN) via localStorage",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_react_19",
+      "label": "React 19",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_react_native",
+      "label": "React Native + Expo",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_nextjs",
+      "label": "Next.js 14",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_tailwind",
+      "label": "Tailwind CSS",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_vite",
+      "label": "Vite",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_firebase",
+      "label": "Firebase",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_leaflet",
+      "label": "React Leaflet + Heatmap",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_recharts",
+      "label": "Recharts",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_jspdf",
+      "label": "jsPDF",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_icons_icon_saas_icon",
+      "label": "Server Architecture Icon",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-saas.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_icons_icon_web_icon",
+      "label": "Web Browser Interface Icon",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-web.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_icons_icon_whatsapp_icon",
+      "label": "WhatsApp Message Icon",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-whatsapp.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_icons_icon_x_icon",
+      "label": "X Social/Close Icon",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-x.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_logo_emblem_noxxd",
+      "label": "NOXXD Emblem - Pixelated N with Checkerboard Border",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\logo-emblem.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_logo_full_noxxd",
+      "label": "NOXXD Full Wordmark - Emblem + Logo + Slogan",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\logo-full.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_caritas_logo_caritas",
+      "label": "Caritas Project Brand - Spherical Gradient Logo",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_caritas_screens_anamnese_screen",
+      "label": "Caritas - Patient Anamnese Form (Health History)",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\screens\\anamnese.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_caritas_screens_sessao_screen",
+      "label": "Caritas - Session Tracking with Mood Evolution Graph",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\screens\\sessao.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_healthsearch_logo_healthsearch",
+      "label": "HealthSearch Project Brand - Shield with Safety Helmet",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\healthsearch\\logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_healthsearch_screens_dashboard_screen",
+      "label": "HealthSearch - Occupational Health Dashboard",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\healthsearch\\screens\\dashboard.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_healthsearch_screens_ficha_screen",
+      "label": "HealthSearch - Employee Profile with Medical Records",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\healthsearch\\screens\\ficha-colaborador.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_urbis_logo_urbis",
+      "label": "Urbis Project Brand - City Infrastructure Icon",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_urbis_screens_app_relatar_screen",
+      "label": "Urbis - Mobile Incident Reporting Form",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\app-relatar.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_urbis_screens_painel_dashboard_screen",
+      "label": "Urbis - Admin Dashboard with Geolocation Heatmap",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\painel-dashboard.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assets_projetos_urbis_screens_painel_relatos_screen",
+      "label": "Urbis - Incident Reports Table with Status",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\painel-relatos.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_system_pixel_aesthetic",
+      "label": "Pixel-Art Aesthetic Design System",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-saas.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_system_gold_color_palette",
+      "label": "Gold Color Palette (#C8975D/rgb(200,151,93))",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\logo-emblem.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_system_blue_teal_palette",
+      "label": "Blue/Teal Color Palette for Project Variants",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "domain_mental_health_therapy",
+      "label": "Mental Health & Therapy Domain",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\screens\\anamnese.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "domain_occupational_health_safety",
+      "label": "Occupational Health & Safety (SST) Domain",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\healthsearch\\screens\\dashboard.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "domain_municipal_services",
+      "label": "Municipal Services & Citizen Engagement Domain",
+      "file_type": "rationale",
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\app-relatar.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_noxxd",
+      "target": "concept_project_urbis",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_noxxd",
+      "target": "concept_project_healthsearch",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_noxxd",
+      "target": "concept_project_caritas",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "design_md",
+      "target": "concept_design_system_two_layer",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "design_md",
+      "target": "concept_noxxd_palette",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "design_md",
+      "target": "concept_typography_noxxd",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "design_md",
+      "target": "concept_frame_rule",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "design_md",
+      "target": "concept_state_vocabulary_rule",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "design_md",
+      "target": "concept_8bit_ornaments",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "design_md",
+      "target": "concept_bilingual_support",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_urbis_specs",
+      "target": "concept_urbis_palette",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_urbis_specs",
+      "target": "concept_typography_urbis",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_healthsearch_specs",
+      "target": "concept_healthsearch_palette",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\especificacoes_frontend_sigac.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_healthsearch_specs",
+      "target": "concept_typography_healthsearch",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\especificacoes_frontend_sigac.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_caritas_specs",
+      "target": "concept_caritas_palette",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_caritas_specs",
+      "target": "concept_typography_caritas",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_html",
+      "target": "design_md",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_html",
+      "target": "concept_bilingual_support",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "projetos_urbis_html",
+      "target": "exemplos_urbis_specs",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\urbis\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "projetos_urbis_html",
+      "target": "concept_urbis_palette",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\urbis\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "projetos_healthsearch_html",
+      "target": "exemplos_healthsearch_specs",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\healthsearch\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "projetos_healthsearch_html",
+      "target": "concept_healthsearch_palette",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\healthsearch\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "projetos_caritas_html",
+      "target": "exemplos_caritas_specs",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\caritas\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "projetos_caritas_html",
+      "target": "concept_caritas_palette",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\projetos\\caritas\\index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_urbis",
+      "target": "exemplos_urbis_logo",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_healthsearch",
+      "target": "exemplos_healthsearch_logo",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_caritas",
+      "target": "exemplos_caritas_logo",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_urbis",
+      "target": "tech_react_native",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_urbis",
+      "target": "tech_nextjs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_urbis",
+      "target": "tech_leaflet",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_urbis",
+      "target": "tech_recharts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_healthsearch",
+      "target": "tech_react_19",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\especificacoes_frontend_sigac.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_healthsearch",
+      "target": "tech_tailwind",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\especificacoes_frontend_sigac.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_caritas",
+      "target": "tech_react_19",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_caritas",
+      "target": "tech_vite",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_caritas",
+      "target": "tech_jspdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_project_caritas",
+      "target": "tech_recharts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\especificacoes-frontend.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "impeccable_projetos_urbis",
+      "target": "concept_project_urbis",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\.impeccable\\surfaces\\projetos-urbis-index-html.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "impeccable_projetos_urbis",
+      "target": "concept_project_healthsearch",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\.impeccable\\surfaces\\projetos-urbis-index-html.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "impeccable_projetos_urbis",
+      "target": "concept_project_caritas",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\.impeccable\\surfaces\\projetos-urbis-index-html.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_urbis_palette",
+      "target": "concept_state_vocabulary_rule",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\ESPECIFICACOES_FRONTEND.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_healthsearch_palette",
+      "target": "concept_state_vocabulary_rule",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\especificacoes_frontend_sigac.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_favicon",
+      "target": "concept_8bit_ornaments",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\favicon.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_urbis_logo",
+      "target": "concept_project_urbis",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Urbis\\logo urbis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_healthsearch_logo",
+      "target": "concept_project_healthsearch",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\HealthSearch\\LOGO HEALTHSEARCH.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "exemplos_caritas_logo",
+      "target": "concept_project_caritas",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\Exemplos\\Caritas\\LOGO CARITAS.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_icons_icon_saas_icon",
+      "target": "design_system_pixel_aesthetic",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-saas.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_icons_icon_web_icon",
+      "target": "design_system_pixel_aesthetic",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-web.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_icons_icon_whatsapp_icon",
+      "target": "design_system_pixel_aesthetic",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-whatsapp.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_icons_icon_x_icon",
+      "target": "design_system_pixel_aesthetic",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-x.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_logo_emblem_noxxd",
+      "target": "design_system_gold_color_palette",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\logo-emblem.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_logo_emblem_noxxd",
+      "target": "design_system_pixel_aesthetic",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\logo-emblem.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_logo_full_noxxd",
+      "target": "assets_logo_emblem_noxxd",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\logo-full.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_caritas_logo_caritas",
+      "target": "assets_logo_emblem_noxxd",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\logo.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_caritas_logo_caritas",
+      "target": "design_system_blue_teal_palette",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\logo.svg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_caritas_screens_anamnese_screen",
+      "target": "assets_projetos_caritas_screens_sessao_screen",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\screens\\anamnese.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_caritas_screens_anamnese_screen",
+      "target": "domain_mental_health_therapy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\screens\\anamnese.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_caritas_screens_sessao_screen",
+      "target": "domain_mental_health_therapy",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\screens\\sessao.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_healthsearch_logo_healthsearch",
+      "target": "assets_logo_emblem_noxxd",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\healthsearch\\logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_healthsearch_screens_dashboard_screen",
+      "target": "assets_projetos_healthsearch_screens_ficha_screen",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\healthsearch\\screens\\dashboard.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_healthsearch_screens_dashboard_screen",
+      "target": "domain_occupational_health_safety",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\healthsearch\\screens\\dashboard.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_healthsearch_screens_ficha_screen",
+      "target": "domain_occupational_health_safety",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\healthsearch\\screens\\ficha-colaborador.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_urbis_logo_urbis",
+      "target": "assets_logo_emblem_noxxd",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\logo.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_urbis_screens_app_relatar_screen",
+      "target": "assets_projetos_urbis_screens_painel_dashboard_screen",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\app-relatar.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_urbis_screens_painel_dashboard_screen",
+      "target": "assets_projetos_urbis_screens_painel_relatos_screen",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\painel-dashboard.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_urbis_screens_app_relatar_screen",
+      "target": "domain_municipal_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\app-relatar.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_urbis_screens_painel_dashboard_screen",
+      "target": "domain_municipal_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\painel-dashboard.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assets_projetos_urbis_screens_painel_relatos_screen",
+      "target": "domain_municipal_services",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\urbis\\screens\\painel-relatos.webp",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hyper_design_authority",
+      "label": "Design System Authority: NOXXD Frame Governs All Projects",
+      "nodes": [
+        "design_md",
+        "projetos_urbis_html",
+        "projetos_healthsearch_html",
+        "projetos_caritas_html"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md"
+    },
+    {
+      "id": "hyper_product_ecosystem",
+      "label": "NOXXD Product Ecosystem: Three Distinct Project Worlds",
+      "nodes": [
+        "concept_project_urbis",
+        "concept_project_healthsearch",
+        "concept_project_caritas"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\README.md"
+    },
+    {
+      "id": "hyper_visual_identity_layer",
+      "label": "Visual Identity Layer: Palette + Typography + Ornaments",
+      "nodes": [
+        "concept_noxxd_palette",
+        "concept_typography_noxxd",
+        "concept_8bit_ornaments"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\DESIGN.md"
+    },
+    {
+      "id": "noxxd_portfolio_projects",
+      "label": "NOXXD Portfolio - Three Distinct Domains",
+      "nodes": [
+        "assets_projetos_caritas_logo_caritas",
+        "assets_projetos_healthsearch_logo_healthsearch",
+        "assets_projetos_urbis_logo_urbis"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\logo-full.svg"
+    },
+    {
+      "id": "icon_design_system",
+      "label": "Unified Icon Design System - Pixel Aesthetic",
+      "nodes": [
+        "assets_icons_icon_saas_icon",
+        "assets_icons_icon_web_icon",
+        "assets_icons_icon_whatsapp_icon",
+        "assets_icons_icon_x_icon"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\icons\\icon-saas.svg"
+    },
+    {
+      "id": "caritas_ui_pattern",
+      "label": "Caritas UI Pattern - Tabbed Health Records",
+      "nodes": [
+        "assets_projetos_caritas_screens_anamnese_screen",
+        "assets_projetos_caritas_screens_sessao_screen",
+        "domain_mental_health_therapy"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Connor\\Documents\\Projects\\noxxd\\assets\\projetos\\caritas\\screens\\anamnese.webp"
+    }
+  ],
+  "input_tokens": 143925,
+  "output_tokens": 0
+}

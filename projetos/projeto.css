@@ -1,6 +1,6 @@
 /* ==========================================================================
    NOXXD — Shared frame for project case pages (/projetos/<slug>/)
-   The NOXXD bar and footer keep the agency identity (teal, gold, square);
+   The NOXXD bar and footer use the ThoughtStream system (DESIGN.md);
    everything between them is themed by each page through --p-* tokens.
    ========================================================================== */
 
@@ -83,21 +83,22 @@ html:not([lang="en"]) body [lang="en"] {
 }
 
 /* --------------------------------------------------------------------------
-   NOXXD frame: top bar
+   NOXXD frame: top bar (ThoughtStream, see DESIGN.md)
+   Flat, hairline borders, 0px radius. The frame is the same on every case
+   page; only the content between bar and footer carries the product palette.
    -------------------------------------------------------------------------- */
-/* Frame colours: NOXXD by default, each case page overrides them with its product palette.
-   Emblem, Oswald and square controls stay as the NOXXD signature. */
 :root {
-  --nx-bg: #154B56;
-  --nx-line: #C8975D;
-  --nx-ink: #F5F7F8;
-  --nx-ink-2: #D0C0A7;
-  --nx-accent: #C8975D;
-  --nx-on-accent: #0E363E; /* text on gold: 5.1:1, brand teal there fails AA */
-  --nxf-bg: #C8975D;
-  --nxf-ink: #0E363E;
-  --nxf-line: #D8A76D;
-  --nxf-hover: #154B56;
+  --nx-bg: #FAFAF9;
+  --nx-line: #E7E5E4;
+  --nx-line-2: #D6D3D1;
+  --nx-ink: #1C1917;
+  --nx-ink-2: #57534E;
+  --nx-accent: #78716C;
+  --nx-accent-hover: #57534E;
+  --nx-on-accent: #FAFAF9;
+  --nx-surface: #F5F5F4;
+  --nx-ring: 0 0 0 2px #FAFAF9, 0 0 0 4px #78716C;
+  --nx-font: 'Inter', -apple-system, 'Segoe UI', Helvetica, sans-serif;
 }
 
 .nx-bar {
@@ -105,10 +106,8 @@ html:not([lang="en"]) body [lang="en"] {
   top: 0;
   z-index: 100;
   background: var(--nx-bg);
-  border-bottom: 2px solid var(--nx-line);
-  font-family: 'Oswald', 'Arial Narrow', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--nx-line);
+  font-family: var(--nx-font);
 }
 
 .nx-bar__inner {
@@ -116,78 +115,81 @@ html:not([lang="en"]) body [lang="en"] {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  min-height: 60px;
+  min-height: 64px;
 }
 
 .nx-back {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  min-height: 44px;
   color: var(--nx-ink);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
   font-weight: 600;
 }
 
 .nx-back svg {
   width: 18px;
   height: 18px;
-  color: var(--nx-accent);
+  color: var(--nx-ink-2);
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* NOXXD emblem painted in the page's frame colour (mask keeps the N cut-out) */
+/* NOXXD emblem painted in ink (mask keeps the N cut-out) */
 .nx-emblem {
   display: inline-block;
   flex: none;
-  width: 34px;
-  height: 34px;
-  background-color: var(--nx-accent);
+  width: 32px;
+  height: 32px;
+  background-color: var(--nx-ink);
   -webkit-mask: url("../assets/logo-emblem.svg") center / contain no-repeat;
   mask: url("../assets/logo-emblem.svg") center / contain no-repeat;
 }
 
 .nx-emblem--footer {
-  width: 40px;
-  height: 40px;
-  background-color: var(--nxf-ink);
-}
-
-.nx-back:hover,
-.nx-back:focus-visible {
-  color: var(--nx-accent);
+  width: 36px;
+  height: 36px;
 }
 
 .nx-back:hover svg {
   transform: translateX(-3px);
 }
 
+.nx-bar :focus-visible,
+.nx-footer :focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: var(--nx-ring);
+}
+
 .nx-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  gap: 2px;
-  border: 1px solid var(--nx-line);
-  padding: 2px;
+  border: 1px solid var(--nx-line-2);
 }
 
 .lang-btn {
   appearance: none;
+  min-width: 44px;
+  min-height: 44px;
   border: 0;
   background: transparent;
   color: var(--nx-ink-2);
-  font: inherit;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 6px 9px;
+  font: 600 0.8125rem/1 var(--nx-font);
+  letter-spacing: 0.04em;
   cursor: pointer;
-  line-height: 1;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: var(--nx-surface);
+  color: var(--nx-ink);
 }
 
 .lang-btn[aria-pressed="true"] {
@@ -195,43 +197,52 @@ html:not([lang="en"]) body [lang="en"] {
   color: var(--nx-on-accent);
 }
 
-.lang-btn:hover {
-  color: var(--nx-ink);
-}
-
 .lang-btn[aria-pressed="true"]:hover {
+  background: var(--nx-accent-hover);
   color: var(--nx-on-accent);
 }
 
 .nx-contact {
   display: inline-flex;
   align-items: center;
-  padding: 9px 18px;
+  min-height: 44px;
+  padding: 12px 24px;
   background: var(--nx-accent);
   color: var(--nx-on-accent);
-  border: 2px solid var(--nx-accent);
-  font-size: 0.85rem;
-  font-weight: 700;
+  border: 1px solid var(--nx-accent);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.2;
   text-decoration: none;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.nx-contact:hover,
-.nx-contact:focus-visible {
-  background: transparent;
-  color: var(--nx-accent);
+.nx-contact:hover {
+  background: var(--nx-accent-hover);
+  border-color: var(--nx-accent-hover);
+}
+
+@media (max-width: 480px) {
+  .nx-back__label {
+    display: none;
+  }
+
+  .nx-contact {
+    padding-inline: 16px;
+  }
 }
 
 /* --------------------------------------------------------------------------
    NOXXD frame: footer
    -------------------------------------------------------------------------- */
 .nx-footer {
-  background: var(--nxf-bg);
-  color: var(--nxf-ink);
-  border-top: 4px solid var(--nxf-line);
-  font-family: 'Josefin Sans', system-ui, sans-serif;
-  font-weight: 600;
-  padding: 28px 0;
+  background: var(--nx-surface);
+  color: var(--nx-ink-2);
+  border-top: 1px solid var(--nx-line);
+  font-family: var(--nx-font);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  padding: 48px 0;
 }
 
 .nx-footer__inner {
@@ -239,37 +250,41 @@ html:not([lang="en"]) body [lang="en"] {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px 32px;
+  gap: 24px 48px;
 }
 
 .nx-footer__brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .nx-footer__slogan {
-  font-size: 0.8rem;
-  letter-spacing: 0.35em;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--nx-ink);
 }
 
 .nx-footer nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 24px;
-  font-size: 0.95rem;
+  gap: 0 24px;
 }
 
 .nx-footer a {
-  color: var(--nxf-ink);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--nx-ink-2);
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 
 .nx-footer a:hover {
-  color: var(--nxf-hover);
+  color: var(--nx-ink);
 }
 
 /* --------------------------------------------------------------------------

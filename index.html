@@ -22,18 +22,18 @@
   <!-- Google Fonts Preconnect & Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
 
-  <!-- CSS Design System -->
+  <!-- CSS Design System: ThoughtStream -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-grid">
+<body>
+  <a href="#conteudo" class="skip-link" data-i18n="skip_link">Pular para o conteúdo</a>
 
-  <!-- Top Navigation Header -->
   <header class="site-header">
     <div class="nav-container">
       <a href="#inicio" class="brand-lockup" aria-label="NOXXD - Início">
-        <img src="assets/logo-emblem.svg" alt="Emblema NOXXD" class="brand-emblem" width="44" height="44">
+        <span class="brand-emblem" aria-hidden="true"></span>
         <span class="brand-name">NOXXD</span>
       </a>
       <div class="nav-right">
@@ -43,10 +43,9 @@
           <a href="#projetos" class="nav-link" data-i18n="nav_projects">Projetos</a>
           <a href="#contato" class="nav-link" data-i18n="nav_contact">Contato</a>
         </nav>
-        <div class="lang-switch" aria-label="Alterar Idioma / Switch Language">
-          <button type="button" class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
-          <span class="lang-divider">|</span>
-          <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <div class="lang-switch" role="group" aria-label="Alterar Idioma / Switch Language">
+          <button type="button" class="lang-btn active" data-lang="pt" aria-label="Português" aria-pressed="true">PT</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
         </div>
         <button class="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-nav">
           <span></span>
@@ -57,192 +56,137 @@
     </div>
   </header>
 
-  <!-- Main Content Landmark -->
-  <main>
+  <main id="conteudo">
 
-    <!-- 1. Hero Section -->
     <section id="inicio" class="hero-section">
-      <div class="hero-content reveal-item">
-        <img src="assets/logo-emblem.svg" alt="NOXXD Emblem" class="hero-emblem" width="96" height="96">
-        <h1 class="hero-title" data-scramble>NOXXD</h1>
-        <div class="hero-slogan-wrapper">
-          <p class="slogan" data-i18n="hero_slogan" data-scramble>CONSTRUA DO SEU JEITO</p>
-        </div>
+      <div class="container reveal-item">
+        <h1 class="hero-title" data-i18n="hero_slogan">CONSTRUA DO SEU JEITO</h1>
         <p class="hero-description" data-i18n="hero_description">
           Soluções digitais de alto impacto, plataformas SaaS robustas e sistemas inteligentes sob medida para modernizar o setor público e empresas privadas.
         </p>
         <div class="hero-actions">
-          <a href="#projetos" class="btn btn-primary" data-i18n="hero_btn_projects">CONHEÇA NOSSOS PROJETOS</a>
+          <a href="#projetos" class="btn" data-i18n="hero_btn_projects">CONHEÇA NOSSOS PROJETOS</a>
           <a href="#contato" class="btn btn-outline" data-i18n="hero_btn_contact">FALE CONOSCO</a>
         </div>
       </div>
     </section>
 
-    <!-- Tech stack loop: technologies used in the portfolio projects -->
-    <div class="tech-loop" role="region" aria-label="Stack">
-      <ul class="tech-loop__track"><li>React 19</li><li>React Native</li><li>Expo</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Vite</li><li>Firebase</li><li>Supabase</li><li>Leaflet</li><li>Recharts</li><li>Cloudflare R2</li><li>jsPDF</li><li>GPT-4o-mini</li></ul>
-      <ul class="tech-loop__track" aria-hidden="true"><li>React 19</li><li>React Native</li><li>Expo</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Vite</li><li>Firebase</li><li>Supabase</li><li>Leaflet</li><li>Recharts</li><li>Cloudflare R2</li><li>jsPDF</li><li>GPT-4o-mini</li></ul>
+    <div class="container">
+      <ul class="stack-list" aria-label="Stack"><li>React 19</li><li>React Native</li><li>Expo</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Vite</li><li>Firebase</li><li>Supabase</li><li>Leaflet</li><li>Recharts</li><li>Cloudflare R2</li><li>jsPDF</li><li>GPT-4o-mini</li></ul>
     </div>
 
-    <!-- 2. Services Section -->
-    <section id="servicos" class="services-section">
-      <div class="section-header reveal-item">
-        <h2 class="section-title" data-i18n="services_title">Nossos Serviços</h2>
-        <p class="lead" data-i18n="services_lead">Engenharia de software ágil, arquitetura limpa e design geométrico de alta fidelidade para transformar sua visão em realidade operacional.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Service Card 1: Sites e Landing Pages -->
-        <article class="service-card pixel-card reveal-item">
-          <div class="pixel-corner top-left" aria-hidden="true"></div>
-          <div class="pixel-corner top-right" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-left" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-right" aria-hidden="true"></div>
-          <img src="assets/icons/icon-web.svg" alt="Ícone representativo de Criação de Sites e Landing Pages" class="service-icon" width="56" height="56">
-          <h3 class="service-title" data-i18n="service_web_title">Criação de Sites e Landing Pages</h3>
-          <p data-i18n="service_web_desc">
-            Desenvolvimento web moderno, totalmente responsivo e otimizado para motores de busca (SEO) e alta taxa de conversão. Construímos sites institucionais e landing pages de alto padrão visual com identidade geométrica exclusiva.
-          </p>
-          <a href="#contato" class="btn-outline" data-i18n="service_web_btn">Solicitar Orçamento</a>
-        </article>
-
-        <!-- Service Card 2: Sistemas Web e SaaS -->
-        <article class="service-card pixel-card reveal-item">
-          <div class="pixel-corner top-left" aria-hidden="true"></div>
-          <div class="pixel-corner top-right" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-left" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-right" aria-hidden="true"></div>
-          <img src="assets/icons/icon-saas.svg" alt="Ícone representativo de Sistemas Web e SaaS" class="service-icon" width="56" height="56">
-          <h3 class="service-title" data-i18n="service_saas_title">Sistemas Web e SaaS</h3>
-          <p data-i18n="service_saas_desc">
-            Arquitetura e programação de plataformas multi-tenant (SaaS), aplicativos em nuvem e painéis de controle empresariais. Código escalável, controle de acesso seguro e integrações fluidas via APIs REST e GraphQL.
-          </p>
-          <a href="#contato" class="btn-outline" data-i18n="service_saas_btn">Construir Sistema</a>
-        </article>
-
-        <!-- Service Card 3: Consultoria em Tecnologia -->
-        <article class="service-card pixel-card reveal-item">
-          <div class="pixel-corner top-left" aria-hidden="true"></div>
-          <div class="pixel-corner top-right" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-left" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-right" aria-hidden="true"></div>
-          <img src="assets/icons/icon-consulting.svg" alt="Ícone representativo de Consultoria em Tecnologia" class="service-icon" width="56" height="56">
-          <h3 class="service-title" data-i18n="service_consulting_title">Consultoria em Tecnologia</h3>
-          <p data-i18n="service_consulting_desc">
-            Auditoria técnica de arquitetura, modernização de sistemas legados, estratégias de migração em nuvem e planejamento tecnológico personalizado para prefeituras, órgãos públicos e empresas inovadoras.
-          </p>
-          <a href="#contato" class="btn-outline" data-i18n="service_consulting_btn">Falar com Especialista</a>
-        </article>
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <h2 class="section-title" data-i18n="services_title">Nossos Serviços</h2>
+          <p class="lead" data-i18n="services_lead">Engenharia de software ágil, arquitetura limpa e design geométrico de alta fidelidade para transformar sua visão em realidade operacional.</p>
+        </div>
+        <div class="service-list">
+          <article class="service-item reveal-item">
+            <h3 class="service-title" data-i18n="service_web_title">Criação de Sites e Landing Pages</h3>
+            <div class="service-body">
+              <p data-i18n="service_web_desc">Desenvolvimento web moderno, totalmente responsivo e otimizado para motores de busca (SEO) e alta taxa de conversão. Construímos sites institucionais e landing pages de alto padrão visual com identidade geométrica exclusiva.</p>
+              <a href="#contato" class="text-link" data-i18n="service_web_btn">Solicitar Orçamento</a>
+            </div>
+          </article>
+          <article class="service-item reveal-item">
+            <h3 class="service-title" data-i18n="service_saas_title">Sistemas Web e SaaS</h3>
+            <div class="service-body">
+              <p data-i18n="service_saas_desc">Arquitetura e programação de plataformas multi-tenant (SaaS), aplicativos em nuvem e painéis de controle empresariais. Código escalável, controle de acesso seguro e integrações fluidas via APIs REST e GraphQL.</p>
+              <a href="#contato" class="text-link" data-i18n="service_saas_btn">Construir Sistema</a>
+            </div>
+          </article>
+          <article class="service-item reveal-item">
+            <h3 class="service-title" data-i18n="service_consulting_title">Consultoria em Tecnologia</h3>
+            <div class="service-body">
+              <p data-i18n="service_consulting_desc">Auditoria técnica de arquitetura, modernização de sistemas legados, estratégias de migração em nuvem e planejamento tecnológico personalizado para prefeituras, órgãos públicos e empresas inovadoras.</p>
+              <a href="#contato" class="text-link" data-i18n="service_consulting_btn">Falar com Especialista</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- 3. Projects Section: real projects, each with its own case page -->
-    <section id="projetos" class="projects-section">
-      <div class="section-header reveal-item">
-        <h2 class="section-title" data-i18n="projects_title">Portfólio de Projetos</h2>
-        <p class="lead" data-i18n="projects_lead">Produtos reais em operação, cada um com identidade própria. Abra o caso completo de cada projeto.</p>
-      </div>
-
-      <div class="portfolio-grid projects-grid">
-          <article class="portfolio-card project-card pixel-card reveal-item" style="--plate: #CAF0F8;">
-            <div class="pixel-corner top-left" aria-hidden="true"></div>
-            <div class="pixel-corner top-right" aria-hidden="true"></div>
-            <div class="pixel-corner bottom-left" aria-hidden="true"></div>
-            <div class="pixel-corner bottom-right" aria-hidden="true"></div>
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <h2 class="section-title" data-i18n="projects_title">Portfólio de Projetos</h2>
+          <p class="lead" data-i18n="projects_lead">Produtos reais em operação, cada um com identidade própria. Abra o caso completo de cada projeto.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-card reveal-item" style="--plate: #CAF0F8;">
             <a href="projetos/urbis/" class="project-logo-link" tabindex="-1" aria-hidden="true">
-              <img src="assets/projetos/urbis/logo.png" alt="Logo oficial do Urbis" class="portfolio-card-img project-logo" width="640" height="639" loading="lazy">
+              <img src="assets/projetos/urbis/logo.png" alt="Logo oficial do Urbis" class="project-logo" width="640" height="639" loading="lazy">
             </a>
-            <div class="showcase-tags"><span class="tag" data-i18n="urbis_tag_1">GovTech</span><span class="tag" data-i18n="urbis_tag_2">App + Painel Web</span></div>
-            <h3 class="project-title">Urbis</h3>
-            <p class="project-summary" data-i18n="urbis_summary">Zeladoria urbana para prefeituras: o cidadão relata com foto, áudio e geolocalização exata, e a gestão municipal decide pelo mapa de calor.</p>
-            <p class="project-stack" data-i18n="urbis_stack">React Native · Expo 54 · Next.js 14 · Leaflet · Recharts</p>
-            <p class="project-metric"><strong data-i18n="urbis_metric_value">Lei 14.129/2021</strong> <span data-i18n="urbis_metric_label">Governo Digital + LGPD</span></p>
-            <a href="projetos/urbis/" class="btn btn-primary project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
+            <div class="project-body">
+              <h3 class="project-title">Urbis</h3>
+              <div class="showcase-tags"><span class="tag" data-i18n="urbis_tag_1">GovTech</span><span class="tag" data-i18n="urbis_tag_2">App + Painel Web</span></div>
+              <p class="project-summary" data-i18n="urbis_summary">Zeladoria urbana para prefeituras: o cidadão relata com foto, áudio e geolocalização exata, e a gestão municipal decide pelo mapa de calor.</p>
+              <p class="project-stack" data-i18n="urbis_stack">React Native · Expo 54 · Next.js 14 · Leaflet · Recharts</p>
+              <p class="project-metric"><strong data-i18n="urbis_metric_value">Lei 14.129/2021</strong> <span data-i18n="urbis_metric_label">Governo Digital + LGPD</span></p>
+              <a href="projetos/urbis/" class="btn project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
+            </div>
           </article>
-          <article class="portfolio-card project-card pixel-card reveal-item" style="--plate: #F4F6F8;">
-            <div class="pixel-corner top-left" aria-hidden="true"></div>
-            <div class="pixel-corner top-right" aria-hidden="true"></div>
-            <div class="pixel-corner bottom-left" aria-hidden="true"></div>
-            <div class="pixel-corner bottom-right" aria-hidden="true"></div>
+          <article class="project-card reveal-item" style="--plate: #F4F6F8;">
             <a href="projetos/healthsearch/" class="project-logo-link" tabindex="-1" aria-hidden="true">
-              <img src="assets/projetos/healthsearch/logo.png" alt="Logo oficial do HealthSearch" class="portfolio-card-img project-logo" width="628" height="640" loading="lazy">
+              <img src="assets/projetos/healthsearch/logo.png" alt="Logo oficial do HealthSearch" class="project-logo" width="628" height="640" loading="lazy">
             </a>
-            <div class="showcase-tags"><span class="tag" data-i18n="hs_tag_1">SST / RH</span><span class="tag" data-i18n="hs_tag_2">SaaS</span></div>
-            <h3 class="project-title">HealthSearch</h3>
-            <p class="project-summary" data-i18n="hs_summary">Central de Saúde e Segurança do Trabalho que sustenta o SIGAC: ciclo do ASO (NR-07), matriz de NR-01 a NR-35, folha e absenteísmo.</p>
-            <p class="project-stack" data-i18n="hs_stack">React 19 · Tailwind v4 · Firebase · Cloudflare R2</p>
-            <p class="project-metric"><strong data-i18n="hs_metric_value">AES-GCM 256 bits</strong> <span data-i18n="hs_metric_label">CID-10 cifrado no navegador</span></p>
-            <a href="projetos/healthsearch/" class="btn btn-primary project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
+            <div class="project-body">
+              <h3 class="project-title">HealthSearch</h3>
+              <div class="showcase-tags"><span class="tag" data-i18n="hs_tag_1">SST / RH</span><span class="tag" data-i18n="hs_tag_2">SaaS</span></div>
+              <p class="project-summary" data-i18n="hs_summary">Central de Saúde e Segurança do Trabalho que sustenta o SIGAC: ciclo do ASO (NR-07), matriz de NR-01 a NR-35, folha e absenteísmo.</p>
+              <p class="project-stack" data-i18n="hs_stack">React 19 · Tailwind v4 · Firebase · Cloudflare R2</p>
+              <p class="project-metric"><strong data-i18n="hs_metric_value">AES-GCM 256 bits</strong> <span data-i18n="hs_metric_label">CID-10 cifrado no navegador</span></p>
+              <a href="projetos/healthsearch/" class="btn project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
+            </div>
           </article>
-          <article class="portfolio-card project-card pixel-card reveal-item" style="--plate: #EFF6FF;">
-            <div class="pixel-corner top-left" aria-hidden="true"></div>
-            <div class="pixel-corner top-right" aria-hidden="true"></div>
-            <div class="pixel-corner bottom-left" aria-hidden="true"></div>
-            <div class="pixel-corner bottom-right" aria-hidden="true"></div>
+          <article class="project-card reveal-item" style="--plate: #EFF6FF;">
             <a href="projetos/caritas/" class="project-logo-link" tabindex="-1" aria-hidden="true">
-              <img src="assets/projetos/caritas/logo.svg" alt="Logo oficial do CARITAS" class="portfolio-card-img project-logo" width="400" height="400" loading="lazy">
+              <img src="assets/projetos/caritas/logo.svg" alt="Logo oficial do CARITAS" class="project-logo" width="400" height="400" loading="lazy">
             </a>
-            <div class="showcase-tags"><span class="tag" data-i18n="caritas_tag_1">HealthTech</span><span class="tag" data-i18n="caritas_tag_2">Psicologia</span></div>
-            <h3 class="project-title">CARITAS</h3>
-            <p class="project-summary" data-i18n="caritas_summary">Prontuário psicológico seguro com anamnese, resumo clínico por I.A., documentos CFP, agenda com link público e cobrança via PIX.</p>
-            <p class="project-stack" data-i18n="caritas_stack">React 19 · Vite 8 · Tailwind · GPT-4o-mini · jsPDF</p>
-            <p class="project-metric"><strong data-i18n="caritas_metric_value">4,55 / 5</strong> <span data-i18n="caritas_metric_label">em heurísticas de Nielsen</span></p>
-            <a href="projetos/caritas/" class="btn btn-primary project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
+            <div class="project-body">
+              <h3 class="project-title">CARITAS</h3>
+              <div class="showcase-tags"><span class="tag" data-i18n="caritas_tag_1">HealthTech</span><span class="tag" data-i18n="caritas_tag_2">Psicologia</span></div>
+              <p class="project-summary" data-i18n="caritas_summary">Prontuário psicológico seguro com anamnese, resumo clínico por I.A., documentos CFP, agenda com link público e cobrança via PIX.</p>
+              <p class="project-stack" data-i18n="caritas_stack">React 19 · Vite 8 · Tailwind · GPT-4o-mini · jsPDF</p>
+              <p class="project-metric"><strong data-i18n="caritas_metric_value">4,55 / 5</strong> <span data-i18n="caritas_metric_label">em heurísticas de Nielsen</span></p>
+              <a href="projetos/caritas/" class="btn project-btn"><span data-i18n="project_btn">VER PROJETO</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a>
+            </div>
           </article>
+        </div>
       </div>
     </section>
 
-    <!-- 4. Contact Section -->
-    <section id="contato" class="contact-section">
-      <div class="section-header reveal-item">
-        <h2 class="section-title" data-i18n="contact_title">Fale Conosco</h2>
-        <p class="lead" data-i18n="contact_lead">Pronto para construir sua próxima plataforma ou modernizar a infraestrutura da sua organização? Entre em contato direto com a equipe da NOXXD.</p>
-      </div>
-
-      <div class="contact-grid">
-        <!-- Direct Contact Channels Card -->
-        <div class="contact-card pixel-card reveal-item">
-          <div class="pixel-corner top-left" aria-hidden="true"></div>
-          <div class="pixel-corner top-right" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-left" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-right" aria-hidden="true"></div>
-          <h3 style="color: var(--color-gold); margin-bottom: 24px;" data-i18n="contact_direct_title">Canais Diretos</h3>
-
-          <div class="contact-item">
-            <img src="assets/icons/icon-email.svg" alt="Ícone de E-mail" width="28" height="28">
-            <div>
-              <span style="display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contact_email_label">E-mail Corporativo</span>
-              <a href="mailto:contato@noxxd.com.br" class="contact-link">contato@noxxd.com.br</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <img src="assets/icons/icon-whatsapp.svg" alt="Ícone de WhatsApp" width="28" height="28">
-            <div>
-              <span style="display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contact_wa_label">WhatsApp Comercial</span>
-              <a href="https://wa.me/5575981802188" target="_blank" rel="noopener noreferrer" class="contact-link">+55 (75) 98180-2188</a>
-            </div>
-          </div>
-
-          <div class="checker-accent checker-accent-sm" aria-hidden="true"></div>
-          <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0;" data-i18n="contact_hours">
-            Horário de atendimento: Segunda a sexta-feira, das 09h às 18h (Horário de Brasília). Respondemos solicitações técnicas e comerciais em até 24 horas úteis.
-          </p>
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <h2 class="section-title" data-i18n="contact_title">Fale Conosco</h2>
+          <p class="lead" data-i18n="contact_lead">Pronto para construir sua próxima plataforma ou modernizar a infraestrutura da sua organização? Entre em contato direto com a equipe da NOXXD.</p>
         </div>
 
-        <!-- Project Initiation Card -->
-        <div class="contact-card pixel-card reveal-item">
-          <div class="pixel-corner top-left" aria-hidden="true"></div>
-          <div class="pixel-corner top-right" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-left" aria-hidden="true"></div>
-          <div class="pixel-corner bottom-right" aria-hidden="true"></div>
-          <h3 style="color: var(--color-gold); margin-bottom: 16px;" data-i18n="contact_start_title">Inicie Seu Projeto</h3>
-          <p data-i18n="contact_start_desc">
-            Seja para criar um novo site ou landing page de alto desempenho, construir um sistema SaaS escalável ou agendar uma apresentação aprofundada do Urbis, do HealthSearch ou do CARITAS, nossa equipe de engenharia e produto está pronta para atender seu projeto.
-          </p>
-          <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 28px;">
-            <a href="mailto:contato@noxxd.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20Proposta%20-%20NOXXD" class="btn btn-primary" data-i18n="contact_btn_email">ENVIAR E-MAIL AGORA</a>
-            <a href="https://wa.me/5575981802188?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20NOXXD." target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="contact_btn_wa">CONVERSAR NO WHATSAPP</a>
+        <div class="contact-grid reveal-item">
+          <div class="contact-direct">
+            <h3 class="contact-subtitle" data-i18n="contact_direct_title">Canais Diretos</h3>
+            <dl class="contact-channels">
+              <dt data-i18n="contact_email_label">E-mail Corporativo</dt>
+              <dd><a href="mailto:contato@noxxd.com.br" class="contact-link">contato@noxxd.com.br</a></dd>
+              <dt data-i18n="contact_wa_label">WhatsApp Comercial</dt>
+              <dd><a href="https://wa.me/5575981802188" target="_blank" rel="noopener noreferrer" class="contact-link">+55 (75) 98180-2188</a></dd>
+            </dl>
+            <p class="contact-hours" data-i18n="contact_hours">
+              Horário de atendimento: Segunda a sexta-feira, das 09h às 18h (Horário de Brasília). Respondemos solicitações técnicas e comerciais em até 24 horas úteis.
+            </p>
+          </div>
+
+          <div class="contact-start">
+            <h3 class="contact-subtitle" data-i18n="contact_start_title">Inicie Seu Projeto</h3>
+            <p data-i18n="contact_start_desc">
+              Seja para criar um novo site ou landing page de alto desempenho, construir um sistema SaaS escalável ou agendar uma apresentação aprofundada do Urbis, do HealthSearch ou do CARITAS, nossa equipe de engenharia e produto está pronta para atender seu projeto.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:contato@noxxd.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20Proposta%20-%20NOXXD" class="btn" data-i18n="contact_btn_email">ENVIAR E-MAIL AGORA</a>
+              <a href="https://wa.me/5575981802188?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20NOXXD." target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="contact_btn_wa">CONVERSAR NO WHATSAPP</a>
+            </div>
           </div>
         </div>
       </div>
@@ -250,48 +194,21 @@
 
   </main>
 
-  <!-- Site Footer in Official Brand Gold Ribbon -->
   <footer class="site-footer">
-    <p class="footer-wordmark" aria-hidden="true">NOXXD</p>
     <div class="footer-container">
-      <div class="footer-brand">
-        <span class="footer-copy" data-i18n="footer_copy">© 2026 NOXXD. Todos os direitos reservados.</span>
-      </div>
-      <div class="footer-socials" aria-label="Canais sociais e comunicação">
-        <a href="https://instagram.com/noxxd" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter">
-            <rect x="3" y="3" width="18" height="18" />
-            <rect x="8" y="8" width="8" height="8" />
-            <rect x="16.5" y="5.5" width="2" height="2" fill="currentColor" stroke="none" />
-          </svg>
-        </a>
-        <a href="https://x.com/noxxd" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
-            <line x1="4" y1="4" x2="20" y2="20" />
-            <line x1="20" y1="4" x2="4" y2="20" />
-            <rect x="3" y="3" width="2" height="2" fill="currentColor" stroke="none" />
-            <rect x="19" y="19" width="2" height="2" fill="currentColor" stroke="none" />
-          </svg>
-        </a>
-        <a href="mailto:contato@noxxd.com.br" class="social-link" aria-label="E-mail">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter">
-            <rect x="2" y="4" width="20" height="16" />
-            <polyline points="2,5 12,13 22,5" />
-            <rect x="19" y="17" width="2" height="2" fill="currentColor" stroke="none" />
-          </svg>
-        </a>
-        <a href="https://wa.me/5575981802188" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter">
-            <path d="M4 4h16v12h-6l-4 4v-4H4V4z" />
-            <rect x="8" y="8" width="3" height="3" fill="currentColor" stroke="none" />
-            <rect x="13" y="11" width="3" height="3" fill="currentColor" stroke="none" />
-          </svg>
-        </a>
-      </div>
+      <span class="footer-copy" data-i18n="footer_copy">© 2026 NOXXD. Todos os direitos reservados.</span>
+      <nav class="footer-socials" aria-label="Canais sociais e comunicação">
+        <a href="https://instagram.com/noxxd" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+        <a href="https://x.com/noxxd" target="_blank" rel="noopener noreferrer" class="social-link">X</a>
+        <a href="mailto:contato@noxxd.com.br" class="social-link" data-i18n="footer_email">E-mail</a>
+        <a href="https://wa.me/5575981802188" target="_blank" rel="noopener noreferrer" class="social-link">WhatsApp</a>
+      </nav>
     </div>
   </footer>
 
-  <!-- Client-Side JavaScript: Navigation, Micro-Interactions & Scroll Reveal -->
   <script src="script.js" defer></script>
+<!-- impeccable-live-start -->
+<script src="http://localhost:8400/live.js?token=2a18e6fe-cc46-4a11-a6a8-0ad91c5b09f5"></script>
+<!-- impeccable-live-end -->
 </body>
 </html>

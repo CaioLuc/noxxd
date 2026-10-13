@@ -1,0 +1,36 @@
+C:\Users\Connor\Documents\Projects\noxxd\.impeccable\surfaces\projetos-urbis-index-html.md
+C:\Users\Connor\Documents\Projects\noxxd\DESIGN.md
+C:\Users\Connor\Documents\Projects\noxxd\Exemplos\Caritas\especificacoes-frontend.md
+C:\Users\Connor\Documents\Projects\noxxd\Exemplos\HealthSearch\especificacoes_frontend_sigac.md
+C:\Users\Connor\Documents\Projects\noxxd\Exemplos\Urbis\ESPECIFICACOES_FRONTEND.md
+C:\Users\Connor\Documents\Projects\noxxd\Exemplos\prompt_draft.md
+C:\Users\Connor\Documents\Projects\noxxd\PRODUCT.md
+C:\Users\Connor\Documents\Projects\noxxd\README.md
+C:\Users\Connor\Documents\Projects\noxxd\index.html
+C:\Users\Connor\Documents\Projects\noxxd\projetos\caritas\index.html
+C:\Users\Connor\Documents\Projects\noxxd\projetos\healthsearch\index.html
+C:\Users\Connor\Documents\Projects\noxxd\projetos\urbis\index.html
+C:\Users\Connor\Documents\Projects\noxxd\Exemplos\Caritas\LOGO CARITAS.svg
+C:\Users\Connor\Documents\Projects\noxxd\Exemplos\HealthSearch\LOGO HEALTHSEARCH.png
+C:\Users\Connor\Documents\Projects\noxxd\Exemplos\Urbis\logo urbis.png
+C:\Users\Connor\Documents\Projects\noxxd\assets\favicon.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\icons\icon-consulting.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\icons\icon-email.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\icons\icon-github.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\icons\icon-instagram.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\icons\icon-saas.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\icons\icon-web.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\icons\icon-whatsapp.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\icons\icon-x.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\logo-emblem.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\logo-full.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\caritas\logo.svg
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\caritas\screens\anamnese.webp
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\caritas\screens\sessao.webp
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\healthsearch\logo.png
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\healthsearch\screens\dashboard.webp
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\healthsearch\screens\ficha-colaborador.webp
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\urbis\logo.png
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\urbis\screens\app-relatar.webp
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\urbis\screens\painel-dashboard.webp
+C:\Users\Connor\Documents\Projects\noxxd\assets\projetos\urbis\screens\painel-relatos.webp

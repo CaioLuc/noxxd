@@ -1,0 +1,338 @@
+{
+  ".claude/launch.json": {
+    "mtime": 1791840379.3215063,
+    "seen": 1791842953.742207,
+    "ast_hash": "8797956650dfa5dbcef955aa530dfab8",
+    "semantic_hash": "8797956650dfa5dbcef955aa530dfab8"
+  },
+  ".impeccable/config.json": {
+    "mtime": 1791840379.323023,
+    "seen": 1791842953.7422101,
+    "ast_hash": "901693ef41da35482124c4091bbf1f75",
+    "semantic_hash": "901693ef41da35482124c4091bbf1f75"
+  },
+  ".impeccable/design.json": {
+    "mtime": 1791840379.323023,
+    "seen": 1791842953.7422113,
+    "ast_hash": "4fb33d5d13e4f110912c8a308eee1b8c",
+    "semantic_hash": "4fb33d5d13e4f110912c8a308eee1b8c"
+  },
+  "assets/projetos/caritas/screens/anamnese.webp.json": {
+    "mtime": 1791840379.3527834,
+    "seen": 1791842953.742212,
+    "ast_hash": "5b2a3798ade70cd4f826427ab6f431e7",
+    "semantic_hash": "5b2a3798ade70cd4f826427ab6f431e7"
+  },
+  "assets/projetos/caritas/screens/sessao.webp.json": {
+    "mtime": 1791840379.3527834,
+    "seen": 1791842953.7422128,
+    "ast_hash": "4160ab1cf7bfeadc358155cac31dfd28",
+    "semantic_hash": "4160ab1cf7bfeadc358155cac31dfd28"
+  },
+  "assets/projetos/healthsearch/screens/dashboard.webp.json": {
+    "mtime": 1791840379.3557878,
+    "seen": 1791842953.7422135,
+    "ast_hash": "7d4f355eeb69b32cfc3453eaab60bd38",
+    "semantic_hash": "7d4f355eeb69b32cfc3453eaab60bd38"
+  },
+  "assets/projetos/healthsearch/screens/ficha-colaborador.webp.json": {
+    "mtime": 1791840379.3557878,
+    "seen": 1791842953.7422142,
+    "ast_hash": "bf6bf96e0a2734a96812bb74720bb90f",
+    "semantic_hash": "bf6bf96e0a2734a96812bb74720bb90f"
+  },
+  "assets/projetos/urbis/screens/app-relatar.webp.json": {
+    "mtime": 1791840379.3577375,
+    "seen": 1791842953.7422147,
+    "ast_hash": "bc58a15a2b96e3a24c7427823dbc1d21",
+    "semantic_hash": "bc58a15a2b96e3a24c7427823dbc1d21"
+  },
+  "assets/projetos/urbis/screens/painel-dashboard.webp.json": {
+    "mtime": 1791840379.3587425,
+    "seen": 1791842953.7422152,
+    "ast_hash": "78cd0323c9532caf74beb00072a780f5",
+    "semantic_hash": "78cd0323c9532caf74beb00072a780f5"
+  },
+  "assets/projetos/urbis/screens/painel-relatos.webp.json": {
+    "mtime": 1791840379.3597417,
+    "seen": 1791842953.7422156,
+    "ast_hash": "df77727e94ecfefbe9376c81a000c4c5",
+    "semantic_hash": "df77727e94ecfefbe9376c81a000c4c5"
+  },
+  "projetos/projeto.js": {
+    "mtime": 1791840379.36225,
+    "seen": 1791842953.742216,
+    "ast_hash": "0cf7b726ea0b43814273c36067295143",
+    "semantic_hash": "0cf7b726ea0b43814273c36067295143"
+  },
+  "script.js": {
+    "mtime": 1791840379.3632493,
+    "seen": 1791842953.742217,
+    "ast_hash": "eafb504148e3f54cbd3a7f040057d912",
+    "semantic_hash": "eafb504148e3f54cbd3a7f040057d912"
+  },
+  "tests/__init__.py": {
+    "mtime": 1791840379.3642502,
+    "seen": 1791842953.7422178,
+    "ast_hash": "c089481c4c0f91c232cb730cd2213b88",
+    "semantic_hash": "c089481c4c0f91c232cb730cd2213b88"
+  },
+  "tests/conftest.py": {
+    "mtime": 1791840379.3642502,
+    "seen": 1791842953.742218,
+    "ast_hash": "0ca4154f2cdfab38123c69ae50fdfa2a",
+    "semantic_hash": "0ca4154f2cdfab38123c69ae50fdfa2a"
+  },
+  "tests/helpers.py": {
+    "mtime": 1791840379.3657553,
+    "seen": 1791842953.7422185,
+    "ast_hash": "e18485bcd7e40c457a28bb9da858315b",
+    "semantic_hash": "e18485bcd7e40c457a28bb9da858315b"
+  },
+  "tests/test_tier1_features.py": {
+    "mtime": 1791840379.3657553,
+    "seen": 1791842953.742219,
+    "ast_hash": "d4adc4881fa909f0a4af93c32c1652f9",
+    "semantic_hash": "d4adc4881fa909f0a4af93c32c1652f9"
+  },
+  "tests/test_tier2_boundaries.py": {
+    "mtime": 1791840379.36676,
+    "seen": 1791842953.7422194,
+    "ast_hash": "fdae51ba4ec3f5c88dc242afa38a8232",
+    "semantic_hash": "fdae51ba4ec3f5c88dc242afa38a8232"
+  },
+  "tests/test_tier3_interaction.py": {
+    "mtime": 1791840379.36676,
+    "seen": 1791842953.74222,
+    "ast_hash": "c76d5d80cbe248297bfabe427f0e4c98",
+    "semantic_hash": "c76d5d80cbe248297bfabe427f0e4c98"
+  },
+  "tests/test_tier4_deploy.py": {
+    "mtime": 1791840379.36676,
+    "seen": 1791842953.7422206,
+    "ast_hash": "1eb2cd6fd7d6f6ea027c65a72a93fa81",
+    "semantic_hash": "1eb2cd6fd7d6f6ea027c65a72a93fa81"
+  },
+  "tests/test_tier5_projects.py": {
+    "mtime": 1791840379.3677905,
+    "seen": 1791842953.742221,
+    "ast_hash": "a2896fcb3026051fc9ad9d44f37fd4b8",
+    "semantic_hash": "a2896fcb3026051fc9ad9d44f37fd4b8"
+  },
+  ".impeccable/surfaces/projetos-urbis-index-html.md": {
+    "mtime": 1791840379.3240283,
+    "seen": 1791842953.7422218,
+    "ast_hash": "244f5801580d563bd1a084516813c92a",
+    "semantic_hash": "244f5801580d563bd1a084516813c92a"
+  },
+  "DESIGN.md": {
+    "mtime": 1791840379.3250299,
+    "seen": 1791842953.742222,
+    "ast_hash": "90254d7eb1000d8b34bbd4aea73dee07",
+    "semantic_hash": "90254d7eb1000d8b34bbd4aea73dee07"
+  },
+  "Exemplos/Caritas/especificacoes-frontend.md": {
+    "mtime": 1791840379.3260279,
+    "seen": 1791842953.7422228,
+    "ast_hash": "c08b61c90174c02bf8219e3dee777999",
+    "semantic_hash": "c08b61c90174c02bf8219e3dee777999"
+  },
+  "Exemplos/HealthSearch/especificacoes_frontend_sigac.md": {
+    "mtime": 1791840379.3351445,
+    "seen": 1791842953.7422233,
+    "ast_hash": "cb0def6e7c28989cbe9093504a05109a",
+    "semantic_hash": "cb0def6e7c28989cbe9093504a05109a"
+  },
+  "Exemplos/Urbis/ESPECIFICACOES_FRONTEND.md": {
+    "mtime": 1791840379.3361447,
+    "seen": 1791842953.742224,
+    "ast_hash": "0ceb4395429315f697d7d1ce5dc7a792",
+    "semantic_hash": "0ceb4395429315f697d7d1ce5dc7a792"
+  },
+  "Exemplos/prompt_draft.md": {
+    "mtime": 1791840379.344213,
+    "seen": 1791842953.7422245,
+    "ast_hash": "cef2d6d8298387a52edece154c59b0ac",
+    "semantic_hash": "cef2d6d8298387a52edece154c59b0ac"
+  },
+  "PRODUCT.md": {
+    "mtime": 1791840379.3457158,
+    "seen": 1791842953.742225,
+    "ast_hash": "07a7cf8b4c4835d04dd03174d84507d9",
+    "semantic_hash": "07a7cf8b4c4835d04dd03174d84507d9"
+  },
+  "README.md": {
+    "mtime": 1791840379.3457158,
+    "seen": 1791842953.7422254,
+    "ast_hash": "7d34cc18a1e7726f26498481500a67d3",
+    "semantic_hash": "7d34cc18a1e7726f26498481500a67d3"
+  },
+  "index.html": {
+    "mtime": 1791840379.3597417,
+    "seen": 1791842953.742226,
+    "ast_hash": "4af0899e199c45b08804500d49c1bd1a",
+    "semantic_hash": "4af0899e199c45b08804500d49c1bd1a"
+  },
+  "projetos/caritas/index.html": {
+    "mtime": 1791840379.3612459,
+    "seen": 1791842953.7422264,
+    "ast_hash": "d9be626d73d0193adec1b9ae6d72fdf3",
+    "semantic_hash": "d9be626d73d0193adec1b9ae6d72fdf3"
+  },
+  "projetos/healthsearch/index.html": {
+    "mtime": 1791840379.36225,
+    "seen": 1791842953.7422268,
+    "ast_hash": "6ab43ac3249b1cecb28a664913e7b264",
+    "semantic_hash": "6ab43ac3249b1cecb28a664913e7b264"
+  },
+  "projetos/urbis/index.html": {
+    "mtime": 1791840379.3632493,
+    "seen": 1791842953.7422276,
+    "ast_hash": "f1c4be4a4d1cb32592cd4f31376ce717",
+    "semantic_hash": "f1c4be4a4d1cb32592cd4f31376ce717"
+  },
+  "Exemplos/Caritas/LOGO CARITAS.svg": {
+    "mtime": 1791840379.3250299,
+    "seen": 1791842953.742228,
+    "ast_hash": "0bac4ca7103c9cb90c2139ff873fa221",
+    "semantic_hash": "0bac4ca7103c9cb90c2139ff873fa221"
+  },
+  "Exemplos/HealthSearch/LOGO HEALTHSEARCH.png": {
+    "mtime": 1791840379.334144,
+    "seen": 1791842953.7422285,
+    "ast_hash": "dea52ed8c155a8104ec6f2bce52a8926",
+    "semantic_hash": "dea52ed8c155a8104ec6f2bce52a8926"
+  },
+  "Exemplos/Urbis/logo urbis.png": {
+    "mtime": 1791840379.344213,
+    "seen": 1791842953.742229,
+    "ast_hash": "3264d39eb2f44a331dfc6eab78b7e8f1",
+    "semantic_hash": "3264d39eb2f44a331dfc6eab78b7e8f1"
+  },
+  "assets/favicon.svg": {
+    "mtime": 1791840379.3467195,
+    "seen": 1791842953.7422297,
+    "ast_hash": "39f3983a76f106d2a185e071e9725548",
+    "semantic_hash": "39f3983a76f106d2a185e071e9725548"
+  },
+  "assets/icons/icon-consulting.svg": {
+    "mtime": 1791840379.3467195,
+    "seen": 1791842953.7422302,
+    "ast_hash": "c0f670a27985d51311278ebf2bc2dd83",
+    "semantic_hash": "c0f670a27985d51311278ebf2bc2dd83"
+  },
+  "assets/icons/icon-email.svg": {
+    "mtime": 1791840379.3467195,
+    "seen": 1791842953.742231,
+    "ast_hash": "c553c53ef0472d0092bcfc870b00d7c7",
+    "semantic_hash": "c553c53ef0472d0092bcfc870b00d7c7"
+  },
+  "assets/icons/icon-github.svg": {
+    "mtime": 1791840379.3482726,
+    "seen": 1791842953.7422314,
+    "ast_hash": "ebf41bc2c8688e9d1238d10d421f43d9",
+    "semantic_hash": "ebf41bc2c8688e9d1238d10d421f43d9"
+  },
+  "assets/icons/icon-instagram.svg": {
+    "mtime": 1791840379.3482726,
+    "seen": 1791842953.7422318,
+    "ast_hash": "b78b777861409660fc3c64ec2676de44",
+    "semantic_hash": "b78b777861409660fc3c64ec2676de44"
+  },
+  "assets/icons/icon-saas.svg": {
+    "mtime": 1791840379.3482726,
+    "seen": 1791842953.7422323,
+    "ast_hash": "afe6cfed5dbd540a659622bc8d9e1e49",
+    "semantic_hash": "afe6cfed5dbd540a659622bc8d9e1e49"
+  },
+  "assets/icons/icon-web.svg": {
+    "mtime": 1791840379.3492796,
+    "seen": 1791842953.7422328,
+    "ast_hash": "0242d1c35a820cc325631bfab2b334b5",
+    "semantic_hash": "0242d1c35a820cc325631bfab2b334b5"
+  },
+  "assets/icons/icon-whatsapp.svg": {
+    "mtime": 1791840379.3492796,
+    "seen": 1791842953.7422333,
+    "ast_hash": "5f7897374b380cf0a8e8f50f9ceb9abf",
+    "semantic_hash": "5f7897374b380cf0a8e8f50f9ceb9abf"
+  },
+  "assets/icons/icon-x.svg": {
+    "mtime": 1791840379.3492796,
+    "seen": 1791842953.7422342,
+    "ast_hash": "6825943328b78506038ba5432849de18",
+    "semantic_hash": "6825943328b78506038ba5432849de18"
+  },
+  "assets/logo-emblem.svg": {
+    "mtime": 1791840379.3502772,
+    "seen": 1791842953.7422347,
+    "ast_hash": "78d53a86502ec0a029be2af3dd74b9f5",
+    "semantic_hash": "78d53a86502ec0a029be2af3dd74b9f5"
+  },
+  "assets/logo-full.svg": {
+    "mtime": 1791840379.3502772,
+    "seen": 1791842953.7422352,
+    "ast_hash": "38b3d50fe2f10a4cc269247a9cb13f7d",
+    "semantic_hash": "38b3d50fe2f10a4cc269247a9cb13f7d"
+  },
+  "assets/projetos/caritas/logo.svg": {
+    "mtime": 1791840379.35128,
+    "seen": 1791842953.7422357,
+    "ast_hash": "0bac4ca7103c9cb90c2139ff873fa221",
+    "semantic_hash": "0bac4ca7103c9cb90c2139ff873fa221"
+  },
+  "assets/projetos/caritas/screens/anamnese.webp": {
+    "mtime": 1791840379.35128,
+    "seen": 1791842953.7422361,
+    "ast_hash": "2270182542c7504644e7574252e88ec9",
+    "semantic_hash": "2270182542c7504644e7574252e88ec9"
+  },
+  "assets/projetos/caritas/screens/sessao.webp": {
+    "mtime": 1791840379.3527834,
+    "seen": 1791842953.7422366,
+    "ast_hash": "c7d8914c214826d416df9a28c19afa1c",
+    "semantic_hash": "c7d8914c214826d416df9a28c19afa1c"
+  },
+  "assets/projetos/healthsearch/logo.png": {
+    "mtime": 1791840379.3537893,
+    "seen": 1791842953.742237,
+    "ast_hash": "97ce51f99b2ffaf268844d84e7592c99",
+    "semantic_hash": "97ce51f99b2ffaf268844d84e7592c99"
+  },
+  "assets/projetos/healthsearch/screens/dashboard.webp": {
+    "mtime": 1791840379.3547869,
+    "seen": 1791842953.7422378,
+    "ast_hash": "183290d5c2803c2c5f95901267f32cf4",
+    "semantic_hash": "183290d5c2803c2c5f95901267f32cf4"
+  },
+  "assets/projetos/healthsearch/screens/ficha-colaborador.webp": {
+    "mtime": 1791840379.3557878,
+    "seen": 1791842953.7422383,
+    "ast_hash": "6cf0eed1b8d895b40693f81d8d2200e6",
+    "semantic_hash": "6cf0eed1b8d895b40693f81d8d2200e6"
+  },
+  "assets/projetos/urbis/logo.png": {
+    "mtime": 1791840379.3573284,
+    "seen": 1791842953.7422388,
+    "ast_hash": "9ad8377c5edeb52512fa58e2f6438e0a",
+    "semantic_hash": "9ad8377c5edeb52512fa58e2f6438e0a"
+  },
+  "assets/projetos/urbis/screens/app-relatar.webp": {
+    "mtime": 1791840379.3577375,
+    "seen": 1791842953.7422392,
+    "ast_hash": "708d09d2468e87b0b5ad0398bc0d37bc",
+    "semantic_hash": "708d09d2468e87b0b5ad0398bc0d37bc"
+  },
+  "assets/projetos/urbis/screens/painel-dashboard.webp": {
+    "mtime": 1791840379.3587425,
+    "seen": 1791842953.7422397,
+    "ast_hash": "ef6416aee8060502b1c1dc263402cdd8",
+    "semantic_hash": "ef6416aee8060502b1c1dc263402cdd8"
+  },
+  "assets/projetos/urbis/screens/painel-relatos.webp": {
+    "mtime": 1791840379.3597417,
+    "seen": 1791842953.7422402,
+    "ast_hash": "76fff2eec68b45262bc828f0e3854873",
+    "semantic_hash": "76fff2eec68b45262bc828f0e3854873"
+  }
+}
