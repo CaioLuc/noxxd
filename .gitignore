@@ -1,18 +1,15 @@
-# Cache e testes em Python
-__pycache__/
-*.py[cod]
-.pytest_cache/
-verify.py
+# Dependências e build
+node_modules/
+dist/
 
 # Documentos internos, guias e referências locais
 guia-site-noxxd.md
 TEST_*.md
 *.jpeg
 
-# Pastas e logs de automação/agentes
+# Pastas locais de ferramentas e agentes
 .agents/
 agents/
-
-# Impeccable: capturas locais e cache do hook
-.impeccable/review/
-.impeccable/hook.cache.json
+.claude/
+.impeccable/
+graphify-out/

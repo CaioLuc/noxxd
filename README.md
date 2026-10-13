@@ -1,51 +1,63 @@
+<p align="center">
+  <img src="public/assets/logo-black.svg#gh-light-mode-only" alt="NOXXD" width="96">
+  <img src="public/assets/logo-white.svg#gh-dark-mode-only" alt="NOXXD" width="96">
+</p>
+
 # NOXXD — Website & Portfólio Institucional
 
-> **BUILD IT YOUR WAY**  
-> Tecnologia sob medida para o setor público e empresas privadas.  
+> **CONSTRUA DO SEU JEITO** · *BUILD IT YOUR WAY*
+> Tecnologia sob medida para o setor público e empresas privadas.
 > Acesse: [noxxd.com.br](https://noxxd.com.br)
 
----
+## Sobre a NOXXD
 
-## 📌 Sobre a NOXXD
+A **NOXXD** desenvolve sites, landing pages, sistemas web e plataformas SaaS sob medida para modernizar a gestão pública e acelerar negócios.
 
-A **NOXXD** é uma empresa de tecnologia focada no desenvolvimento de soluções digitais de alto impacto, plataformas SaaS escaláveis e sistemas sob medida para modernizar a gestão pública e acelerar negócios.
+### Projetos em portfólio
 
-### Projetos em Portfólio
-Cada projeto tem página própria, com a identidade visual oficial do produto dentro da moldura NOXXD:
-- **[Urbis](https://noxxd.com.br/projetos/urbis/)** (`/projetos/urbis/`): zeladoria urbana para prefeituras, com app do cidadão (React Native / Expo 54) e painel web com mapa de calor (Next.js 14).
-- **[HealthSearch](https://noxxd.com.br/projetos/healthsearch/)** (`/projetos/healthsearch/`): central de Saúde e Segurança do Trabalho que sustenta o SIGAC (ASO NR-07, matriz NR-01 a NR-35, CID-10 cifrado em AES-GCM 256).
-- **[CARITAS](https://noxxd.com.br/projetos/caritas/)** (`/projetos/caritas/`): plataforma clínica para psicólogas(os), com prontuário, anamnese, I.A., documentos CFP, agenda e PIX.
+Cada projeto tem página própria, com a moldura NOXXD e um tom, uma tipografia e a logo do produto:
 
-Logos em `assets/projetos/<slug>/` e prints dos sistemas em `assets/projetos/<slug>/screens/` (WebP). Os prints vêm de execuções locais com **dados fictícios** (emuladores Firebase / modo demo do Urbis) e levam o selo "Dados fictícios" na moldura.
+- **[Urbis](https://noxxd.com.br/projetos/urbis/)**: zeladoria urbana para prefeituras, com app do cidadão (React Native / Expo 54) e painel web com mapa de calor (Next.js 14).
+- **[HealthSearch](https://noxxd.com.br/projetos/healthsearch/)**: central de Saúde e Segurança do Trabalho que sustenta o SIGAC (ASO NR-07, matriz NR-01 a NR-35, CID-10 cifrado em AES-GCM 256).
+- **[CARITAS](https://noxxd.com.br/projetos/caritas/)**: plataforma clínica para psicólogas(os), com prontuário, anamnese, I.A., documentos CFP, agenda e PIX.
 
-### Serviços
-- **Sistemas Web & SaaS:** Plataformas em nuvem, controle de acessos, microsserviços e APIs.
-- **Criação de Sites & Landing Pages:** Interfaces modernas, responsivas e de alta performance.
-- **Consultoria em Tecnologia:** Arquitetura, planejamento tecnológico e transformação digital.
+Os prints dos sistemas vêm de execuções locais com **dados fictícios** e levam esse rótulo no site.
 
----
+## Identidade visual
 
-## 🎨 Identidade Visual & Design System
+- **Logo:** emblema xadrez com o "N" vazado, em duas versões: `public/assets/logo-black.svg` (fundos claros) e `public/assets/logo-white.svg` (fundos escuros). O favicon troca sozinho entre as duas no modo escuro.
+- **Cores:** neutros de pedra quentes (`#FAFAF9`, `#1C1917`, `#78716C`) e linhas finas. Cada projeto recebe um único tom discreto: Urbis `#2F6B7C`, HealthSearch `#8A6A2E`, CARITAS `#52599A`.
+- **Tipografia:** Libre Baskerville (títulos), Inter (texto) e Source Code Pro (stack e código). Nos projetos, os títulos usam a fonte do produto: Manrope, Archivo e Sora.
+- **Forma:** cantos retos, sem sombras, separação por linhas e espaço.
 
-O site segue uma identidade visual geométrica e marcante:
-- **Cores Oficiais:**
-  - Fundo principal: Azul-petróleo (`#1B5E6B`)
-  - Fundo secundário: Azul-petróleo escuro (`#154B56`)
-  - Acentos, botões e detalhes: Dourado (`#C8975D`)
-- **Estética:** Grade blueprint de fundo, ornamentos pixelados e cantos ortogonais retos (`border-radius: 0`).
-- **Tipografia:** Oswald (títulos condensados) e Josefin Sans (slogans e textos).
+## Tecnologias
 
----
+- **React 19 + Vite** com build de várias páginas (Home e uma página por projeto), cada uma com seu próprio HTML, título, meta tags e URL canônica.
+- **Tailwind CSS v4** com os tokens da marca em `src/styles.css`.
+- **PT | EN** com a escolha salva em `localStorage` (`noxxd_lang`) e compartilhada entre as páginas.
+- Componentes adaptados de padrões do React Bits (Blur Text, Count Up, Logo Loop), 21st.dev (FAQ) e Uiverse (seletor de idioma), sem dependências extras. Toda animação respeita `prefers-reduced-motion`.
 
-## 💻 Tecnologias
+## Desenvolvimento
 
-- **HTML5 Semântico:** Estrutura acessível com metadados SEO e OpenGraph completos.
-- **CSS3 Puro:** Variáveis de design system, micro-interações táteis e aceleração por GPU.
-- **Vanilla JavaScript (ES6):** Animações suaves na rolagem (*Scroll Reveal*), partículas 8-bit douradas (GPU, respeitam `prefers-reduced-motion`), menu mobile acessível, navegação ativa e alternância PT | EN (persistida entre Home e páginas de projeto).
-- **Hospedagem:** GitHub Pages com domínio customizado via arquivo `CNAME`.
+```bash
+npm install
+npm run dev      # servidor local
+npm test         # links de páginas e assets, domínio e títulos
+npm run build    # gera dist/
+```
 
----
+```
+index.html                 Home
+projetos/<slug>/index.html Páginas dos projetos
+src/pages/                 Uma página React por HTML
+src/ui.jsx, src/project.jsx Componentes compartilhados
+public/                    Logos, prints e CNAME (copiados para dist/)
+```
 
-## 📄 Licença
+## Deploy
+
+O GitHub Actions (`.github/workflows/deploy.yml`) roda os testes, faz o build e publica `dist/` no GitHub Pages a cada push na `main`. Em **Settings → Pages → Source**, a opção precisa estar em **GitHub Actions**. O domínio `noxxd.com.br` vem de `public/CNAME`.
+
+## Licença
 
 Este projeto está sob a licença [MIT](LICENSE).

@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+/* NOXXD: flat, 0px radius, hairline borders, warm stone neutrals.
+   Project pages swap only --p-* (accent, ink, tint, display face). */
+@theme {
+  --color-bg: #FAFAF9;
+  --color-surface: #F5F5F4;
+  --color-ink: #1C1917;
+  --color-text-2: #57534E;
+  --color-sage: #A8A29E;
+  --color-stone: #78716C;
+  --color-stone-hover: #57534E;
+  --color-stone-active: #44403C;
+  --color-line: #E7E5E4;
+  --color-line-2: #D6D3D1;
+  --color-night: #1C1917;
+  --color-night-2: #A8A29E;
+
+  --font-display: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, 'Segoe UI', Helvetica, sans-serif;
+  --font-mono: 'Source Code Pro', 'Fira Code', Consolas, monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --color-accent: var(--p-accent);
+  --color-accent-ink: var(--p-ink);
+  --color-tint: var(--p-tint);
+  --font-product: var(--p-font);
+}
+
+:root {
+  --p-accent: #78716C;
+  --p-ink: #1C1917;
+  --p-tint: #F5F5F4;
+  --p-font: var(--font-display);
+}
+
+/* English visitors: the prerendered HTML is Portuguese, so it stays hidden until React renders English. */
+[data-wait] #root { visibility: hidden; }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
+    scrollbar-color: var(--color-sage) var(--color-bg);
+    scrollbar-width: thin;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    caret-color: var(--p-accent);
+  }
+
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+
+  ::selection {
+    background: var(--p-accent);
+    color: var(--color-bg);
+  }
+
+  :focus-visible {
+    outline: 2px solid transparent; /* keeps a ring in forced-colors mode */
+    box-shadow: var(--ring, 0 0 0 2px #FAFAF9, 0 0 0 4px var(--p-accent)); /* fallback resolves per element, so it follows each project accent */
+  }
+
+  a { text-underline-offset: 4px; text-decoration-thickness: 1px; }
+
+  kbd {
+    padding: 1px 6px;
+    border: 1px solid var(--color-line-2);
+    background: var(--color-bg);
+    font: 500 0.8em/1.4 var(--font-mono);
+  }
+}
+
+@layer components {
+  .wrap { width: min(1080px, 100% - 48px); margin-inline: auto; }
+  @media (max-width: 640px) { .wrap { width: calc(100% - 32px); } }
+
+  .section { padding-block: 60px; }
+  @media (min-width: 701px) { .section { padding-block: 84px; } }
+  @media (min-width: 1025px) { .section { padding-block: 120px; } }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 12px 24px;
+    border: 1px solid var(--p-accent);
+    background: var(--p-accent);
+    color: var(--color-bg);
+    font: 600 0.9375rem/1.2 var(--font-sans);
+    text-decoration: none;
+    transition: background-color 0.2s var(--ease-out-expo), border-color 0.2s var(--ease-out-expo), color 0.2s var(--ease-out-expo);
+  }
+  .btn:hover { background: var(--p-ink); border-color: var(--p-ink); }
+  .btn:active { background: var(--color-stone-active); border-color: var(--color-stone-active); }
+  .btn svg { width: 18px; height: 18px; flex: none; transition: transform 0.3s var(--ease-out-expo); }
+  .btn:hover svg { transform: translateX(3px); }
+
+  .btn-outline {
+    background: transparent;
+    border-color: var(--color-line-2);
+    color: var(--color-stone-hover);
+  }
+  .btn-outline:hover { background: var(--color-surface); border-color: var(--color-line-2); color: var(--color-ink); }
+  .btn-outline:active { background: var(--color-line); border-color: var(--color-line-2); }
+
+  @media (max-width: 640px) { .btn { width: 100%; } }
+
+  .text-link {
+    color: var(--color-ink);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--color-line-2);
+    transition: text-decoration-color 0.2s var(--ease-out-expo), color 0.2s var(--ease-out-expo);
+  }
+  .text-link:hover { color: var(--p-accent); text-decoration-color: currentColor; }
+
+  .lead { font-size: 1.25rem; line-height: 1.75; color: var(--color-text-2); max-width: 680px; }
+}
+
+/* React Bits "Blur Text" pattern: words settle from blur, one at a time. */
+.blur-word {
+  display: inline-block;
+  animation: blur-in 0.9s var(--ease-out-expo) both;
+  animation-delay: calc(var(--i) * 70ms);
+}
+@keyframes blur-in {
+  from { opacity: 0; filter: blur(10px); transform: translateY(6px); }
+}
+
+/* React Bits "Logo Loop" pattern: two identical tracks slide forever, pause on hover. */
+.loop { display: flex; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.loop__track { display: flex; flex: none; animation: loop var(--loop-speed, 48s) linear infinite; }
+.loop:hover .loop__track { animation-play-state: paused; }
+@keyframes loop { to { transform: translate3d(-100%, 0, 0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .loop { mask-image: none; flex-wrap: wrap; }
+  .loop__track { flex-wrap: wrap; }
+  .loop__track[aria-hidden] { display: none; }
+}
+
+/* Urbis status ribbon: each badge steps up in turn. */
+@keyframes u-step {
+  0%, 22%, 100% { transform: none; box-shadow: 0 0 0 0 transparent; }
+  6%, 16% { transform: translateY(-3px); box-shadow: 0 0 0 1px currentColor; }
+}
+
+/* HealthSearch alert feed: the newest alert slides in on top. */
+@keyframes feed-in {
+  from { opacity: 0; transform: translateY(-12px); }
+}
