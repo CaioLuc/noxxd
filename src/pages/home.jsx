@@ -117,15 +117,6 @@ function Home() {
             <a href="#projetos" className="btn"><T pt="Conheça nossos projetos" en="Explore our projects" /><Arrow /></a>
             <a href="#contato" className="btn btn-outline"><T pt="Fale conosco" en="Contact us" /></a>
           </div>
-          <div className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-line pt-6 text-[0.9375rem] text-text-2">
-            <span><T pt="Em operação:" en="In operation:" /></span>
-            {PROJECT_ROWS.map((p) => (
-              <a key={p.slug} href={`/projetos/${p.slug}/`} className="group inline-flex min-h-11 items-center gap-3 text-ink no-underline">
-                <img src={p.logo} alt="" width="28" height="28" className="size-7 object-contain" />
-                <span className="underline decoration-line-2 underline-offset-4 transition-colors group-hover:decoration-ink">{p.name}</span>
-              </a>
-            ))}
-          </div>
         </section>
 
         <Loop
