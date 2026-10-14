@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Urbis">
-  <!-- U = the city: the left stem wears a roof; the dot = the citizen -->
-  <path fill="#2F6B7C" d="M16 22L30 8L44 22V72A16 16 0 0 0 76 72V50H104V72A44 44 0 0 1 16 72Z"/>
-  <circle fill="#2F6B7C" cx="90" cy="30" r="12"/>
+  <!-- U = the city: the left stem is a house with a 2x2 window; the map pin = the citizen's geolocated report -->
+  <path fill="#2F6B7C" fill-rule="evenodd" d="M16 22L30 8L44 22V72A16 16 0 0 0 76 72V50H104V72A44 44 0 0 1 16 72ZM23 29H29V35H23ZM31 29H37V35H31ZM23 37H29V43H23ZM31 37H37V43H31Z"/>
+  <path fill="#4FA3BF" fill-rule="evenodd" d="M90 48L79.6 36.3A14 14 0 1 1 100.4 36.3ZM90 22A5 5 0 1 0 90 32A5 5 0 1 0 90 22Z"/>
 </svg>
