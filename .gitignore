@@ -13,3 +13,7 @@ agents/
 .claude/
 .impeccable/
 graphify-out/
+
+# Motion CARITAS: saídas intermediárias
+Exemplos/Caritas/motion/stills/
+Exemplos/Caritas/motion/*.wav
