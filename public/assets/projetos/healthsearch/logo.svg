@@ -1,5 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="HealthSearch">
-  <!-- hard hat over a shield = occupational safety; the check cut out of the shield = compliance up to date -->
-  <path fill="#8A6A2E" d="M8 38H22A38 30 0 0 1 98 38H112V47H8Z"/>
-  <path fill="#8A6A2E" fill-rule="evenodd" d="M22 55H98V70C98 90 82 104 60 113C38 104 22 90 22 70ZM38 76L45 69L55 79L75 59L82 66L55 93Z"/>
+  <!-- search ring with four checkpoints, a hard hat over a shield, and the check that says "up to date" -->
+  <circle cx="60" cy="60" r="53" fill="none" stroke="#1F2D3D" stroke-width="3"/>
+  <g fill="#D9A23A">
+    <circle cx="60" cy="7" r="5"/><circle cx="113" cy="60" r="5"/><circle cx="60" cy="113" r="5"/><circle cx="7" cy="60" r="5"/>
+  </g>
+  <g transform="translate(60 60) scale(1.12) translate(-60 -60)">
+    <path fill="#D9A23A" d="M28 41H36A24 22 0 0 1 84 41H92V48H28Z"/>
+    <rect x="57" y="19" width="6" height="22" rx="3" fill="#1F2D3D"/>
+    <path fill="#1F2D3D" d="M36 54H84V68C84 83 74 93 60 100C46 93 36 83 36 68Z"/>
+    <path fill="none" stroke="#D9A23A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" d="M47 72L56 81L73 64"/>
+  </g>
 </svg>
