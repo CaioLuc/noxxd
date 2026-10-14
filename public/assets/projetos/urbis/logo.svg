@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Urbis">
+  <!-- U = the city: the left stem wears a roof; the dot = the citizen -->
+  <path fill="#2F6B7C" d="M16 22L30 8L44 22V72A16 16 0 0 0 76 72V50H104V72A44 44 0 0 1 16 72Z"/>
+  <circle fill="#2F6B7C" cx="90" cy="30" r="12"/>
+</svg>
