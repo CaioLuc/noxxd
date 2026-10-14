@@ -221,11 +221,11 @@ function HealthSearch() {
           <Shot
             className="mt-14"
             src="/assets/projetos/healthsearch/screens/ficha-colaborador.webp"
-            alt={t('HealthSearch: ficha do colaborador com ASO e treinamentos NR', 'HealthSearch: employee profile with exams and NR training')}
+            alt={t('HealthSearch: ficha do funcionário com dados, NRs aplicáveis e histórico de ASOs', 'HealthSearch: employee profile with details, applicable NRs and exam history')}
             width={1440}
             height={900}
-            url="/funcionarios"
-            caption={t('Ficha do colaborador: ASO, exames complementares e treinamentos com o mesmo semáforo', 'Employee profile: exams, complementary tests and training under the same traffic light')}
+            url="/funcionarios/func_003"
+            caption={t('Ficha do funcionário: vínculo, NRs aplicáveis e histórico de ASOs com status', 'Employee profile: employment, applicable NRs and exam history with status')}
           />
         </div>
       </section>
@@ -269,11 +269,11 @@ function HealthSearch() {
           <div className="mt-12 grid gap-12 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
             <Shot
               src="/assets/projetos/healthsearch/screens/dashboard.webp"
-              alt={t('HealthSearch: dashboard de conformidade SST', 'HealthSearch: OHS compliance dashboard')}
+              alt={t('HealthSearch: painel de conformidade com ASOs vencidos, a vencer e gráfico de vencimentos', 'HealthSearch: compliance dashboard with expired and due exams and an expiry chart')}
               width={1440}
               height={900}
               url="/dashboard"
-              caption={t('Painel em bento grid: KPIs, ações prioritárias e vencimentos', 'Bento-grid dashboard: KPIs, priority actions and upcoming expirations')}
+              caption={t('Painel de conformidade: situação dos ASOs, filtros por empresa e próximos vencimentos', 'Compliance dashboard: exam status, company filters and upcoming expirations')}
             />
             <dl className="border-t border-line">
               {[
