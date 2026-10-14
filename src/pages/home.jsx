@@ -49,8 +49,8 @@ const PROJECT_ROWS = [
   {
     slug: 'healthsearch',
     name: 'HealthSearch',
-    logo: '/assets/projetos/healthsearch/logo.png',
-    size: [628, 640],
+    logo: '/assets/projetos/healthsearch/logo.svg',
+    size: [120, 120],
     tags: [['SST / RH', 'OHS / HR'], ['SaaS', 'SaaS']],
     summary: [
       'Central de Saúde e Segurança do Trabalho que sustenta o SIGAC: ciclo do ASO (NR-07), matriz de NR-01 a NR-35, folha e absenteísmo.',

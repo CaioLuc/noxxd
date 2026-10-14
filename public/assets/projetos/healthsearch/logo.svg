@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="HealthSearch">
+  <!-- hard hat over a shield = occupational safety; the check cut out of the shield = compliance up to date -->
+  <path fill="#8A6A2E" d="M8 38H22A38 30 0 0 1 98 38H112V47H8Z"/>
+  <path fill="#8A6A2E" fill-rule="evenodd" d="M22 55H98V70C98 90 82 104 60 113C38 104 22 90 22 70ZM38 76L45 69L55 79L75 59L82 66L55 93Z"/>
+</svg>
