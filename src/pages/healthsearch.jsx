@@ -162,8 +162,8 @@ function HealthSearch() {
   return (
     <ProjectPage slug="healthsearch">
       <Hero
-        logo="/assets/projetos/healthsearch/logo.png"
-        logoSize={[628, 640]}
+        logo="/assets/projetos/healthsearch/logo.svg"
+        logoSize={[120, 120]}
         name="HealthSearch"
         byline={t('Central de SST que sustenta o SIGAC · desenvolvida pela NOXXD', 'The OHS hub behind SIGAC · built by NOXXD')}
         title={t('Nenhum ASO vence', 'No medical exam expires')}

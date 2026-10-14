@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="HealthSearch">
+  <!-- search ring with four checkpoints, a ribbed hard hat over a shield, and the check that says "up to date" -->
+  <circle cx="60" cy="60" r="53" fill="none" stroke="#1F2D3D" stroke-width="3"/>
+  <g fill="#D9A23A">
+    <circle cx="60" cy="7" r="5"/><circle cx="113" cy="60" r="5"/><circle cx="60" cy="113" r="5"/><circle cx="7" cy="60" r="5"/>
+  </g>
+  <g transform="translate(60 60) scale(1.12) translate(-60 -60)">
+    <path fill="#D9A23A" d="M35 47A25 27 0 0 1 85 47Z"/>
+    <path fill="none" stroke="#1F2D3D" stroke-width="3" stroke-linecap="round" d="M60 21V45M49 25Q44 32 44 45M71 25Q76 32 76 45"/>
+    <path fill="none" stroke="#D9A23A" stroke-width="7" stroke-linecap="round" d="M27 44Q60 52 93 44"/>
+    <path fill="#1F2D3D" d="M36 54H84V68C84 83 74 93 60 100C46 93 36 83 36 68Z"/>
+    <path fill="none" stroke="#D9A23A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" d="M47 72L56 81L73 64"/>
+  </g>
+</svg>
