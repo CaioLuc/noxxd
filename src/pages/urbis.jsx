@@ -42,8 +42,8 @@ function Urbis() {
   return (
     <ProjectPage slug="urbis">
       <Hero
-        logo="/assets/projetos/urbis/logo.png"
-        logoSize={[640, 639]}
+        logo="/assets/projetos/urbis/logo.svg"
+        logoSize={[120, 120]}
         name="Urbis"
         byline={t('Plataforma GovTech · desenvolvida pela NOXXD', 'GovTech platform · built by NOXXD')}
         title={t('A cidade relata.', 'The city reports.')}

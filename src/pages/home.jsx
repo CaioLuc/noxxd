@@ -36,8 +36,8 @@ const PROJECT_ROWS = [
   {
     slug: 'urbis',
     name: 'Urbis',
-    logo: '/assets/projetos/urbis/logo.png',
-    size: [640, 639],
+    logo: '/assets/projetos/urbis/logo.svg',
+    size: [120, 120],
     tags: [['GovTech', 'GovTech'], ['App + Painel Web', 'App + Web Dashboard']],
     summary: [
       'Zeladoria urbana para prefeituras: o cidadão relata com foto, áudio e geolocalização exata, e a gestão municipal decide pelo mapa de calor.',
