@@ -255,8 +255,7 @@ export function Footer() {
         </div>
         <div className={col}>
           <p className={head}><T pt="Redes" en="Social" /></p>
-          <a className={link} href="https://instagram.com/noxxd" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a className={link} href="https://x.com/noxxd" target="_blank" rel="noopener noreferrer">X</a>
+          <a className={link} href="https://instagram.com/noxxd_company?dlrf=MXA5Zzdsbm53cGFucA%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
       <div className="border-t border-white/10">
