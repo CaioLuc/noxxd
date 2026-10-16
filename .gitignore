@@ -13,7 +13,11 @@ agents/
 .claude/
 .impeccable/
 graphify-out/
+.pytest_cache/
 
-# Motion CARITAS: saídas intermediárias
-Exemplos/Caritas/motion/stills/
-Exemplos/Caritas/motion/*.wav
+# Material de divulgação (Instagram, vídeos, motion): fica só local, o site não usa
+Exemplos/
+
+# Segredos (chaves de API)
+.env
+.env.*
